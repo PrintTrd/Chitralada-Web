@@ -36,15 +36,14 @@
             }
             .vane{
                 position: absolute;
-                margin-left: 1732px;
-                margin-top: 552px;
+                margin-left: 1282px;
+                margin-top: 397px;
                 width: 130px;
                 /* -webkit-animation: rotate 3s infinite linear;
                 -moz-animation: rotate 3s infinite linear;
                 -o-animation: rotate 3s infinite linear;
                 -ms-animation: rotate 3s infinite linear; */
                 animation: rotate 3s infinite linear;
-                z-index: 1;
             }
             /* @-webkit-keyframes rotate{
                 0%{transform: rotate(0deg);}
@@ -68,22 +67,52 @@
             }
             .cloud{
                 position: absolute;
-                margin-left: -1200px;
+                margin-left: -900px;
                 margin-top: 75px;
-                width: 1200px;
+                width: 900px;
                 opacity: 0.95;
                 /* filter: alpha(opacity=70); */
-                animation: cloud 50s linear infinite;
-                -webkit-animation: cloud 50s linear infinite;
+                animation: cloud 30s linear infinite;
+                -webkit-animation: cloud 30s linear infinite;
                 z-index: -2;
             }
             @keyframes cloud{
                 0%{left: 0px;}
-                100%{left: 3125px;}
+                100%{left: 1800px;}
             }
             @-webkit-keyframes cloud{
                 0%{left: 0px;}
-                100%{left: 3125px;}
+                100%{left: 1800px;}
+            }
+            .label1{
+                position: absolute;
+                margin-left: 272px;
+                margin-top: 392px;
+                width: 145px;          
+            }
+            .label2{
+                position: absolute;
+                margin-left: 666px;
+                margin-top: 505px;
+                width: 145px;          
+            }
+            .label3{
+                position: absolute;
+                margin-left: 350px;
+                margin-top: 530px;
+                width: 145px;          
+            }
+            .label4{
+                position: absolute;
+                margin-left: 45px;
+                margin-top: 626px;
+                width: 145px;          
+            }
+            .label5{
+                position: absolute;
+                margin-left: 1262px;
+                margin-top: 652px;
+                width: 145px;          
             }
         </style>    
     </head>
@@ -91,8 +120,12 @@
         <img src="image/Home/BGwithLogo.svg" class="bg">
         <img src="image/Home/cloud group.svg" class="cloud">
         <img src="image/Home/vane.svg" class="vane" alt="Image">      
-        <!-- <img src="image/Home/ป้ายกระบวนการ.svg" class="" alt="Image"> -->
-        
+        <a href=""><img src="image/Home/ป้ายกระบวนการ.svg" class="label1 button:hover" alt="Image"></a>
+        <a href=""><img src="image/Home/ป้ายผลิตภัณฑ์.svg" class="label2 button:hover" alt="Image"></a>
+        <a href=""><img src="image/Home/ป้ายท่องเที่ยว.svg" class="label3 button:hover" alt="Image"></img>
+        <a href=""><img src="image/Home/ป้ายประวัติ.svg" class="label4 button:hover" alt="Image"></a>
+        <a href=""><img src="image/Home/ป้ายติดต่อ.svg" class="label5 button:hover" alt="Image"></img>
+
         <script src="index.js"></script>
         <!-- jQuery -->
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
