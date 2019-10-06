@@ -88,43 +88,52 @@
                 position: absolute;
                 margin-left: 272px;
                 margin-top: 392px;
-                width: 145px;          
+                width: 145px;
+                transition: transform .5s;          
             }
             .label2{
                 position: absolute;
                 margin-left: 666px;
                 margin-top: 505px;
-                width: 145px;          
+                width: 145px;
+                transition: transform .5s;          
             }
             .label3{
                 position: absolute;
                 margin-left: 350px;
                 margin-top: 530px;
-                width: 145px;          
+                width: 145px;
+                transition: transform .5s;          
             }
             .label4{
                 position: absolute;
                 margin-left: 45px;
                 margin-top: 626px;
-                width: 145px;          
+                width: 145px;
+                transition: transform .5s;          
             }
             .label5{
                 position: absolute;
                 margin-left: 1262px;
                 margin-top: 652px;
-                width: 145px;          
+                width: 145px;
+                transition: transform .5s; 
             }
+            .zoom:hover {
+                transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
+
         </style>    
     </head>
     <body>
         <img src="image/Home/BGwithLogo.svg" class="bg">
         <img src="image/Home/cloud group.svg" class="cloud">
         <img src="image/Home/vane.svg" class="vane" alt="Image">      
-        <a href=""><img src="image/Home/ป้ายกระบวนการ.svg" class="label1 button:hover" alt="Image"></a>
-        <a href=""><img src="image/Home/ป้ายผลิตภัณฑ์.svg" class="label2 button:hover" alt="Image"></a>
-        <a href=""><img src="image/Home/ป้ายท่องเที่ยว.svg" class="label3 button:hover" alt="Image"></img>
-        <a href=""><img src="image/Home/ป้ายประวัติ.svg" class="label4 button:hover" alt="Image"></a>
-        <a href=""><img src="image/Home/ป้ายติดต่อ.svg" class="label5 button:hover" alt="Image"></img>
+        <a href="process.html"><img src="image/Home/ป้ายกระบวนการ.svg" class="label1 zoom" alt="Image"></a>
+        <a href="product.html"><img src="image/Home/ป้ายผลิตภัณฑ์.svg" class="label2 zoom" alt="Image"></a>
+        <a href="tour.html"><img src="image/Home/ป้ายท่องเที่ยว.svg" class="label3 zoom" alt="Image"></a>
+        <a href="history.html"><img src="image/Home/ป้ายประวัติ.svg" class="label4 zoom" alt="Image"></a>
+        <a href="contact.html"><img src="image/Home/ป้ายติดต่อ.svg" class="label5 zoom" alt="Image"></a>
 
         <script src="index.js"></script>
         <!-- jQuery -->
