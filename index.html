@@ -25,42 +25,28 @@
                 margin: 0;
             }
             .bg{
-                /* background-image: url(Web-co/image/Home/BGwithLogo.svg); */
                 min-width: 100%;
-                /* Center and scale the image nicely */
-                background-position: 0% 0%;
-                background-repeat: no-repeat;
-                background-size: cover;
+                position: 0% 0%;
+                size: 100%;
                 z-index: -1;
                 position: absolute;
             }
+            .windmill{
+                position: absolute;
+                width: 10%;
+                left: 93%;
+                top: 52%;
+            }
             .vane{
                 position: absolute;
-                margin-left: 1282px;
-                margin-top: 397px;
-                width: 130px;
-                /* -webkit-animation: rotate 3s infinite linear;
-                -moz-animation: rotate 3s infinite linear;
-                -o-animation: rotate 3s infinite linear;
-                -ms-animation: rotate 3s infinite linear; */
                 animation: rotate 3s infinite linear;
+                right: 45%;
+                bottom: 70.5%;
+                z-index: 1;
             }
-            /* @-webkit-keyframes rotate{
-                0%{transform: rotate(0deg);}
-                100%{transform: rotate(360deg);}
+            .pole{
+                width: 11%;
             }
-            @-moz-keyframes rotate{
-                0%{transform: rotate(0deg);}
-                100%{transform: rotate(360deg);}
-            }
-            @-o-keyframes rotate{
-                0%{transform: rotate(0deg);}
-                100%{transform: rotate(360deg);}
-            }
-            @-ms-keyframes rotate{
-                0%{transform: rotate(0deg);}
-                100%{transform: rotate(360deg);}
-            } */
             @keyframes rotate{
                 0%{transform: rotate(0deg);}
                 100%{transform: rotate(360deg);}
@@ -68,21 +54,15 @@
             .cloud{
                 position: absolute;
                 margin-left: -900px;
-                margin-top: 75px;
+                top: 5%;
                 width: 900px;
                 opacity: 0.95;
-                /* filter: alpha(opacity=70); */
-                animation: cloud 30s linear infinite;
-                -webkit-animation: cloud 30s linear infinite;
+                animation: cloud 40s linear infinite;
                 z-index: -2;
             }
             @keyframes cloud{
                 0%{left: 0px;}
-                100%{left: 1800px;}
-            }
-            @-webkit-keyframes cloud{
-                0%{left: 0px;}
-                100%{left: 1800px;}
+                100%{left: 2700px;}
             }
             .label1{
                 position: absolute;
@@ -126,15 +106,20 @@
         </style>    
     </head>
     <body>
-        <img src="image/Home/BGwithLogo.svg" class="bg">
-        <img src="image/Home/cloud group.svg" class="cloud">
-        <img src="image/Home/vane.svg" class="vane" alt="Image">      
-        <a href="process.html"><img src="image/Home/ป้ายกระบวนการ.svg" class="label1 zoom" alt="Image"></a>
-        <a href="product.html"><img src="image/Home/ป้ายผลิตภัณฑ์.svg" class="label2 zoom" alt="Image"></a>
-        <a href="tour.html"><img src="image/Home/ป้ายท่องเที่ยว.svg" class="label3 zoom" alt="Image"></a>
-        <a href="history.html"><img src="image/Home/ป้ายประวัติ.svg" class="label4 zoom" alt="Image"></a>
-        <a href="contact.html"><img src="image/Home/ป้ายติดต่อ.svg" class="label5 zoom" alt="Image"></a>
-
+        <div>
+            <img src="image/Home/BGwithoutPole.svg" class="bg">
+            <img src="image/Home/cloud group.svg" class="cloud">
+            <div class="windmill">
+              <img src="image/Home/vane.svg" class="vane" alt="Image">
+              <img src="image/Home/Pole.svg" class="pole" alt="Image">
+            </div>
+               
+            <a href="process.html"><img src="image/Home/ป้ายกระบวนการ.svg" class="label1 zoom" alt="Image"></a>
+            <a href="product.html"><img src="image/Home/ป้ายผลิตภัณฑ์.svg" class="label2 zoom" alt="Image"></a>
+            <a href="tour.html"><img src="image/Home/ป้ายท่องเที่ยว.svg" class="label3 zoom" alt="Image"></a>
+            <a href="history.html"><img src="image/Home/ป้ายประวัติ.svg" class="label4 zoom" alt="Image"></a>
+            <a href="contact.html"><img src="image/Home/ป้ายติดต่อ.svg" class="label5 zoom" alt="Image"></a>
+        </div>
         <script src="index.js"></script>
         <!-- jQuery -->
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
