@@ -10,12 +10,6 @@
         <!-- Bootstrap CSS -->
         <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
         <!-- <link rel="stylesheet" href="https://jabont.com/jayss/jayss.css"> -->
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!-- [if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif] -->
         
         <style>
             body {
@@ -24,6 +18,7 @@
                 -webkit-user-select: none;
                 margin: 0;
             }
+            
             .bg{
                 min-width: 100%;
                 position: 0% 0%;
@@ -31,11 +26,14 @@
                 z-index: -1;
                 position: absolute;
             }
+            .mob-bg{
+                display: none;
+            }
             .windmill{
                 position: absolute;
                 width: 10%;
                 left: 93%;
-                top: 52%;
+                top: 46.5%;
             }
             .vane{
                 position: absolute;
@@ -103,16 +101,34 @@
                 transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
             }
 
+            /* Responsive style */
+            @media only screen and (max-width: 900px) {
+                .bg{
+                    display: none;
+                }
+                .mob-bg{
+                    min-width: 100%;
+                    position: 0% 0%;
+                    size: 100%;
+                    z-index: -1;
+                    position: absolute;
+                    display: inline !important;
+                }
+            }
+
         </style>    
     </head>
     <body>
         <div>
             <img src="image/Home/BGwithoutPole.svg" class="bg">
+            <img src="image/Home/BGmobile.svg" class="mob-bg">
+
             <img src="image/Home/cloud group.svg" class="cloud">
-            <div class="windmill">
+
+            <section class="windmill">
               <img src="image/Home/vane.svg" class="vane" alt="Image">
               <img src="image/Home/Pole.svg" class="pole" alt="Image">
-            </div>
+            </section>
                
             <a href="process.html"><img src="image/Home/ป้ายกระบวนการ.svg" class="label1 zoom" alt="Image"></a>
             <a href="product.html"><img src="image/Home/ป้ายผลิตภัณฑ์.svg" class="label2 zoom" alt="Image"></a>
