@@ -78,6 +78,9 @@
                 opacity: 0.95;
                 animation: cloud 40s linear infinite;
             }
+            .cloud-mob{
+                display: none;
+            }
             @keyframes cloud{
                 0%{left: 0px;}
                 100%{left: 2700px;}
@@ -152,7 +155,7 @@
                     position: absolute;
                     width: 25%;
                     top: 6%;
-                    left: 40%;
+                    left: 37.5%;
                     animation: logo 1s linear;
                 }
                 @keyframes logo{
@@ -171,6 +174,22 @@
                     right: 45%;
                     bottom: 68%;
                     z-index: 1;
+                }
+                .cloud{
+                    display: none;
+                }
+                .cloud-mob{
+                    display: inline !important;
+                    position: absolute;
+                    margin-left: -600px;
+                    top: 5%;
+                    width: 600px;
+                    opacity: 0.95;
+                    animation: cloud 40s linear infinite;
+                }
+                @keyframes cloud{
+                    0%{left: 0px;}
+                    100%{left: 1800px;}
                 }
                 .l-process{
                     position: absolute;
@@ -216,7 +235,10 @@
             <img src="image/Home/BGwithoutLogo.svg" class="bg">
             <img src="image/Home/BGmob-woLogo.svg" class="mob-bg">
 
-            <div class="cloud-area"><img src="image/Home/cloud group.svg" class="cloud"></div>
+            <div class="cloud-area">
+                <img src="image/Home/cloud_group.svg" class="cloud">
+                <img src="image/Home/cloud_group-mob.svg" class="cloud-mob">
+            </div>
 
             <img src="image/Home/logo.svg" class="logo" alt="Image">
             <img src="image/Home/logo-mob.svg" class="logo-mob" alt="Image">
