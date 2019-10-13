@@ -20,7 +20,7 @@
                 margin: 0;
             }
             .bg{
-                min-width: 100%;
+                width: 100%;
                 position: 0% 0%;
                 size: 100%;
                 z-index: -1;
@@ -28,6 +28,20 @@
             }
             .mob-bg{
                 display: none;
+            }
+            .logo{
+                position: absolute;
+                width: 16%;
+                top: 11%;
+                left: 70%;
+                animation: logo 1s linear;
+            }
+            .logo-mob{
+                display: none;
+            }
+            @keyframes logo{
+                0%{top: 15%; opacity: 0;}
+                100%{top: 11%; opacity: 1;}
             }
             .windmill{
                 position: absolute;
@@ -123,12 +137,27 @@
                     display: none;
                 }
                 .mob-bg{
-                    width: 100vw;
+                    width: 100%;
                     position: 0% 0%;
                     size: 100%;
                     z-index: -1;
                     position: absolute;
                     display: inline !important;
+                }
+                .logo{
+                    display: none;
+                }    
+                .logo-mob{
+                    display: inline !important;
+                    position: absolute;
+                    width: 25%;
+                    top: 6%;
+                    left: 40%;
+                    animation: logo 1s linear;
+                }
+                @keyframes logo{
+                    0%{top: 10%; opacity: 0;}
+                    100%{top: 6%; opacity: 1;}
                 }
                 .windmill{
                     position: absolute;
@@ -184,10 +213,13 @@
     </head>
     <body>
         <div>
-            <img src="image/Home/BGwithoutPole.svg" class="bg">
-            <img src="image/Home/BGmobile.svg" class="mob-bg">
+            <img src="image/Home/BGwithoutLogo.svg" class="bg">
+            <img src="image/Home/BGmob-woLogo.svg" class="mob-bg">
 
             <div class="cloud-area"><img src="image/Home/cloud group.svg" class="cloud"></div>
+
+            <img src="image/Home/logo.svg" class="logo" alt="Image">
+            <img src="image/Home/logo-mob.svg" class="logo-mob" alt="Image">
 
             <section class="windmill">
               <img src="image/Home/vane.svg" class="vane" alt="Image">
@@ -200,11 +232,8 @@
             <a href="history.html"><img src="image/Home/ป้ายประวัติ.svg" class="l-history zoom" alt="Image"></a>
             <a href="contact.html"><img src="image/Home/ป้ายติดต่อ.svg" class="l-contact zoom" alt="Image"></a>
         </div>
+
         <script src="index.js"></script>
-        <!-- jQuery -->
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-        <!-- Bootstrap JavaScript -->
-        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
     </body>
     
 </html>
