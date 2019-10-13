@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="image/logoสวนจิตร.png" type="image/x-icon">
         <title>โครงการหลวงสวนจิตรลดา</title>
 
         <!-- Bootstrap CSS -->
@@ -48,6 +49,13 @@
                 0%{transform: rotate(0deg);}
                 100%{transform: rotate(360deg);}
             }
+            .cloud-area {
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                z-index: -2;
+            }
             .cloud{
                 position: absolute;
                 margin-left: -900px;
@@ -55,7 +63,6 @@
                 width: 900px;
                 opacity: 0.95;
                 animation: cloud 40s linear infinite;
-                z-index: -2;
             }
             @keyframes cloud{
                 0%{left: 0px;}
@@ -116,7 +123,7 @@
                     display: none;
                 }
                 .mob-bg{
-                    min-width: 100%;
+                    width: 100vw;
                     position: 0% 0%;
                     size: 100%;
                     z-index: -1;
@@ -128,6 +135,13 @@
                     width: 15%;
                     left: 17%;
                     top: 73%;
+                }
+                .vane{
+                    position: absolute;
+                    animation: rotate 3s infinite linear;
+                    right: 45%;
+                    bottom: 68%;
+                    z-index: 1;
                 }
                 .l-process{
                     position: absolute;
@@ -173,7 +187,7 @@
             <img src="image/Home/BGwithoutPole.svg" class="bg">
             <img src="image/Home/BGmobile.svg" class="mob-bg">
 
-            <img src="image/Home/cloud group.svg" class="cloud">
+            <div class="cloud-area"><img src="image/Home/cloud group.svg" class="cloud"></div>
 
             <section class="windmill">
               <img src="image/Home/vane.svg" class="vane" alt="Image">
