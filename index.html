@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="image/logoสวนจิตร.png" type="image/x-icon">
+        <link rel="shortcut icon" href="image/cow_logo.png" type="image">
         <title>โครงการหลวงสวนจิตรลดา</title>
 
         <!-- Bootstrap CSS -->
@@ -16,8 +16,18 @@
             body {
                 overflow-y: hidden;
                 overflow-x: hidden;
-                -webkit-user-select: none;
                 margin: 0;
+                /* cursor: url("/image/default.cur"),auto; */
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+            }
+            /* With a .cur fallback */
+            .custom-cur {
+                cursor: url('/image/default.svg'),
+                url('/image/default.cur');
+                height: 32;
+                width: 32;
             }
             .bg{
                 width: 100%;
@@ -31,7 +41,7 @@
             }
             .logo{
                 position: absolute;
-                width: 16%;
+                width: 18%;
                 top: 11%;
                 left: 70%;
                 animation: logo 1s linear;
@@ -135,6 +145,98 @@
             }
 
             /* Responsive style */
+            /* @media only screen and (max-width: 1200px) {
+                .bg{
+                    display: none;
+                }
+                .mob-bg{
+                    width: 100%;
+                    position: 0% 0%;
+                    size: 100%;
+                    z-index: -1;
+                    position: absolute;
+                    display: inline !important;
+                }
+                .logo{
+                    display: none;
+                }    
+                .logo-mob{
+                    display: inline !important;
+                    position: absolute;
+                    width: 25%;
+                    top: 6%;
+                    left: 37.5%;
+                    animation: logo 1s linear;
+                }
+                @keyframes logo{
+                    0%{top: 10%; opacity: 0;}
+                    100%{top: 6%; opacity: 1;}
+                }
+                .windmill{
+                    position: absolute;
+                    width: 15%;
+                    left: 17%;
+                    top: 73%;
+                }
+                .vane{
+                    position: absolute;
+                    animation: rotate 3s infinite linear;
+                    right: 45%;
+                    bottom: 68%;
+                    z-index: 1;
+                }
+                .cloud{
+                    display: none;
+                }
+                .cloud-mob{
+                    display: inline !important;
+                    position: absolute;
+                    margin-left: -600px;
+                    top: 5%;
+                    width: 600px;
+                    opacity: 0.95;
+                    animation: cloud 40s linear infinite;
+                }
+                @keyframes cloud{
+                    0%{left: 0px;}
+                    100%{left: 1800px;}
+                }
+                .l-process{
+                    position: absolute;
+                    left: 30%;
+                    top: 47%;
+                    width: 100px;
+                    transition: transform .5s;          
+                }
+                .l-product{
+                    position: absolute;
+                    left: 57%;
+                    top: 54%;
+                    width: 100px;
+                    transition: transform .5s;          
+                }
+                .l-tour{
+                    position: absolute;
+                    left: 55%;
+                    top: 65%;
+                    width: 100px;
+                    transition: transform .5s;          
+                }
+                .l-history{
+                    position: absolute;
+                    left: 23%;
+                    top: 62%;
+                    width: 100px;
+                    transition: transform .5s;          
+                }
+                .l-contact{
+                    position: absolute;
+                    left: 15%;
+                    top: 85%;
+                    width: 100px;
+                    transition: transform .5s; 
+                }
+            } */
             @media only screen and (max-width: 720px) {
                 .bg{
                     display: none;
