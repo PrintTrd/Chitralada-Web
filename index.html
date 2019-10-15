@@ -17,17 +17,16 @@
                 overflow-y: hidden;
                 overflow-x: hidden;
                 margin: 0;
-                /* cursor: url("/image/default.cur"),auto; */
+                cursor: url("image/default.cur"),auto;
                 -webkit-user-select: none;
                 -moz-user-select: none;
                 -ms-user-select: none;
             }
             /* With a .cur fallback */
             .custom-cur {
-                cursor: url('/image/default.svg'),
-                url('/image/default.cur');
-                height: 32;
-                width: 32;
+                cursor: url('image/pointer.cur'),pointer;
+                /* height: 32;
+                width: 32; */
             }
             .bg{
                 width: 100%;
@@ -350,11 +349,11 @@
               <img src="image/Home/Pole.svg" class="pole" alt="Image">
             </section>
                
-            <a href="process.html"><img src="image/Home/ป้ายกระบวนการ.svg" class="l-process zoom" alt="Image"></a>
-            <a href="product.html"><img src="image/Home/ป้ายผลิตภัณฑ์.svg" class="l-product zoom" alt="Image"></a>
-            <a href="tour.html"><img src="image/Home/ป้ายท่องเที่ยว.svg" class="l-tour zoom" alt="Image"></a>
-            <a href="history.html"><img src="image/Home/ป้ายประวัติ.svg" class="l-history zoom" alt="Image"></a>
-            <a href="contact.html"><img src="image/Home/ป้ายติดต่อ.svg" class="l-contact zoom" alt="Image"></a>
+            <a href="process.html"><img src="image/Home/ป้ายกระบวนการ.svg" class="l-process zoom custom-cur" alt="Image"></a>
+            <a href="product.html"><img src="image/Home/ป้ายผลิตภัณฑ์.svg" class="l-product zoom custom-cur" alt="Image"></a>
+            <a href="tour.html"><img src="image/Home/ป้ายท่องเที่ยว.svg" class="l-tour zoom custom-cur" alt="Image"></a>
+            <a href="history.html"><img src="https://iizcy.github.io/Web-co/history.html" class="l-history zoom custom-cur" alt="Image"></a>
+            <a href="contact.html"><img src="image/Home/ป้ายติดต่อ.svg" class="l-contact zoom custom-cur" alt="Image"></a>
         </div>
 
         <script src="index.js"></script>
