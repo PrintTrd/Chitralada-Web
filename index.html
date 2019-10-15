@@ -28,12 +28,16 @@
                 /* height: 32;
                 width: 32; */
             }
+            .d{
+                bottom: 0;
+            }
             .bg{
                 width: 100%;
-                position: 0% 0%;
+                /* position: 0% 0%; */
                 size: 100%;
                 z-index: -1;
                 position: absolute;
+                bottom: 0;
             }
             .mob-bg{
                 display: none;
@@ -68,6 +72,14 @@
             .pole{
                 width: 11%;
             }
+            .wheel{
+                position: absolute;
+                animation: rotate 15s infinite linear;
+                left: 25%;
+                top: 31%;
+                z-index: 1;
+                width: 7%;
+            }
             @keyframes rotate{
                 0%{transform: rotate(0deg);}
                 100%{transform: rotate(360deg);}
@@ -97,46 +109,46 @@
             .l-process{
                 position: absolute;
                 left: 19%;
-                top: 42%;
+                top: 44%;
                 /* left: 272px;
                 top: 392px; */
-                width: 145px;
+                width: 10%;
                 transition: transform .5s;          
             }
             .l-product{
                 position: absolute;
-                left: 48%;
-                top: 53%;
+                left: 46%;
+                top: 58.5%;
                 /* left: 666px;
                 top: 505px; */
-                width: 145px;
+                width: 10%;
                 transition: transform .5s;          
             }
             .l-tour{
                 position: absolute;
                 left: 23.5%;
-                top: 59%;
+                top: 63%;
                 /* left: 350px;
                 top: 530px; */
-                width: 145px;
+                width: 10%;
                 transition: transform .5s;          
             }
             .l-history{
                 position: absolute;
                 left: 4%;
-                top: 71%;
+                top: 68.5%;
                 /* left: 45px;
                 top: 626px; */
-                width: 145px;
+                width: 10%;
                 transition: transform .5s;          
             }
             .l-contact{
                 position: absolute;
                 left: 88%;
-                top: 72%;
+                top: 74%;
                 /* left: 1262px;
                 top: 652px; */
-                width: 145px;
+                width: 10%;
                 transition: transform .5s; 
             }
             .zoom:hover {
@@ -236,13 +248,14 @@
                     transition: transform .5s; 
                 }
             } */
-            @media only screen and (max-width: 720px) {
+            @media only screen and (max-width: 414px) {
                 .bg{
                     display: none;
                 }
                 .mob-bg{
                     width: 100%;
-                    position: 0% 0%;
+                    /* position: 0% 0%; */
+                    bottom: 0;
                     size: 100%;
                     z-index: -1;
                     position: absolute;
@@ -273,8 +286,16 @@
                     position: absolute;
                     animation: rotate 3s infinite linear;
                     right: 45%;
-                    bottom: 68%;
+                    bottom: 70.5%;
                     z-index: 1;
+                }
+                .wheel{
+                    position: absolute;
+                    animation: rotate 15s infinite linear;
+                    left: 32%;
+                    top: 38%;
+                    z-index: 1;
+                    width: 10%;
                 }
                 .cloud{
                     display: none;
@@ -282,49 +303,49 @@
                 .cloud-mob{
                     display: inline !important;
                     position: absolute;
-                    margin-left: -600px;
+                    margin-left: -300px;
                     top: 5%;
-                    width: 600px;
+                    width: 300px;
                     opacity: 0.95;
                     animation: cloud 40s linear infinite;
                 }
                 @keyframes cloud{
                     0%{left: 0px;}
-                    100%{left: 1800px;}
+                    100%{left: 900px;}
                 }
                 .l-process{
                     position: absolute;
-                    left: 30%;
+                    left: 27%;
                     top: 47%;
-                    width: 100px;
+                    width: 16%;
                     transition: transform .5s;          
                 }
                 .l-product{
                     position: absolute;
-                    left: 57%;
+                    left: 58%;
                     top: 54%;
-                    width: 100px;
+                    width: 16%;
                     transition: transform .5s;          
                 }
                 .l-tour{
                     position: absolute;
-                    left: 55%;
+                    left: 52%;
                     top: 65%;
-                    width: 100px;
+                    width: 16%;
                     transition: transform .5s;          
                 }
                 .l-history{
                     position: absolute;
-                    left: 23%;
+                    left: 20%;
                     top: 62%;
-                    width: 100px;
+                    width: 16%;
                     transition: transform .5s;          
                 }
                 .l-contact{
                     position: absolute;
-                    left: 15%;
+                    left: 12%;
                     top: 85%;
-                    width: 100px;
+                    width: 16%;
                     transition: transform .5s; 
                 }
             }
@@ -332,9 +353,9 @@
         </style>    
     </head>
     <body>
-        <div>
-            <img src="image/Home/BGwithoutLogo.svg" class="bg">
-            <img src="image/Home/BGmob-woLogo.svg" class="mob-bg">
+        <div class="d">
+            <img src="image/Home/BGdesktop.svg" class="bg">
+            <img src="image/Home/BGmob.svg" class="mob-bg">
 
             <div class="cloud-area">
                 <img src="image/Home/cloud_group.svg" class="cloud">
@@ -343,6 +364,10 @@
 
             <img src="image/Home/logo.svg" class="logo" alt="Image">
             <img src="image/Home/logo-mob.svg" class="logo-mob" alt="Image">
+
+            <img src="image/Home/wheel.svg" class="wheel" alt="Image">
+            <!-- <img src="image/Home/truck.svg" class="vehicle" alt="Image">
+            <img src="image/Home/tracktor.svg" class="vehicle" alt="Image"> -->
 
             <section class="windmill">
               <img src="image/Home/vane.svg" class="vane" alt="Image">
