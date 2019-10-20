@@ -56,6 +56,9 @@ body{
     z-index: 1;
     height: 50%;
 }
+.vane:active{
+    animation: reverse rotate 8s infinite linear;
+}
 .pole{
     width: 20%;
 }
@@ -67,9 +70,42 @@ body{
     z-index: 0;
     width: 7%;
 }
+.wheel:active{
+    animation: reverse rotate 15s infinite linear;
+}
 @keyframes rotate{
     0%{transform: rotate(0deg);}
     100%{transform: rotate(360deg);}
+}
+.tracktor{
+    position: absolute;
+    left: 16.5%;
+    bottom: 25%;
+    z-index: 0;
+    width: 6%;
+}
+.truck{
+    position: absolute;
+    left: 60%;
+    bottom: 35%;
+    z-index: 0;
+    width: 7%;
+}
+.tracktor:hover{
+    animation: vehicle-tracktor 1s linear;
+}
+.truck:hover{
+    animation: vehicle-truck 1s linear;
+}
+@keyframes vehicle-tracktor{
+    0%{left: 16.5%;}
+    50%{left: 17.5%;}
+    100%{left: 16.5%;}
+}
+@keyframes vehicle-truck{
+    0%{left: 60%;}
+    50%{left: 63%;}
+    100%{left: 60%;}
 }
 .cloud-area {
     overflow: hidden;
@@ -203,8 +239,8 @@ body{
     }
 }
 .rubberBand:hover{
-    -webkit-animation: rubberBand 0.8s linear infinite;
-    animation: rubberBand 0.8s linear infinite;
+    -webkit-animation: rubberBand 0.8s linear;
+    animation: rubberBand 0.8s linear;
 }
 
 /* Responsive style */
