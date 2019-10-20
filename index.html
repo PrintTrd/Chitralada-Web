@@ -45,7 +45,7 @@
             .logo{
                 position: absolute;
                 width: 18%;
-                top: 11%;
+                bottom: 55%;
                 left: 70%;
                 animation: logo 1s linear;
             }
@@ -53,30 +53,14 @@
                 display: none;
             }
             @keyframes logo{
-                0%{top: 15%; opacity: 0;}
-                100%{top: 11%; opacity: 1;}
+                0%{bottom: 48%; opacity: 0;}
+                100%{bottom: 55%; opacity: 1;}
             }
-            /* .windmill{
-                position: absolute;
-                width: 10%;
-                left: 93%;
-                top: 46.5%;
-            }
-            .vane{
-                position: absolute;
-                animation: rotate 3s infinite linear;
-                right: 45%;
-                bottom: 70.5%;
-                z-index: 1;
-            }
-            .pole{
-                width: 11%;
-            } */
             .windmill{
                     position: absolute;
                     width: 6%;
-                    left: 92.2%;
-                    top: 48.5%;
+                    right: 2%;
+                    bottom: 20%;
                 }
             .vane{
                 position: absolute;
@@ -93,8 +77,8 @@
                 position: absolute;
                 animation: rotate 15s infinite linear;
                 left: 25%;
-                top: 31%;
-                z-index: 1;
+                bottom: 60%;
+                z-index: 0;
                 width: 7%;
             }
             @keyframes rotate{
@@ -126,45 +110,35 @@
             .l-process{
                 position: absolute;
                 left: 19%;
-                top: 44%;
-                /* left: 272px;
-                top: 392px; */
+                bottom: 45%;
                 width: 10%;
                 transition: transform .5s;          
             }
             .l-product{
                 position: absolute;
                 left: 46%;
-                top: 58.5%;
-                /* left: 666px;
-                top: 505px; */
+                bottom: 32%;
                 width: 10%;
                 transition: transform .5s;          
             }
             .l-tour{
                 position: absolute;
                 left: 23.5%;
-                top: 63%;
-                /* left: 350px;
-                top: 530px; */
+                bottom: 25%;
                 width: 10%;
                 transition: transform .5s;          
             }
             .l-history{
                 position: absolute;
                 left: 4%;
-                top: 68.5%;
-                /* left: 45px;
-                top: 626px; */
+                bottom: 19.5%;
                 width: 10%;
                 transition: transform .5s;          
             }
             .l-contact{
                 position: absolute;
                 left: 88%;
-                top: 74%;
-                /* left: 1262px;
-                top: 652px; */
+                bottom: 15%;
                 width: 10%;
                 transition: transform .5s; 
             }
@@ -175,49 +149,29 @@
             /* Responsive style */
             @media only screen and (max-width: 1024px) {
                 .windmill{
-                    left: 91.5%;
-                    top: 54%;
+                    right: 2.5%;
+                    bottom: 20%;
                 }
                 .vane{
                     bottom: 72%;
                 }
                 .wheel{
-                    top: 43.8%;
+                    bottom: 46%;
                 }
                 .l-process{
-                    position: absolute;
-                    left: 18%;
-                    top: 55.5%;
-                    width: 10%;
-                    transition: transform .5s;          
+                    bottom: 35.25%;       
                 }
                 .l-product{
-                    position: absolute;
-                    left: 46%;
-                    top: 63.5%;
-                    width: 10%;
-                    transition: transform .5s;          
+                    bottom: 25%;        
                 }
                 .l-tour{
-                    position: absolute;
-                    left: 23.5%;
-                    top: 70%;
-                    width: 10%;
-                    transition: transform .5s;          
+                    bottom: 20%;        
                 }
                 .l-history{
-                    position: absolute;
-                    left: 4%;
-                    top: 75%;
-                    width: 10%;
-                    transition: transform .5s;          
+                    bottom: 15%;         
                 }
                 .l-contact{
-                    position: absolute;
-                    left: 88%;
-                    top: 77%;
-                    width: 10%;
-                    transition: transform .5s; 
+                    bottom: 13%;
                 }
             }
 
