@@ -1,8 +1,8 @@
 body{
-    overflow-y: hidden;
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;    
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -28,6 +28,7 @@ body{
 .mob-bg{
     display: none;
 }
+
 .logo{
     position: absolute;
     width: 18%;
@@ -42,6 +43,7 @@ body{
     0%{bottom: 48%; opacity: 0;}
     100%{bottom: 55%; opacity: 1;}
 }
+
 .windmill{
         position: absolute;
         width: 6%;
@@ -62,6 +64,7 @@ body{
 .pole{
     width: 20%;
 }
+
 .wheel{
     position: absolute;
     animation: rotate 15s infinite linear;
@@ -73,10 +76,12 @@ body{
 .wheel:active{
     animation: reverse rotate 15s infinite linear;
 }
+
 @keyframes rotate{
     0%{transform: rotate(0deg);}
     100%{transform: rotate(360deg);}
 }
+
 .tracktor{
     position: absolute;
     left: 16.5%;
@@ -107,6 +112,7 @@ body{
     50%{left: 63%;}
     100%{left: 60%;}
 }
+
 .cloud-area {
     overflow: hidden;
     position: relative;
@@ -129,6 +135,7 @@ body{
     0%{left: 0px;}
     100%{left: 2700px;}
 }
+
 .l-process{
     position: absolute;
     left: 19%;
@@ -277,10 +284,16 @@ body{
         bottom: 20%;
     }
     .vane{
-        bottom: 72%;
+        bottom: 71.5%;
     }
     .wheel{
         bottom: 50%;
+    }
+    .tracktor{
+        bottom: 22%;
+    }
+    .truck{
+        bottom: 32%;
     }
     .l-process{
         bottom: 38%;       
@@ -309,6 +322,12 @@ body{
     .wheel{
         bottom: 44%;
     }
+    .tracktor{
+        bottom: 18%;
+    }
+    .truck{
+        bottom: 25%;
+    }
     .l-process{
         bottom: 33%;       
     }
@@ -323,6 +342,39 @@ body{
     }
     .l-contact{
         bottom: 13%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .windmill{
+        right: 2.5%;
+        bottom: 15%;
+    }
+    .vane{
+        bottom: 72%;
+    }
+    .wheel{
+        bottom: 40%;
+    }
+    .tracktor{
+        bottom: 17%;
+    }
+    .truck{
+        bottom: 24%;
+    }
+    .l-process{
+        bottom: 31%;       
+    }
+    .l-product{
+        bottom: 20%;        
+    }
+    .l-tour{
+        bottom: 17%;        
+    }
+    .l-history{
+        bottom: 13%;         
+    }
+    .l-contact{
+        bottom: 12%;
     }
 }
 
