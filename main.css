@@ -23,7 +23,7 @@ body{
     size: 100%;
     z-index: -1;
     position: absolute;
-    bottom: 0;
+    bottom: -20%;
 }
 .mob-bg{
     display: none;
@@ -251,6 +251,50 @@ body{
 }
 
 /* Responsive style */
+@media only screen and (max-width: 1499px) {
+    .bg{
+        bottom: 0;
+    }
+    .windmill{
+        position: absolute;
+        width: 6%;
+        right: 2%;
+        bottom: 20%;
+    }
+    .vane{
+        position: absolute;
+        animation: rotate 3s infinite linear;
+        right: 2%;
+        bottom: 72%;
+        z-index: 1;
+        height: 50%;
+    }
+    .pole{
+        width: 20%;
+    }
+    .wheel{
+        position: absolute;
+        animation: rotate 15s infinite linear;
+        left: 25%;
+        bottom: 62%;
+        z-index: 0;
+        width: 7%;
+    }
+    .tracktor{
+        position: absolute;
+        left: 16.5%;
+        bottom: 25%;
+        z-index: 0;
+        width: 6%;
+    }
+    .truck{
+        position: absolute;
+        left: 60%;
+        bottom: 35%;
+        z-index: 0;
+        width: 7%;
+    }
+}
 @media only screen and (max-width: 1440px) {
     .windmill{
         right: 2.5%;
