@@ -8,12 +8,12 @@
 }
 
 body{
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-    background-size: cover;
-    font-family: 'Prompt', sans-serif;
-    font-size: 10px;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 10px;    
 }
 
 /* navbar */
@@ -59,7 +59,53 @@ body{
 .menu img:last-child{display:none}
 .menu:hover img:first-child{display:none}
 .menu:hover img:last-child{display:inline-block}
+
+#text-box{
+    width: 100vw;
+    top: 20.5vh;
+    position: absolute;
+    text-align: center;
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center;
+    margin-left: auto;
+    margin-right: auto; */
+}
+.topic-main{
+    font-size: 4em;
+    color:#3c6868;
+    font-weight: bold;
+}
+.topic-sub{
+    font-size: 2.5em;
+    color:#e97625;
+}
+
+.fridge{
+    height: 55%;
+    margin-top: 25%;
+}
+.l-fridge{
+    width: 50%;
+    position: relative;
+    animation: l-fridge 2s linear;
+}
+.r-fridge{
+    width: 50%;
+    position: absolute;
+    animation: r-fridge 2s linear;
+}
+@keyframes l-fridge{
+    0%{left: 0%;}
+    100%{left: -150%;}
+}
+@keyframes r-fridge{
+    0%{left: 50%;}
+    100%{left: 150%;}
+}
+
 .cupboard-leg{
-    width: 60%;
-    box-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
