@@ -19,9 +19,9 @@ body{
 /* navbar */
 .navbar{
     background-color: transparent;
-    width: 100%;
-    height: 10%;
-    position:fixed;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
     display: block;
     top:0;
     z-index: 4;
@@ -82,26 +82,37 @@ body{
 }
 
 .fridge{
-    height: 55%;
-    margin-top: 25%;
+    height: 55vh;
+    margin-top: 25vh;
+    display: block;
 }
 .l-fridge{
-    width: 50%;
+    width: 50vw;
+    left: -52vw;
     position: relative;
-    animation: l-fridge 2s linear;
+    animation: l-fridge 1.5s linear;
+    z-index: 2;
 }
 .r-fridge{
-    width: 50%;
+    width: 50vw;
+    left: 102vw;
     position: absolute;
-    animation: r-fridge 2s linear;
+    animation: r-fridge 1.5s linear;
+    z-index: 2;
 }
 @keyframes l-fridge{
-    0%{left: 0%;}
-    100%{left: -150%;}
+    0%{left: 0vw;}
+    100%{left: -52vw;}
 }
 @keyframes r-fridge{
-    0%{left: 50%;}
-    100%{left: 150%;}
+    0%{left: 50vw;}
+    100%{left: 102vw;}
+}
+
+.icecream{
+    width: 10%;
+    position: absolute;
+    top: 5%;
 }
 
 .cupboard-leg{
