@@ -19,6 +19,14 @@ body{
     width: 0px;
   }
 
+  /* With a .cur fallback */
+.cur{
+    cursor: url('image/default-s.png'), default;
+}
+.pointer-cur{
+    cursor: url('image/pointer-s.png'), pointer;
+}
+
 /* navbar */
 .navbar{
     background-color: transparent;
@@ -83,8 +91,9 @@ body{
 }
 
 .fridge{
-    height: 47.8vh;
+    height: 48.5vh;
     margin-top: 38vh;
+    margin-bottom: 10vh;
     display: block;
     position: relative;
 }
@@ -103,12 +112,14 @@ body{
     left: -47vw;
     width: 50vw;
     position: absolute;
+    z-index: 2;
 }
 .r-fridge_door{
     animation: r-fridge 1.5s linear;
     left: 47vw;
     width: 50vw;
     position: absolute;
+    z-index: 2;
 }
 @keyframes l-fridge{
     0%{left: 0vw;}
@@ -121,7 +132,7 @@ body{
 .fridge_shelf{
     margin-top: 15%;
     position: absolute;
-    z-index: -2;
+    z-index: 1;
 }
 .l-fridge_board{
     width: 50vw;
@@ -138,7 +149,6 @@ body{
     display: inline-flex;
     position: absolute;
     left: 5%;
-    z-index: -3;
     margin-top: 15%;
 }
 
