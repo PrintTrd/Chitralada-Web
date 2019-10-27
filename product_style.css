@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
 }
-
 body{
     overflow-x: hidden;
     -webkit-user-select: none;
@@ -15,6 +14,10 @@ body{
     font-family: 'Kanit', sans-serif;
     font-size: 10px;    
 }
+/* scrollbar*/
+::-webkit-scrollbar {
+    width: 0px;
+  }
 
 /* navbar */
 .navbar{
@@ -67,9 +70,7 @@ body{
     text-align: center;
     /* display: flex; */
     justify-content: center;
-    /* align-items: center;
-    margin-left: auto;
-    margin-right: auto; */
+    /* align-items: center;*/
 }
 .topic-main{
     font-size: 4em;
@@ -82,37 +83,63 @@ body{
 }
 
 .fridge{
-    height: 55vh;
-    margin-top: 25vh;
+    height: 47.8vh;
+    margin-top: 38vh;
     display: block;
+    position: relative;
 }
 .l-fridge{
     width: 50vw;
-    left: -52vw;
-    position: relative;
-    animation: l-fridge 1.5s linear;
-    z-index: 2;
+    left: 0vw;
+    position: absolute;
 }
 .r-fridge{
     width: 50vw;
-    left: 102vw;
+    left: 50vw;
     position: absolute;
+}
+.l-fridge_door{
+    animation: l-fridge 1.5s linear;
+    left: -47vw;
+    width: 50vw;
+    position: absolute;
+}
+.r-fridge_door{
     animation: r-fridge 1.5s linear;
-    z-index: 2;
+    left: 47vw;
+    width: 50vw;
+    position: absolute;
 }
 @keyframes l-fridge{
     0%{left: 0vw;}
-    100%{left: -52vw;}
+    100%{left: -47vw;}
 }
 @keyframes r-fridge{
-    0%{left: 50vw;}
-    100%{left: 102vw;}
+    0%{left: 0vw;}
+    100%{left: 47vw;}
 }
-
-.icecream{
-    width: 10%;
+.fridge_shelf{
+    margin-top: 15%;
     position: absolute;
-    top: 5%;
+    z-index: -2;
+}
+.l-fridge_board{
+    width: 50vw;
+    left: 0vw;
+    position: absolute;
+    z-index: -1;
+}
+.r-fridge_board{
+    width: 50vw;
+    position: absolute;
+    z-index: -1;
+}
+.icecream{
+    display: inline-flex;
+    position: absolute;
+    left: 5%;
+    z-index: -3;
+    margin-top: 15%;
 }
 
 .cupboard-leg{
