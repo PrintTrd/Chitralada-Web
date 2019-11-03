@@ -14,6 +14,12 @@ body{
     font-family: 'Kanit', sans-serif;
     font-size: 10px;    
 }
+h3{
+    font-size: 200%;
+}
+p{
+    font-size: 150%;
+}
 /* scrollbar*/
 ::-webkit-scrollbar {
     width: 0px;
@@ -90,12 +96,90 @@ body{
     color:#e97625;
 }
 
+@-webkit-keyframes rubberBand{
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+@keyframes rubberBand{
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1, 0.75, 1);
+        transform: scale3d(1, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+.rubberBand:hover{
+    -webkit-animation: rubberBand 0.8s linear;
+    animation: rubberBand 0.8s linear;
+}
+
 .fridge{
     height: 48.5vh;
     margin-top: 38vh;
     margin-bottom: 10vh;
     display: block;
     position: relative;
+    /* background-color: saddlebrown; */
 }
 .l-fridge{
     width: 50vw;
@@ -145,6 +229,7 @@ body{
     position: absolute;
     z-index: -1;
 }
+
 .icecream{
     display: inline-flex;
     position: absolute;
@@ -156,4 +241,52 @@ body{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.detailbox{
+    z-index: 2;
+    top: 18%;
+    left: 25vw;
+    width: 40vw;
+    position: absolute;
+    visibility: hidden;
+    /* display: flex;
+    justify-content: center; */
+}
+.balloon{
+    position: absolute;
+}
+.cross{
+    width: 5%;
+    right: 5%;
+    margin-top: 5%;
+    position: absolute;
+}
+.image{
+    position: absolute;
+    width: 50%;
+    left: 15%;
+    margin-top: 10%;
+}
+.text-detail{
+    position: absolute;
+    width: 40%;
+    right: 3%;
+    margin-top: 18%;
+    display: flex;
+    flex-direction: column;
+}
+@keyframes show{
+	from{transform: scale(0);}
+	to{transform: scale(1);}
+}
+.show{
+    visibility: visible;
+	animation: show 1s 1;
+	transform: scale(1);
+}
+.hide{
+    visibility: hidden;
+	animation: show 1s 1 reverse;
+	transform: scale(0);
 }
