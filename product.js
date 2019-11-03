@@ -18,11 +18,11 @@ function show(){
     var op = setInterval(frame, 50);
     function frame() {
         setTimeout(function(){
-            if(opa>=1){
+            if (opa >= 1) {
                 clearInterval(op);
             }
-            else{
-                opa+=0.05;
+            else {
+                opa += 0.05;
                 image.style.opacity = opa;
                 text_detail.style.opacity = opa;            
             }            
@@ -33,4 +33,43 @@ function hide(){
     image.style.opacity = 0;
     text_detail.style.opacity = 0;     
     detailbox.classList.remove("show");
+}
+
+var state = 1;
+function door(){
+    if (state == 1) {
+        var pos = 47;
+        var door = setInterval(frames, 22);
+        function frames() {
+            setTimeout(function(){
+                if (pos == 0) {
+                    clearInterval(door);
+                }
+                else {
+                    pos--;
+                    l_door.style.left = -pos + 'vw';
+                    r_door.style.left = pos + 'vw';
+                }            
+            }, 250);
+        }
+        state = 0;    
+    } 
+    else {
+        var pos = 0;
+        var door = setInterval(frames, 22);
+        function frames() {
+            setTimeout(function(){
+                if (pos == 47) {
+                    clearInterval(door);
+                }
+                else {
+                    pos++;
+                    l_door.style.left = -pos + 'vw';
+                    r_door.style.left = pos + 'vw';
+                }            
+            }, 250);
+        }
+        state = 1;
+    }
+
 }
