@@ -262,31 +262,34 @@ p{
     margin-top: 5%;
     position: absolute;
 }
-.image{
+#image{
     position: absolute;
     width: 50%;
     left: 15%;
     margin-top: 10%;
+    opacity: 0;
 }
-.text-detail{
+#text_detail{
     position: absolute;
     width: 40%;
     right: 3%;
     margin-top: 18%;
     display: flex;
     flex-direction: column;
+    opacity: 0;
 }
 @keyframes show{
-	from{transform: scale(0);}
-	to{transform: scale(1);}
+    from {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    to {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
 }
 .show{
     visibility: visible;
 	animation: show 1s 1;
-	transform: scale(1);
 }
-.hide{
-    visibility: hidden;
-	animation: show 1s 1 reverse;
-	transform: scale(0);
-}
+
