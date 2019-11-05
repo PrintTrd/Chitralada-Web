@@ -13,7 +13,7 @@
 // ];
 
 function show(){
-    detailbox.classList.add("show");
+    detailbox_area.classList.add("show");
     var opa = 0;
     var op = setInterval(frame, 50);
     function frame() {
@@ -31,8 +31,8 @@ function show(){
 }
 function hide(){
     image.style.opacity = 0;
-    text_detail.style.opacity = 0;     
-    detailbox.classList.remove("show");
+    text_detail.style.opacity = 0;
+    detailbox_area.classList.remove("show");
 }
 
 var state = 1;
