@@ -239,13 +239,13 @@ grid-template-columns: repeat(auto-fill, 25%); */
     display: inline-flex;
     justify-content: space-between;
     justify-items: center;    
-    margin-top: 19%;
+    margin-top: 20%;
 }
 .yogurtTD{
     display: inline-flex;
     justify-content: space-between;
     justify-items: center;    
-    margin-top: 8%;
+    margin-top: 9%;
     width: 102%;
 }
 .butter{
