@@ -82,17 +82,18 @@ p{
     top: 20.5vh;
     position: absolute;
     text-align: center;
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     /* align-items: center;*/
 }
 .topic-main{
-    font-size: 4em;
+    font-size: 3vw;
     color:#3c6868;
     font-weight: bold;
 }
 .topic-sub{
-    font-size: 2.5em;
+    font-size: 1.5vw;
     color:#e97625;
 }
 
@@ -169,8 +170,8 @@ p{
 
 .fridge{
     height: 48.5vh;
-    margin-top: 38vh;
-    margin-bottom: 10vh;
+    margin-top: 39vh;
+    margin-bottom: 15%;
     display: block;
     position: relative;
     /* background-color: saddlebrown; */
@@ -210,7 +211,7 @@ p{
 .fridge_shelf{
     margin-top: 15%;
     position: absolute;
-    z-index: 1;
+    z-index: -1;
 }
 .l-fridge_board{
     width: 50vw;
@@ -224,28 +225,41 @@ p{
     z-index: -1;
 }
 
+/* display: grid;
+grid-template-columns: repeat(auto-fill, 25%); */
 .fridge_product{
     display: flex;
     flex-direction: column;
+    justify-items: center; 
     position: absolute;
-    left: 8%;
-    right: 8%;
+    left: 7.5%;
+    right: 7.5%;
 }
 .icecream{
     display: inline-flex;
+    justify-content: space-between;
     justify-items: center;    
-    margin-top: 19.5%;
-    width: 105%;
+    margin-top: 19%;
+}
+.yogurtTD{
+    display: inline-flex;
+    justify-content: space-between;
+    justify-items: center;    
+    margin-top: 8%;
+    width: 102%;
 }
 .butter{
     display: inline-flex;
+    justify-content: space-between;
     justify-items: center;    
     margin-top: 25%;
 }
 .yogurt{
     display: inline-flex;
-    justify-content: center;    
+    justify-content: space-between;
+    justify-items: center;    
     margin-top: 10%;
+    width: 96%;
 }
 
 .detailbox{
@@ -298,8 +312,30 @@ p{
 	animation: show 1s 1;
 }
 
-.cupboard-leg{
+.cupboard{
     width: 100%;
+}
+.cupboard-leg{
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
+}
+.cupboard_product{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    position: absolute;
+    left: 4vw;
+    right: 4vw;
+}
+.m_Nong-Pho{
+    display: inline-flex;
+    justify-content: space-between;
+    justify-items: center;    
+}
+.m_pellets{
+    display: inline-flex;
+    justify-content: space-around;
+    justify-items: center;
+    margin-top: 5%; 
 }
