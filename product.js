@@ -1,21 +1,98 @@
-// nowIndex = 0;
-// title = [
-// "ไอศกรีมนมสดหนองโพ"
-// ];
-// detail1 = [
-// "รสชาติ: รสนม, รสวนิลา, รสช็อกโกแลต, รสสตรอว์เบอร์รี"
-// ];
-// detail2 = [
-// "ปริมาณสุทธิ: 85 กรัม"
-// ];
-// detail3 = [
-// "ราคา: 35 บาท"
-// ];
+nowIndex = 0;
+data = {
+    "data": [
+        {
+            "image": "1icecream_Nong-Pho_image",
+            "title": "ไอศกรีมนมสดหนองโพ",
+            "sub": [
+                "<strong>รสชาติ:</strong> รสนม, รสวนิลา, รสช็อกโกแลต, รสสตรอว์เบอร์รี",
+                "<strong>ปริมาณสุทธิ:</strong> 85 กรัม",
+                "<strong>ราคา:</strong> 35 บาท"
+            ]  
+        },
+        {
+            "image": "2yogurt_Thai-Denmark_image",
+            "title": "โยเกิร์ตไทยเดนมาร์ค",
+            "sub": [
+                "<strong>รสชาติ:</strong> รสออริจินอล, รสแยมสตรอว์เบอร์รี",
+                "<strong>ปริมาณสุทธิ:</strong> 120 กรัม",
+                "<strong>ราคา:</strong> 13 บาท"
+            ]  
+        },
+        {
+            "image": "3butter_image",
+            "title": "เนยแข็งมหามงคลชนิดทาและขนมปังกรอบ",
+            "sub": [
+                "<strong>ปริมาณสุทธิ:</strong> 200 กรัม",
+                "<strong>ราคา:</strong> 15 บาท"
+            ]  
+        },
+        {
+            "image": "4yogurt_image",
+            "title": "โยเกิร์ต ไขมันต่ำ",
+            "sub": [
+                "<strong>รสชาติ:</strong> รสธรรมดา, รสสตรอว์เบอร์รี, รสวุ้นมะพร้าว",
+                "<strong>ปริมาณสุทธิ:</strong> 150 กรัม",
+                "<strong>ราคา:</strong> 15 บาท"
+            ]  
+        },
+        {
+            "image": "5milk_Nong-Pho_image",
+            "title": "นมหนองโพ นมโคแท้ 100%",
+            "sub": [
+                "<strong>รสชาติ:</strong> รสจืด, รสหวาน",
+                "<strong>ปริมาณสุทธิ:</strong> 180 มล.",
+                "<strong>ราคา:</strong> 10 บาท"
+            ]  
+        },
+        {
+            "image": "6milk_pellets_image",
+            "title": "นมปรุงแต่งชนิดเม็ด",
+            "sub": [
+                "<strong>รสชาติ:</strong> รสหวาน",
+                "<strong>ปริมาณสุทธิ:</strong> 25 กรัม",
+                "<strong>ราคา:</strong> 15 บาท"
+            ]  
+        },
+        {
+            "image": "7milk_Thai-Denmark_image",
+            "title": "นมไทยเดนมาร์ค",
+            "sub": [
+                "<strong>รสชาติ:</strong> รสจืด, รสหวาน, รสช็อกโกแลต",
+                "<strong>ปริมาณสุทธิ:</strong> 125 มล.",
+                "<strong>ราคา:</strong> 10 บาท"
+            ]  
+        },
+        {
+            "image": "8milk_Chitralada_image",
+            "title": "นมจิตรลดา",
+            "sub": [
+                "นมยูเอชที",
+                "<strong>รสชาติ:</strong> รสจืด",
+                "<strong>ปริมาณสุทธิ:</strong> 200 มล.",
+                "<strong>ราคา:</strong> 10 บาท"
+            ]  
+        }
+    ]
+}
 
-function show(){
+function rendata(nowIndex){
+    let title = document.getElementsByClassName("title");
+    let detail = document.getElementsByClassName("detail");
+
+    image.src = `image/Product/${data.data[nowIndex].image}.svg`;
+    title.innerHTML = data.data[nowIndex].title;
+    for (let i = 0; i < data.data[nowIndex].sub.length; i++){
+        let p = document.createElement("p");
+        p.innerHTML = data.data[nowIndex].sub[i];
+    }
+}
+
+function show(nowIndex){
     detailbox_area.classList.add("show");
     var opa = 0;
     var op = setInterval(frame, 50);
+    rendata(nowIndex);
     function frame() {
         setTimeout(function(){
             if (opa >= 1) {
@@ -71,5 +148,4 @@ function door(){
         }
         state = 1;
     }
-
 }

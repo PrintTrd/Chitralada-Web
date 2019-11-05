@@ -168,6 +168,79 @@ p{
     animation: rubberBand 0.8s linear;
 }
 
+#detailbox_area{
+    z-index: 5;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transform: scale(1);
+}
+.area{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.detailbox{
+    z-index: 6;
+    width: 40vw;
+    position: fixed;
+    margin: auto;
+    height: 40vh;
+    background: rgb(255, 244, 220);
+    border: 5px solid #d78b8b;
+    border-radius: 1.25rem;
+}
+.flex_detail{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    height: 40vh;
+}
+.cross{
+    width: 5%;
+    right: 5%;
+    margin-top: 5%;
+    position: absolute;
+}
+#image{
+    position: absolute;
+    width: 40%;
+    left: 10%;
+}
+#text_detail{
+    text-align: start;
+    position: absolute;
+    width: 40%;
+    right: 4%;
+    display: flex;
+    flex-direction: column;
+}
+@keyframes show{
+    from {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+.show{
+    visibility: visible !important;
+	animation: show .5s 1;
+}
+
 .fridge{
     height: 48.5vh;
     margin-top: 39vh;
@@ -260,77 +333,6 @@ grid-template-columns: repeat(auto-fill, 25%); */
     justify-items: center;    
     margin-top: 10%;
     width: 96%;
-}
-
-#detailbox_area{
-    z-index: 5;
-    position: fixed;
-    display: flex;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    transform: scale(1);
-}
-.area{
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-}
-.detailbox{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    z-index: 6;
-    width: 40vw;
-    position: fixed;
-    margin: auto;
-    height: 40vh;
-    background: rgb(255, 244, 220);
-    border: 5px solid #d78b8b;
-    border-radius: 1.25rem;
-}
-.cross{
-    width: 5%;
-    right: 5%;
-    margin-top: -23%;
-    position: absolute;
-}
-#image{
-    position: absolute;
-    width: 40%;
-    left: 10%;
-    opacity: 0;
-}
-#text_detail{
-    text-align: start;
-    position: absolute;
-    width: 40%;
-    right: 4%;
-    display: flex;
-    flex-direction: column;
-    opacity: 0;
-}
-@keyframes show{
-    from {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
-    to {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-.show{
-    visibility: visible !important;
-	animation: show .5s 1;
 }
 
 .cupboard{
