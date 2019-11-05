@@ -101,32 +101,26 @@ p{
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
-
     30% {
         -webkit-transform: scale3d(1.25, 0.75, 1);
         transform: scale3d(1.25, 0.75, 1);
     }
-
     40% {
         -webkit-transform: scale3d(0.75, 1.25, 1);
         transform: scale3d(0.75, 1.25, 1);
     }
-
     50% {
         -webkit-transform: scale3d(1.15, 0.85, 1);
         transform: scale3d(1.15, 0.85, 1);
     }
-
     65% {
         -webkit-transform: scale3d(0.95, 1.05, 1);
         transform: scale3d(0.95, 1.05, 1);
     }
-
     75% {
         -webkit-transform: scale3d(1.05, 0.95, 1);
         transform: scale3d(1.05, 0.95, 1);
     }
-
     to {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
@@ -230,17 +224,28 @@ p{
     z-index: -1;
 }
 
+.fridge_product{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 8%;
+    right: 8%;
+}
 .icecream{
     display: inline-flex;
-    position: absolute;
-    left: 5%;
-    margin-top: 15%;
+    justify-items: center;    
+    margin-top: 19.5%;
+    width: 105%;
 }
-
-.cupboard-leg{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.butter{
+    display: inline-flex;
+    justify-items: center;    
+    margin-top: 25%;
+}
+.yogurt{
+    display: inline-flex;
+    justify-content: center;    
+    margin-top: 10%;
 }
 
 .detailbox{
@@ -291,4 +296,10 @@ p{
 .show{
     visibility: visible;
 	animation: show 1s 1;
+}
+
+.cupboard-leg{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
