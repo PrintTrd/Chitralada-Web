@@ -93,7 +93,7 @@ p{
     font-weight: bold;
 }
 .topic-sub{
-    font-size: 1.5vw;
+    font-size: 2vw;
     color:#e97625;
 }
 
@@ -293,13 +293,10 @@ grid-template-columns: repeat(auto-fill, 25%); */
     position: fixed;
     margin: auto;
     height: 40vh;
-    background: rgb(245, 244, 241);
+    background: rgb(255, 244, 220);
     border: 5px solid #d78b8b;
     border-radius: 1.25rem;
 }
-/* .balloon{
-    position: absolute;
-} */
 .cross{
     width: 5%;
     right: 5%;
@@ -308,8 +305,8 @@ grid-template-columns: repeat(auto-fill, 25%); */
 }
 #image{
     position: absolute;
-    width: 50%;
-    left: 13%;
+    width: 40%;
+    left: 10%;
     opacity: 0;
 }
 #text_detail{
@@ -333,7 +330,7 @@ grid-template-columns: repeat(auto-fill, 25%); */
 }
 .show{
     visibility: visible !important;
-	animation: show 1s 1;
+	animation: show .5s 1;
 }
 
 .cupboard{
@@ -351,7 +348,6 @@ grid-template-columns: repeat(auto-fill, 25%); */
 .cupboard_product{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     position: absolute;
     left: 4vw;
     right: 4vw;
@@ -378,4 +374,16 @@ grid-template-columns: repeat(auto-fill, 25%); */
     justify-content: space-around;
     justify-items: center;
     margin-top: 4%; 
+}
+.m_TD{
+    display: inline-flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin-top: 6%;
+}
+.m_Chit{
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 6%;
+    align-self: flex-end;
 }
