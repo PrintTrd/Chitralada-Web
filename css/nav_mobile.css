@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+.logo2 {
+    width: 13%;
+    padding-left: 3%;
+    padding-top: 4%;
+    position: absolute;
+}
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+}
+.a {
+    padding-top: 14px;
+    background-color: white;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #bf744b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+}
+.topnav .icon {
+    display: none;
+}
+
+
+/* iphone 6/7/8 size */
+@media only screen and (min-width: 768px) {
+    .topnav a {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .topnav a {
+        display: none;
+    }
+    .navbar {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .topnav.responsive {
+        z-index: 9;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: transparent;
+        font-size: 30px;
+        padding: 14px 16px;
+        color: #bf744b;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        padding: 2%;
+        background-color: white;
+        color: #bf744b;
+        font-size: 1.2em;
+    }
+    .topnav.responsive {
+        float: none;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive {
+        display: block;
+        width: 100%;
+        text-align: right;
+        position: fixed;
+        right: 0px;
+    }
+    .logo2 {
+        width: 9%;
+        padding-left: 3%;
+        padding-top: 2%;
+        position: absolute;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .topnav a {
+        font-size: 30px;
+    }
+    .topnav.responsive a {
+        font-size: 1em;
+    }
+    .topnav.responsive .icon {
+        font-size: 30px;
+    }
+    .logo2 {
+        width: 13%;
+        padding-left: 3%;
+        padding-top: 4%;
+        position: absolute;
+    }
+}

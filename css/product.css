@@ -387,11 +387,7 @@ grid-template-columns: repeat(auto-fill, 25%); */
     align-self: flex-end;
 }
 
-.topnav {
-    display: none;
-}
-
 /* responsive */
-@media only screen and (max-width: px) {
+/* @media only screen and (max-width: px) {
 
-}
+} */
