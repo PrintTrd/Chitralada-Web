@@ -1,4 +1,3 @@
-nowIndex = 0;
 data = {
     "data": [
         {
@@ -76,40 +75,27 @@ data = {
     ]
 }
 
-function rendata(nowIndex){
-    let title = document.getElementsByClassName("title");
-    let detail = document.getElementsByClassName("detail");
-
-    image.src = `image/Product/${data.data[nowIndex].image}.svg`;
-    title.innerHTML = data.data[nowIndex].title;
-    for (let i = 0; i < data.data[nowIndex].sub.length; i++){
+function rendata(index){
+    image.src = `image/Product/${data.data[index].image}.svg`;
+    detail.innerHTML = "";
+    title.innerHTML = data.data[index].title;
+    for (let j = 0; j < data.data[index].sub.length; j++){
         let p = document.createElement("p");
-        p.innerHTML = data.data[nowIndex].sub[i];
+        p.innerHTML = data.data[index].sub[j];
+        detail.appendChild(p);
     }
 }
 
 function show(nowIndex){
-    detailbox_area.classList.add("show");
-    var opa = 0;
-    var op = setInterval(frame, 50);
+    // detailbox_area.classList.add("show");
+    detailbox_area.style.transform = "scale(1)";
     rendata(nowIndex);
-    function frame() {
-        setTimeout(function(){
-            if (opa >= 1) {
-                clearInterval(op);
-            }
-            else {
-                opa += 0.05;
-                image.style.opacity = opa;
-                text_detail.style.opacity = opa;            
-            }            
-        }, 1000);
-    }
+    flex_detail.style.opacity = 1;
 }
-function hide(){
-    image.style.opacity = 0;
-    text_detail.style.opacity = 0;
-    detailbox_area.classList.remove("show");
+function hide(){ 
+    // detailbox_area.classList.remove("show");
+    detailbox_area.style.transform = "scale(0)";
+    flex_detail.style.opacity = 0;
 }
 
 var state = 1;

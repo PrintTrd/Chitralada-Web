@@ -57,7 +57,7 @@ p{
     width: 10%;
     padding: 1.5%;
     margin-top: 2%
-}
+} 
 #logo img{
     margin-top: -12%;
     width: 70%;
@@ -85,7 +85,6 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center;*/
 }
 .topic-main{
     font-size: 3vw;
@@ -179,8 +178,8 @@ p{
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
-    visibility: hidden;
-    transform: scale(1);
+    transform: scale(0);
+    transition: .3s;
 }
 .area{
     display: flex;
@@ -193,52 +192,41 @@ p{
 .detailbox{
     z-index: 6;
     width: 40vw;
+    height: 300px;   
+    padding: 2%;
     position: fixed;
-    margin: auto;
-    height: 40vh;
-    background: rgb(255, 244, 220);
+    align-items: center;    
     border: 5px solid #d78b8b;
-    border-radius: 1.25rem;
+    border-radius: 2.5rem;
+    background: rgb(255, 244, 220);
 }
-.flex_detail{
-    justify-content: center;
-    align-items: center;
+#flex_detail{
+    opacity: 0;
+    transition: 2s;
+    height: 98%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     margin: auto;
-    height: 40vh;
 }
 .cross{
+    z-index: 7;
     width: 5%;
     right: 5%;
-    margin-top: 5%;
     position: absolute;
 }
 #image{
-    position: absolute;
-    width: 40%;
-    left: 10%;
+    position: relative;
+    min-width: 30%;
+    max-height: 95%;
 }
 #text_detail{
     text-align: start;
-    position: absolute;
-    width: 40%;
-    right: 4%;
+    position: relative;
+    width: 30%;
     display: flex;
     flex-direction: column;
-}
-@keyframes show{
-    from {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
-    to {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-.show{
-    visibility: visible !important;
-	animation: show .5s 1;
 }
 
 .fridge{
@@ -246,7 +234,7 @@ p{
     margin-top: 39vh;
     margin-bottom: 15%;
     display: block;
-    position: relative;
+    overflow: hidden;
     /* background-color: saddlebrown; */
 }
 .l-fridge{
@@ -303,6 +291,7 @@ grid-template-columns: repeat(auto-fill, 25%); */
 .fridge_product{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     justify-items: center; 
     position: absolute;
     left: 7.5%;
@@ -314,13 +303,6 @@ grid-template-columns: repeat(auto-fill, 25%); */
     justify-items: center;    
     margin-top: 19%;
 }
-.yogurtTD{
-    display: inline-flex;
-    justify-content: space-between;
-    justify-items: center;    
-    margin-top: 8%;
-    width: 102%;
-}
 .butter{
     display: inline-flex;
     justify-content: space-between;
@@ -329,10 +311,9 @@ grid-template-columns: repeat(auto-fill, 25%); */
 }
 .yogurt{
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-around;
     justify-items: center;    
     margin-top: 10%;
-    width: 96%;
 }
 
 .cupboard{
