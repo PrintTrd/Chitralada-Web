@@ -9,13 +9,13 @@ body{
 }
 /* With a .cur fallback */
 .cur{
-    cursor: url('image/default-s.png'), default;
-    width: 100vw;
-    position: absolute;
-    bottom: 0;
+    cursor: url('default-s.png'), default;
 }
 .pointer-cur{
-    cursor: url('image/pointer-s.png'), pointer;
+    cursor: url('pointer.png'), pointer;
+}
+.pointer-cur:active{
+    cursor: url('pointer-s.png'), pointer;
 }
 
 .bg{

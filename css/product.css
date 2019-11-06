@@ -27,10 +27,13 @@ p{
 
   /* With a .cur fallback */
 .cur{
-    cursor: url('image/default-s.png'), default;
+    cursor: url('default-s.png'), default;
 }
 .pointer-cur{
-    cursor: url('image/pointer-s.png'), pointer;
+    cursor: url('pointer.png'), pointer;
+}
+.pointer-cur:active{
+    cursor: url('pointer-s.png'), pointer;
 }
 
 /* navbar */
