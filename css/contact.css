@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Taviraj');
 @import url('https://fonts.googleapis.com/css?family=Sarabun:200&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
-
 /* @import url('https://fonts.googleapis.com/css?family=Kanit500&display=swap'); */
 
 * {
     margin: 0;
     padding: 0;
+    transition: .2s;
 }
 
 html,
@@ -28,12 +28,6 @@ body {
 .pointer-cur:active{
     cursor: url('pointer-s.png'), pointer;
 }
-
-/* .bg-process {
-    background: linear-gradient(to bottom, #ffffff 65%, #c5e9ef 100%);
-    height: 100%;
-    width: 100%;
-} */
 
 /* navbar */
 .navbar {
@@ -94,10 +88,6 @@ body {
     z-index: 1;
 }
 
-/* home-cow-grass */
-
-/* plan1 */
-
 .con {
     position: absolute;
     overflow: hidden;
@@ -108,15 +98,16 @@ body {
     justify-content: center;
     z-index: 1;
 }
-
-.wind {
-    position: absolute;
-    width: 10%;
-    left: 76%;
-    bottom: 34%;
+.home {
+    position: fixed;
+    bottom: 0;
+    width: 153%;
     z-index: 2;
+    left: -21%;
+    margin-bottom: -4%;
 }
 
+/* windmill */
 .windmill{
     position: absolute;
     width: 4.5%;
@@ -143,39 +134,42 @@ body {
     100%{transform: rotate(360deg);}
 }
 
-.home {
-    position: fixed;
-    bottom: 0;
-    width: 153%;
-    z-index: 2;
-    left: -21%;
-    margin-bottom: -4%;
+/* speechBalloon */
+.speechBalloon{
+    position: absolute;
+    z-index: 3;
+    width: 100vw;
+    bottom: 60%;
 }
-
 .web {
     position: absolute;
     width: 25%;
-    top: 40%;
     left: 13%;
-    z-index: 3;
 }
-
 .facebook {
     position: absolute;
     width: 17%;
-    top: 24%;
-    left: 33%;
-    z-index: 3;
+    margin-top: -10.5%;
+    left: 33.5%;
 }
-
+.facebook_mb {
+    display: none;
+}
 .address {
     position: absolute;
     width: 27%;
-    top: 28%;
-    left: 60%;
-    z-index: 3;
+    margin-top: -7%;
+    left: 60.5%;
 }
-
+.web:hover{
+    opacity: 0.8;
+}
+.facebook:hover{
+    opacity: 0.8;
+}
+.address:hover{
+    opacity: 0.8;
+}
 @keyframes flipInY {
     from {
         transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
@@ -225,6 +219,7 @@ body {
     animation: flipInYreverse 1s linear;
 }
 
+/* cloud */
 .cloud {
     position: absolute;
     top: 20%;
@@ -232,7 +227,6 @@ body {
     width: 100%;
     animation: animateCloud 40s linear infinite;
 }
-
 .cloud2 {
     position: absolute;
     top: 20%;
@@ -240,7 +234,6 @@ body {
     width: 100%;
     animation: animateCloud2 70s linear infinite;
 }
-
 @keyframes animateCloud {
     0% {
         margin-left: -1600px;
@@ -249,7 +242,6 @@ body {
         margin-left: 1600px;
     }
 }
-
 @keyframes animateCloud2 {
     0% {
         margin-left: -3200px;
@@ -259,39 +251,80 @@ body {
     }
 }
 
+/* responsive */
+@media only screen and (min-width: 1951px) {
+    .speechBalloon{
+        width: 95vw;
+        bottom: 62%;
+    }
+}
+@media only screen and (max-width: 1950px) {
+    .speechBalloon{
+        bottom: 63%;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .speechBalloon{
+        bottom: 56%;
+    }
+}
+@media only screen and (max-width: 1366px) {
+    .speechBalloon{
+        bottom: 62%;
+    }
+}
 
-/* plan2 */
-
-
-/* .con {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+@media only screen and (orientation: portrait){
+    .speechBalloon{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-items: center; */
+        top: 15%;
+    }
+    .facebook {
+        display: none;
+    }
+    .facebook_mb{
+        display: inline;
+        position: relative;
+        width: 17%;
+        left: 47%;
+    }
+    .web {
+        position: relative;
+        width: 25%;
+        margin-top: 3%;
+        left: 30%;
+    }
+    .address {
+        position: relative;
+        width: 27%;
+        margin-top: 3%;
+        left: 42%;
+    }
 }
-.grass1 {
-    position: relative;
+@media only screen and (max-width: 768px) {
+    .speechBalloon{
+        top: 15%;
+        width: 200%;
+    }
+    .facebook {
+        position: relative;
+        width: 17%;
+        margin-top: 0%;
+        left: 42.5%;
+    }
+    .web {
+        position: relative;
+        width: 25%;
+        margin-top: 3%;
+        left: 30%;
+    }
+    .address {
+        position: relative;
+        width: 27%;
+        margin-top: 3%;
+        left: 42%;
+    }
 }
-.grass {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-}
-.web {
-    position: absolute;
-    width: 25%;
-    top: -3%;
-    left: 13%;
-}
-.facebook {
-    position: absolute;
-    width: 17%;
-    top: -38%;
-    left: 33%;
-}
-.address {
-    position: absolute;
-    width: 27%;
-    top: -29%;
-    left: 60%;
-} */
