@@ -117,17 +117,30 @@ body {
     z-index: 2;
 }
 
-.wind_it {
+.windmill{
     position: absolute;
-    width: 7%;
-}
-
-.roll {
-    position: absolute;
-    width: 95%;
-    right: 48%;
-    top: -61px;
+    width: 4.5%;
+    right: 33%;
+    bottom: 20%;
     z-index: 3;
+}
+.vane{
+    position: absolute;
+    animation: rotate 3s infinite linear;
+    right: 22%;
+    bottom: 71.5%;
+    z-index: 1;
+    height: 50%;
+}
+.vane:active{
+    animation: reverse rotate 8s infinite linear;
+}
+.pole{
+    width: 16%;
+}
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
 }
 
 .home {
