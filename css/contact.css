@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Taviraj');
+@import url('https://fonts.googleapis.com/css?family=Sarabun:200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css?family=Kanit500&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background: linear-gradient(to bottom, #ffffff 15%, #c5e9ef 100%) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+.cur{
+    cursor: url('default-s.png'), default;
+}
+.pointer-cur{
+    cursor: url('pointer.png'), pointer;
+}
+.pointer-cur:active{
+    cursor: url('pointer-s.png'), pointer;
+}
+
+/* .bg-process {
+    background: linear-gradient(to bottom, #ffffff 65%, #c5e9ef 100%);
+    height: 100%;
+    width: 100%;
+} */
+
+/* navbar */
+.navbar {
+    background-color: transparent;
+    width: 100vw;
+    height: 10%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 4;
+    transition: top 0.8s;
+}
+.nav {
+    width: 100%;
+    margin-top: 5%;
+}
+.navbar ul {
+    position: relative;
+    left: 4.5%;
+    list-style-type: none;
+}
+.navbar ul li {
+    text-align: center;
+    float: left;
+    width: 10%;
+    padding: 1.5%;
+}
+#logo img {
+    margin-top: -12%;
+    width: 70%;
+}
+#con img {
+    width: 50%;
+    margin-left: -30%;
+    margin-top: 3%;
+}
+#home img {
+    width: 50%;
+    margin-left: 30%;
+    margin-top: -2%;
+}
+
+/* hover menu */
+.menu img:last-child {
+    display: none
+}
+.menu:hover img:first-child {
+    display: none
+}
+.menu:hover img:last-child {
+    display: inline-block
+}
+.main {
+    width: auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* home-cow-grass */
+
+/* plan1 */
+
+.con {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.wind {
+    position: absolute;
+    width: 10%;
+    left: 76%;
+    bottom: 34%;
+    z-index: 2;
+}
+
+.wind_it {
+    position: absolute;
+    width: 7%;
+}
+
+.roll {
+    position: absolute;
+    width: 95%;
+    right: 48%;
+    top: -61px;
+    z-index: 3;
+}
+
+.home {
+    position: fixed;
+    bottom: 0;
+    width: 153%;
+    z-index: 2;
+    left: -21%;
+    margin-bottom: -4%;
+}
+
+.web {
+    position: absolute;
+    width: 25%;
+    top: 40%;
+    left: 13%;
+    z-index: 3;
+}
+
+.facebook {
+    position: absolute;
+    width: 17%;
+    top: 24%;
+    left: 33%;
+    z-index: 3;
+}
+
+.address {
+    position: absolute;
+    width: 27%;
+    top: 28%;
+    left: 60%;
+    z-index: 3;
+}
+
+@keyframes flipInY {
+    from {
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        animation-timing-function: ease-in;
+    }
+    60% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+    80% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+    to {
+        transform: perspective(400px);
+    }
+}
+@keyframes flipInYreverse {
+    from {
+        transform: perspective(400px) rotate3d(0, 1, 0, -90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 20deg);
+        animation-timing-function: ease-in;
+    }
+    60% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -10deg);
+        opacity: 1;
+    }
+    80% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 5deg);
+    }
+    to {
+        transform: perspective(400px);
+    }
+}
+.flipInY {
+    animation: flipInY 1s linear;
+}
+.flipInYreverse {
+    animation: flipInYreverse 1s linear;
+}
+
+.cloud {
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+    width: 100%;
+    animation: animateCloud 40s linear infinite;
+}
+
+.cloud2 {
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+    width: 100%;
+    animation: animateCloud2 70s linear infinite;
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -1600px;
+    }
+    100% {
+        margin-left: 1600px;
+    }
+}
+
+@keyframes animateCloud2 {
+    0% {
+        margin-left: -3200px;
+    }
+    100% {
+        margin-left: 3200px;
+    }
+}
+
+
+/* plan2 */
+
+
+/* .con {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.grass1 {
+    position: relative;
+}
+.grass {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+.web {
+    position: absolute;
+    width: 25%;
+    top: -3%;
+    left: 13%;
+}
+.facebook {
+    position: absolute;
+    width: 17%;
+    top: -38%;
+    left: 33%;
+}
+.address {
+    position: absolute;
+    width: 27%;
+    top: -29%;
+    left: 60%;
+} */

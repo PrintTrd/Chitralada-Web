@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
-.logo2 {
-    width: 13%;
-    padding-left: 3%;
-    padding-top: 4%;
-    position: absolute;
-}
 .topnav {
     overflow: hidden;
     background-color: transparent;
     width: 100%;
     position: fixed;
     z-index: 9;
+}
+.logo2 {
+    width: 52px;
+    padding: 15px 15px;
+    position: absolute;
+    justify-content: center;
 }
 .a {
     padding-top: 14px;
@@ -21,15 +21,16 @@
     display: block;
     color: #bf744b;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 20px;
     text-decoration: none;
     font-size: 30px;
+    font-weight: bold;
     font-family: 'Kanit', sans-serif;
+    transition: .5s;
 }
 .topnav .icon {
     display: none;
 }
-
 
 /* iphone 6/7/8 size */
 @media only screen and (min-width: 768px) {
@@ -65,7 +66,7 @@
     .topnav.responsive a {
         float: none;
         display: block;
-        padding: 2%;
+        padding: 14px;
         background-color: white;
         color: #bf744b;
         font-size: 1.2em;
@@ -84,26 +85,26 @@
         right: 0px;
     }
     .logo2 {
-        width: 9%;
-        padding-left: 3%;
-        padding-top: 2%;
+        width: 52px;
+        /* padding-left: 3px;
+        padding-top: 3px; */
         position: absolute;
     }
 }
 @media only screen and (max-width: 375px) {
     .topnav a {
-        font-size: 30px;
+        /* font-size: 30px; */
     }
     .topnav.responsive a {
         font-size: 1em;
     }
     .topnav.responsive .icon {
-        font-size: 30px;
+        /* font-size: 30px; */
     }
     .logo2 {
-        width: 13%;
-        padding-left: 3%;
-        padding-top: 4%;
+        width: 52px;
+        /* padding-left: 3px;
+        padding-top: 3px; */
         position: absolute;
     }
 }

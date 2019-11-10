@@ -23,7 +23,7 @@ body{
     size: 100%;
     z-index: -1;
     position: absolute;
-    bottom: -20%;
+    bottom: -10%;
 }
 .mob-bg{
     display: none;
@@ -139,35 +139,35 @@ body{
 .l-process{
     position: absolute;
     left: 19%;
-    bottom: 45%;
+    bottom: 32%;
     width: 10%;
     transition: transform .5s;       
 }
 .l-product{
     position: absolute;
     left: 46%;
-    bottom: 32%;
+    bottom: 20%;
     width: 10%;
     transition: transform .5s;          
 }
 .l-tour{
     position: absolute;
     left: 23.5%;
-    bottom: 25%;
+    bottom: 15%;
     width: 10%;
     transition: transform .5s;          
 }
 .l-history{
     position: absolute;
     left: 4%;
-    bottom: 19.5%;
+    bottom: 2%;
     width: 10%;
     transition: transform .5s;          
 }
 .l-contact{
     position: absolute;
     left: 88%;
-    bottom: 15%;
+    bottom: 10%;
     width: 10%;
     transition: transform .5s; 
 }
