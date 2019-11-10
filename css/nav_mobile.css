@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+*{
+    transition: .2s;
+}
 .topnav {
     overflow: hidden;
     background-color: transparent;
@@ -21,9 +24,9 @@
     display: block;
     color: #bf744b;
     text-align: center;
-    padding: 15px 20px;
+    padding: 15px 25px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
     font-family: 'Kanit', sans-serif;
     transition: .5s;
@@ -59,8 +62,8 @@
         right: 0;
         top: 0;
         background-color: transparent;
-        font-size: 30px;
-        padding: 14px 16px;
+        font-size: 50px;
+        padding: 15px 25px;
         color: #bf744b;
     }
     .topnav.responsive a {
@@ -85,26 +88,31 @@
         right: 0px;
     }
     .logo2 {
-        width: 52px;
-        /* padding-left: 3px;
-        padding-top: 3px; */
+        width: 80px;
         position: absolute;
     }
 }
-@media only screen and (max-width: 375px) {
-    .topnav a {
-        /* font-size: 30px; */
+@media only screen and (max-width: 414px) {
+    .topnav a.icon {
+        font-size: 40px;
     }
     .topnav.responsive a {
         font-size: 1em;
     }
     .topnav.responsive .icon {
-        /* font-size: 30px; */
+        font-size: 30px;
     }
     .logo2 {
-        width: 52px;
-        /* padding-left: 3px;
-        padding-top: 3px; */
+        width: 62px;
+        position: absolute;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .topnav a.icon {
+        font-size: 35px;
+    }
+    .logo2 {
+        width: 55px;
         position: absolute;
     }
 }

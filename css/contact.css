@@ -265,7 +265,7 @@ body {
 }
 @media only screen and (max-width: 1440px) {
     .speechBalloon{
-        bottom: 56%;
+        bottom: 59%;
     }
 }
 @media only screen and (max-width: 1366px) {
@@ -276,11 +276,11 @@ body {
 
 @media only screen and (orientation: portrait){
     .speechBalloon{
-        /* display: flex;
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
-        justify-items: center; */
         top: 15%;
+        height: 40%;
     }
     .facebook {
         display: none;
@@ -288,43 +288,58 @@ body {
     .facebook_mb{
         display: inline;
         position: relative;
-        width: 17%;
+        width: 25%;
         left: 47%;
     }
     .web {
         position: relative;
-        width: 25%;
+        width: 38%;
         margin-top: 3%;
-        left: 30%;
+        left: 25%;
     }
     .address {
         position: relative;
-        width: 27%;
+        width: 42%;
         margin-top: 3%;
-        left: 42%;
+        left: 35%;
+    }
+    .windmill{
+        width: 5%;
+        right: 33%;
+    }
+    .home{
+        width: 235%;
+        left: -58%;
+        margin-bottom: -5%;        
     }
 }
 @media only screen and (max-width: 768px) {
     .speechBalloon{
-        top: 15%;
-        width: 200%;
+        top: 12%;
+        height: 45%;
     }
-    .facebook {
-        position: relative;
-        width: 17%;
-        margin-top: 0%;
-        left: 42.5%;
+    .facebook_mb {
+        width: 33%;
+        left: 47%;
     }
     .web {
-        position: relative;
-        width: 25%;
+        width: 50%;
         margin-top: 3%;
-        left: 30%;
+        left: 15%;
     }
     .address {
-        position: relative;
-        width: 27%;
+        width: 53%;
         margin-top: 3%;
-        left: 42%;
+        left: 35%;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .speechBalloon{
+        top: 20%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .vane{
+        bottom: 71.5%;
     }
 }
