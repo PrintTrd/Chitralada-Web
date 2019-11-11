@@ -279,8 +279,8 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        top: 15%;
-        height: 40%;
+        bottom: 50%;
+        height: 38%;
     }
     .facebook {
         display: none;
@@ -315,8 +315,8 @@ body {
 }
 @media only screen and (max-width: 768px) {
     .speechBalloon{
-        top: 12%;
         height: 45%;
+        bottom: 45%;
     }
     .facebook_mb {
         width: 33%;
@@ -335,7 +335,8 @@ body {
 }
 @media only screen and (max-width: 414px) {
     .speechBalloon{
-        top: 20%;
+        height: 40%;
+        bottom: 35%;
     }
 }
 @media only screen and (max-width: 375px) {

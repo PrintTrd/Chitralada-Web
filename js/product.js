@@ -99,39 +99,76 @@ function hide(){
 }
 
 var state = 1;
-function door(){
-    if (state == 1) {
-        var pos = 47;
-        var door = setInterval(frames, 22);
-        function frames() {
-            setTimeout(function(){
-                if (pos == 0) {
-                    clearInterval(door);
-                }
-                else {
-                    pos--;
-                    l_door.style.left = -pos + 'vw';
-                    r_door.style.left = pos + 'vw';
-                }            
-            }, 250);
+function door(){ 
+    if (screen.width > "768") {
+        if (state == 1) {
+            var pos = 47;
+            var door = setInterval(frames, 22);
+            function frames() {
+                setTimeout(function(){
+                    if (pos == 0) {
+                        clearInterval(door);
+                    }
+                    else {
+                        pos--;
+                        l_door.style.left = -pos + 'vw';
+                        r_door.style.left = pos + 'vw';
+                    }            
+                }, 250);
+            }
+            state = 0;    
+        } 
+        else {
+            var pos = 0;
+            var door = setInterval(frames, 22);
+            function frames() {
+                setTimeout(function(){
+                    if (pos == 47) {
+                        clearInterval(door);
+                    }
+                    else {
+                        pos++;
+                        l_door.style.left = -pos + 'vw';
+                        r_door.style.left = pos + 'vw';
+                    }            
+                }, 250);
+            }
+            state = 1;
+        }        
+    } else {
+        if (state == 1) {
+            var pos = 93;
+            var door = setInterval(frames, 45);
+            function frames() {
+                setTimeout(function(){
+                    if (pos == 0) {
+                        clearInterval(door);
+                    }
+                    else {
+                        pos--;
+                        l_door.style.left = -pos + 'vw';
+                        r_door.style.left = pos + 'vw';
+                    }            
+                }, 50);
+            }
+            state = 0;    
+        } 
+        else {
+            var pos = 0;
+            var door = setInterval(frames, 45);
+            function frames() {
+                setTimeout(function(){
+                    if (pos == 93) {
+                        clearInterval(door);
+                    }
+                    else {
+                        pos++;
+                        l_door.style.left = -pos + 'vw';
+                        r_door.style.left = pos + 'vw';
+                    }            
+                }, 50);
+            }
+            state = 1;
         }
-        state = 0;    
-    } 
-    else {
-        var pos = 0;
-        var door = setInterval(frames, 22);
-        function frames() {
-            setTimeout(function(){
-                if (pos == 47) {
-                    clearInterval(door);
-                }
-                else {
-                    pos++;
-                    l_door.style.left = -pos + 'vw';
-                    r_door.style.left = pos + 'vw';
-                }            
-            }, 250);
-        }
-        state = 1;
     }
 }

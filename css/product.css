@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+    transition: .2s;
 }
 body{
     overflow-x: hidden;
@@ -12,7 +13,8 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
     font-family: 'Kanit', sans-serif;
-    font-size: 10px;
+    font-size: 100%;
+    height: 100%;
 }
 h3{
     font-size: 200%;
@@ -23,11 +25,12 @@ p{
 /* scrollbar*/
 ::-webkit-scrollbar {
     width: 0px;
-  }
+}
 
   /* With a .cur fallback */
 .cur{
     cursor: url('default-s.png'), default;
+    height: 100%;
 }
 .pointer-cur{
     cursor: url('pointer.png'), pointer;
@@ -238,11 +241,12 @@ p{
 }
 
 .fridge{
-    height: 48.5vh;
+    position: relative;
+    height: 54%;
     margin-top: 39vh;
-    margin-bottom: 15%;
+    margin-bottom: 3.5%;
     display: block;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .l-fridge{
     width: 50vw;
@@ -260,7 +264,7 @@ p{
     width: 50vw;
     position: absolute;
     z-index: 2;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .r-fridge_door{
     animation: r-fridge 1.5s linear;
@@ -268,7 +272,7 @@ p{
     width: 50vw;
     position: absolute;
     z-index: 2;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 @keyframes l-fridge{
     0%{left: 0vw;}
@@ -281,9 +285,16 @@ p{
     100%{left: 45vw;}
 }
 .fridge_shelf{
+    width: 98vw;
     margin-top: 15%;
     position: absolute;
     z-index: -1;
+}
+.r_fridge_shelf{
+    display: none;
+}
+.l_fridge_shelf{
+    display: none;
 }
 .l-fridge_board{
     width: 50vw;
@@ -326,6 +337,9 @@ grid-template-columns: repeat(auto-fill, 25%); */
     justify-items: center;    
     margin-top: 10%;
 }
+.yogurttt{
+    width: 8vw;
+}
 
 .cupboard{
     width: 100%;
@@ -335,9 +349,15 @@ grid-template-columns: repeat(auto-fill, 25%); */
     margin-left: auto;
     margin-right: auto;
 }
+.cupboard-leg_mb{
+    display: none;
+}
 .cupboard_shelf{
     position: absolute;
     z-index: 0;
+}
+.cupboard_shelf_mb{
+    display: none;
 }
 .cupboard_product{
     display: flex;
@@ -368,11 +388,25 @@ grid-template-columns: repeat(auto-fill, 25%); */
     justify-content: space-between;
     justify-items: center;    
 }
+.milk1{
+    width: 8vw;
+}
+.milk2{
+    width: 8vw;
+    margin-left: 1.5vw;
+}
+.milk3{
+    width: 10vw;
+}
 .m_pellets{
     display: inline-flex;
     justify-content: space-around;
     justify-items: center;
     margin-top: 4%; 
+}
+.pellet{
+    width: 9vw;
+    margin-left: 1.5vw;
 }
 .m_TD{
     display: inline-flex;
@@ -388,6 +422,195 @@ grid-template-columns: repeat(auto-fill, 25%); */
 }
 
 /* responsive */
-/* @media only screen and (max-width: px) {
-
-} */
+@media only screen and (orientation: portrait){
+    .fridge{
+        height: 70%;
+        margin-top: 0;
+        margin-bottom: 10%;
+        top: 33%;
+    }
+    .r-fridge{
+        width: 100vw;
+        left: 0;
+    }
+    .r-fridge_board{
+        width: 100vw;
+    }
+    .r-fridge_door{
+        left: 93vw;
+        width: 100vw;
+    }
+    .l-fridge{
+        width: 100vw;
+        left: 0vw;
+        margin-top: 62%;
+    }
+    .l-fridge_board{
+        width: 100vw;
+    }
+    .l-fridge_door{
+        left: -93vw;
+        width: 100vw;
+    }
+    @keyframes l-fridge{
+        0%{left: 0vw;}
+        75%{left: -97vw;}
+        100%{left: -93vw;}
+    }
+    @keyframes r-fridge{
+        0%{left: 0vw;}
+        75%{left: 97vw;}
+        100%{left: 93vw;}
+    }
+    .fridge_shelf{
+        display: none;
+    }    
+    .r_fridge_shelf{
+        display: inline;
+        width: 98vw;
+        margin-left: 1%;
+        margin-top: 30%;
+    }
+    .l_fridge_shelf{
+        display: inline;
+        width: 98vw;
+        margin-left: 1%;
+        margin-top: 57%;
+    }
+    .yogurttt{
+        width: 16vw;
+    }
+    .cupboard{
+        margin-top: 58%;
+    }
+    .cupboard-leg{
+        display: none;
+    }
+    .cupboard-leg_mb{
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cupboard_shelf{
+        display: none;
+    }
+    .cupboard_shelf_mb{
+        display: inline;
+        position: absolute;
+        z-index: 0;
+    }
+    .cupboard_product{
+        left: 7.5vw;
+        right: 7.5vw;
+    }
+    .best_shelf{
+        margin-top: 88%;
+    }
+    .bestsell{
+        width: 18vw;
+        left: 3vw;
+        margin-top: -4%;
+    }
+    .hide{
+        display: none;
+        width: 0px;
+    }
+    .m_TD{
+        margin-top: 30%;
+    }
+    .m_Chit{
+        margin-top: 36.5%;
+    }
+    .milk1{
+        width: 16.35vw;
+        margin-top: 10%;
+    }
+    .milk2{
+        width: 13vw;
+        margin-left: 0.5vw;
+    }
+    .milk3{
+        width: 14vw;
+    }
+    .m_pellets{
+        margin-top: 17%;
+    }
+    .pellet{
+        width: 21vw;
+        margin-left: 1.5vw;
+    }
+}
+@media only screen and (max-width: 1440px) and (orientation: portrait){
+    .fridge{
+        height: 125%;
+        margin-bottom: 0%;
+    }
+    .cupboard{
+        margin-top: 50%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .fridge{
+        top: 32%;
+        height: 94%;
+    }
+    .cupboard{
+        margin-top: 45%;
+    }
+}
+@media only screen and (max-width: 738px) {
+    .milk1 {
+        width: 16.25vw;
+    }
+    .milk2 {
+        width: 13vw;
+        margin-left: 0.45vw;
+    }
+}
+@media only screen and (max-width: 686px) {
+    .milk2 {
+        margin-left: 0.2vw;
+    }
+}
+@media only screen and (max-width: 630px) {
+    .m_pellets {
+        margin-top: 17.5%;
+    }
+    .milk1 {
+        width: 16vw;
+    }
+}
+@media only screen and (max-width: 508px) {
+    .milk2 {
+        margin-left: 0.05vw;
+    }
+}
+@media only screen and (max-width: 473px) {
+    .milk1 {
+        width: 15.75vw;
+        margin-top: 10.5%;
+    }
+    .milk2 {
+        margin-left: 0vw;
+    }
+}
+@media only screen and (max-width: 422px) {
+    .milk2 {
+        width: 14vw;
+        margin-left: 1.5vw;
+    }
+    .m_TD{
+        margin-top: 27.5%;
+    }
+    #hide{
+        display: none;
+    }
+    .m_Chit {
+        margin-top: 35.5%;
+    }
+}
+@media only screen and (max-width: 378px) {
+    .milk1 {
+        margin-left: -0.25vw;
+    }
+}
