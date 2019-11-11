@@ -203,13 +203,13 @@ p{
 .detailbox{
     z-index: 6;
     width: 40vw;
-    height: 300px;   
+    height: 500px;   
     padding: 2%;
     position: fixed;
     align-items: center;    
     border: 5px solid #d78b8b;
     border-radius: 2.5rem;
-    background: rgb(255, 244, 220);
+    background: rgb(253, 247, 234);
 }
 #flex_detail{
     opacity: 0;

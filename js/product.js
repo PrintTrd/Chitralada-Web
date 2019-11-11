@@ -103,7 +103,7 @@ function door(){
     if (screen.width > "768") {
         if (state == 1) {
             var pos = 47;
-            var door = setInterval(frames, 22);
+            var door = setInterval(frames, 25);
             function frames() {
                 setTimeout(function(){
                     if (pos == 0) {
@@ -120,7 +120,7 @@ function door(){
         } 
         else {
             var pos = 0;
-            var door = setInterval(frames, 22);
+            var door = setInterval(frames, 25);
             function frames() {
                 setTimeout(function(){
                     if (pos == 47) {
