@@ -240,9 +240,12 @@ p{
     flex-direction: column;
 }
 
+.line{
+    display: none;
+}
 .fridge{
     position: relative;
-    height: 54%;
+    height: 70%;
     margin-top: 39vh;
     margin-bottom: 3.5%;
     display: block;
@@ -463,6 +466,13 @@ grid-template-columns: repeat(auto-fill, 25%); */
 
 /* mobile responsive */
 @media only screen and (orientation: portrait){
+    .line{
+        display: inline;
+        width: 120vw;
+        position: absolute;
+        margin-top: 62%;
+        z-index: 3;
+    }
     #text-box {
         top: 15vh;
     }
@@ -602,7 +612,7 @@ grid-template-columns: repeat(auto-fill, 25%); */
 @media only screen and (max-width: 768px) {
     .fridge{
         top: 32%;
-        height: 94%;
+        height: 107%;
     }
     .cupboard{
         margin-top: 45%;
