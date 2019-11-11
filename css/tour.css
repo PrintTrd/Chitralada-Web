@@ -1,0 +1,825 @@
+@import url('https://fonts.googleapis.com/css?family=Taviraj');
+@import url('https://fonts.googleapis.com/css?family=Sarabun:200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css?family=Kanit500&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background: linear-gradient(to bottom, #ffffff 45%, #c5e9ef 100%) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.cur{
+    cursor: url('default-s.png'), default;
+    height: 100%;
+}
+.pointer-cur{
+    cursor: url('pointer.png'), pointer;
+}
+.pointer-cur:active{
+    cursor: url('pointer-s.png'), pointer;
+}
+
+/* .bg-process {
+    background: linear-gradient(to bottom, #ffffff 65%, #c5e9ef 100%);
+    height: 100%;
+    width: 100%;
+} */
+
+/* navbar */
+.navbar {
+    background-color: transparent;
+    width: 100vw;
+    height: 10%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 4;
+    transition: top 0.8s;
+}
+
+.nav {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.navbar ul {
+    position: relative;
+    left: 4.5%;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    text-align: center;
+    float: left;
+    width: 10%;
+    padding: 1.5%;
+}
+
+#logo img {
+    margin-top: -12%;
+    width: 70%;
+}
+
+#con img {
+    width: 50%;
+    margin-left: -30%;
+    margin-top: 3%;
+}
+
+#home img {
+    width: 50%;
+    margin-left: 30%;
+    margin-top: -2%;
+}
+
+
+/* hover menu */
+
+.menu img:last-child {
+    display: none
+}
+
+.menu:hover img:first-child {
+    display: none
+}
+
+.menu:hover img:last-child {
+    display: inline-block
+}
+
+.main {
+    width: auto;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* topic */
+
+.topic-text {
+    width: auto;
+    height: 60%;
+    margin-top: 25%;
+    position: relative;
+}
+
+h1 {
+    /* position: absolute;
+    top: 20%;
+    right: 13%;
+    text-align: center;
+    letter-spacing: 2px; */
+    position: absolute;
+    padding-top: 10%;
+    left: 20%;
+    text-align: center;
+    letter-spacing: 1px;
+    z-index: 2;
+    width: 90%;
+}
+
+.topic-main {
+    font-size: 1.3em;
+    color: #3C6868;
+    font-family: 'Kanit', sans-serif;
+}
+
+.topic-sub {
+    font-size: 1em;
+    color: #E97625;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100;
+}
+
+.cow1 {
+    position: absolute;
+    width: 80%;
+    left: -2%;
+    z-index: 2;
+}
+
+
+/* text2-pic_car */
+
+.text2 {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    top: 850px;
+}
+
+.car1-1 {
+    position: absolute;
+    width: 60%;
+    left: -2%;
+    top: 80px;
+    z-index: 2;
+}
+
+.text2 p {
+    font-size: 1.2em;
+    font-family: 'Kanit', sans-serif;
+    color: #434264;
+    position: absolute;
+    left: 55%;
+    top: 250px;
+    width: 30%;
+}
+
+.text2 b {
+    font-size: 1.5em;
+    font-family: 'Kanit', sans-serif;
+    color: #418482;
+    font-weight: 100;
+}
+
+
+/* text3-pic_cow2 */
+
+.text3 {
+    position: relative;
+    width: auto;
+    height: 50%;
+    top: 1300px;
+}
+
+.cow2-2 {
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    z-index: 2;
+}
+
+.text3 b {
+    font-size: 1.5em;
+    font-family: 'Kanit', sans-serif;
+    color: #418482;
+    font-weight: 100;
+}
+
+.text3 p {
+    font-size: 1.2em;
+    font-family: 'Kanit', sans-serif;
+    color: #434264;
+    position: absolute;
+    left: 13%;
+    top: 400px;
+    text-align: right;
+}
+
+
+/* text4-pic_cow3_milk*/
+
+.text4 {
+    position: relative;
+    width: auto;
+    height: 50%;
+    top: 2000px;
+}
+
+.milk {
+    position: absolute;
+    width: 30%;
+    left: 15%;
+}
+
+.cow3 {
+    position: absolute;
+    width: 50%;
+    top: 300px;
+    left: 32%;
+}
+
+.text4 b {
+    font-size: 1.5em;
+    font-family: 'Kanit', sans-serif;
+    color: #418482;
+    font-weight: 100;
+}
+
+.text4 p {
+    font-size: 1.2em;
+    font-family: 'Kanit', sans-serif;
+    color: #434264;
+    position: absolute;
+    left: 55%;
+    top: 116px;
+    width: 30%;
+}
+
+
+/* text5-pic__milk2*/
+
+.text5 {
+    position: relative;
+    width: auto;
+    height: 50%;
+    top: 2900px;
+}
+
+.milk2 {
+    position: absolute;
+    width: 50%;
+    left: 53%;
+}
+
+.text5 b {
+    font-size: 1.5em;
+    font-family: 'Kanit', sans-serif;
+    color: #418482;
+    font-weight: 100;
+}
+
+.text5 p {
+    font-size: 1.2em;
+    font-family: 'Kanit', sans-serif;
+    color: #434264;
+    position: absolute;
+    left: 20%;
+    top: 10px;
+    width: 30%;
+    text-align: right;
+}
+
+
+/* text6-pic_foot*/
+
+.text6 {
+    position: relative;
+    width: auto;
+    height: 150%;
+    top: 2880px;
+    margin-bottom: -11%;
+}
+
+.foot {
+    position: absolute;
+    width: 100%;
+}
+
+.text6 p {
+    font-size: 1.8em;
+    font-family: 'Kanit', sans-serif;
+    color: #434264;
+    position: absolute;
+    left: 55%;
+    top: 600px;
+    width: 30%;
+    text-align: center;
+}
+
+.text6 p1 {
+    color: #E97625;
+}
+
+
+/* all-cloud */
+
+.cloud1 {
+    z-index: 1;
+}
+
+.cloud1 .cloud1-1 {
+    width: 20%;
+    right: -5%;
+    top: 100px;
+    position: absolute;
+    animation: mymove 8s infinite;
+}
+
+.cloud1 .cloud1-2 {
+    width: 10%;
+    top: 350px;
+    right: 8%;
+    position: absolute;
+    animation: mymove 9s infinite;
+}
+
+.cloud1 .cloud1-3 {
+    width: 20%;
+    top: 700px;
+    right: -1%;
+    position: absolute;
+    animation: mymove2 11s infinite;
+}
+
+.cow .cloud2 {
+    width: 20%;
+    position: absolute;
+    top: 350px;
+    left: 16%;
+    animation: mymove2 8s infinite;
+    z-index: 1;
+}
+
+.car1 .cloud3 {
+    width: 20%;
+    top: -50px;
+    position: absolute;
+    left: -10%;
+    z-index: 1;
+    animation: mymove 7s infinite;
+}
+
+.car1 .cloud4 {
+    width: 10%;
+    top: 120px;
+    position: absolute;
+    left: 28%;
+    z-index: 3;
+    animation: mymove2 10s infinite;
+}
+
+.cow2 .cloud5 {
+    width: 20%;
+    top: 50px;
+    position: absolute;
+    right: 20%;
+    z-index: 1;
+    animation: mymove 7s infinite;
+}
+
+.cow2 .cloud6 {
+    width: 20%;
+    top: 300px;
+    position: absolute;
+    left: -8%;
+    animation: mymove2 10s infinite;
+}
+
+
+/* animation cloud */
+
+@keyframes mymove {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(100px, 0);
+    }
+}
+
+@keyframes mymove2 {
+    0%,
+    100% {
+        transform: translate(100px, 0);
+    }
+    50% {
+        transform: translate(0px, 0);
+    }
+}
+
+@media only screen and (max-width: 1330px) {
+    .text2 {
+        top: 750px;
+    }
+    .text3 {
+        top: 1200px;
+    }
+    .text3 p {
+        left: 8%;
+        top: 320px;
+    }
+    .text4 {
+        top: 1900px;
+    }
+    .text4 p {
+        width: 39%;
+    }
+    .text5 {
+        top: 2700px;
+    }
+    .text6 {
+        top: 2680px;
+    }
+    .text6 p {
+        left: 58%;
+        top: 500px;
+        font-size: 1.6em;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    h1 {
+        font-size: 1.3em;
+    }
+    .text2 {
+        top: 650px;
+    }
+    .text2 p {
+        font-size: 1em;
+        top: 200px;
+    }
+    .text3 {
+        top: 1090px;
+    }
+    .text3 p {
+        top: 300px;
+        font-size: 1em;
+        left: 10%;
+    }
+    .cow .cloud2 {
+        top: 250px;
+    }
+    .cow3 {
+        top: 200px;
+    }
+    .text4 {
+        top: 1650px;
+    }
+    .text4 p {
+        font-size: 1em;
+        left: 48%;
+        top: 50px;
+    }
+    .text5 {
+        top: 2350px;
+    }
+    .text5 p {
+        font-size: 1em;
+        top: -19px;
+    }
+    .text6 {
+        top: 2330px;
+    }
+    .text6 p {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    .text2 {
+        top: 550px;
+    }
+    .text3 {
+        top: 890px;
+    }
+    .text3 p {
+        left: 8%;
+        top: 250px;
+    }
+    .text4 {
+        top: 1450px;
+    }
+    .text4 p {
+        width: 39%;
+    }
+    .text5 {
+        top: 2100px;
+    }
+    .text6 {
+        top: 2080px;
+    }
+    .text6 p {
+        left: 55%;
+        top: 380px;
+    }
+    .cow .cloud2 {
+        top: 200px;
+    }
+}
+
+@media only screen and (max-width: 821px) {
+    h1 {
+        font-size: 1em;
+    }
+    .text2 {
+        top: 450px;
+    }
+    .text2 p {
+        font-size: 0.8em;
+        top: 150px;
+    }
+    .text3 {
+        top: 740px;
+    }
+    .text3 p {
+        font-size: 0.8em;
+        left: 8%;
+        top: 220px;
+    }
+    .cow3 {
+        top: 160px;
+    }
+    .text4 {
+        top: 1200px;
+    }
+    .text4 p {
+        font-size: 0.8em;
+        width: 39%;
+        top: 20px;
+    }
+    .text5 {
+        top: 1720px;
+    }
+    .text5 p {
+        font-size: .8em;
+        top: -35px;
+        left: 19%;
+    }
+    .text6 {
+        top: 1700px;
+    }
+    .text6 p {
+        font-size: 1em;
+        top: 300px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    h1 {
+        font-size: 0.8em;
+        /* left: 44%; */
+    }
+    .text2 {
+        top: 350px;
+    }
+    .text2 p {
+        font-size: 0.65em;
+        top: 150px;
+    }
+    .text3 {
+        top: 610px;
+    }
+    .text3 p {
+        font-size: 0.65em;
+        top: 180px;
+    }
+    .text4 {
+        top: 970px;
+    }
+    .text4 p {
+        font-size: 0.65em;
+    }
+    .text5 {
+        top: 1440px;
+    }
+    .text5 p {
+        font-size: 0.65em;
+        left: 22%;
+    }
+    .text6 {
+        top: 1380px;
+    }
+    .text6 p {
+        font-size: 0.85em;
+        top: 280px;
+    }
+    .cow .cloud2 {
+        top: 150px;
+    }
+    .cloud1 .cloud1-3 {
+        top: 500px;
+    }
+}
+
+
+/* new plattern */
+
+@media only screen and (max-width: 570px) {
+    /* text1 */
+    h1 {
+        font-size: 0.85em;
+        left: 15%;
+    }
+    .cow1 {
+        position: absolute;
+        width: 170%;
+        left: -47%;
+        z-index: 2;
+    }
+    .cow .cloud2 {
+        width: 34%;
+        top: 300px;
+        left: -5%;
+    }
+    .cloud1 .cloud1-1 {
+        width: 35%;
+        right: -2%;
+        top: 0px;
+    }
+    .cloud1 .cloud1-2 {
+        width: 15%;
+        top: 130px;
+        right: 25%;
+    }
+    .cloud1 .cloud1-3 {
+        width: 30%;
+        top: 700px;
+        right: -9%;
+    }
+    .text2 {
+        top: 750px;
+        width: 150%;
+        left: -9%;
+    }
+    .car1 .cloud3 {
+        width: 20%;
+        top: 0px;
+        left: -10%;
+    }
+    .car1 .cloud4 {
+        width: 11%;
+        top: 100px;
+        left: 21%;
+        z-index: 1;
+    }
+    .text2 p {
+        font-size: 0.8em;
+        top: -9px;
+        left: 40%;
+        width: 30%;
+    }
+    .text3 {
+        top: 1200px;
+        width: 150%;
+        left: -38%;
+    }
+    .text3 p {
+        font-size: 0.8em;
+        top: 30px;
+        left: 32%;
+    }
+    .cow2 .cloud5 {
+        z-index: 0;
+    }
+    .cow2 .cloud6 {
+        width: 26%;
+        top: 300px;
+        left: 10%;
+    }
+    .text4 {
+        top: 1640px;
+        z-index: 3;
+    }
+    .milk {
+        width: 44%;
+        left: 5%;
+    }
+    .cow3 {
+        width: 85%;
+        top: 250px;
+        left: 8%;
+    }
+    .text4 p {
+        font-size: 0.8em;
+        width: 40%;
+        top: 20px;
+        left: 52%;
+    }
+    .milk2 {
+        width: 80%;
+        left: 30%;
+    }
+    .text5 {
+        top: 2380px;
+    }
+    .text5 p {
+        font-size: 0.8em;
+        width: 37%;
+        left: 13%;
+        top: -130px;
+    }
+    .text6 {
+        top: 2500px;
+    }
+    .text6 p {
+        font-size: 1em;
+        top: 200px;
+        width: 45%;
+        left: 50%;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    h1 {
+        font-size: 0.65em;
+        /* left: 30%; */
+    }
+    .text2 {
+        top: 600px;
+    }
+    .text2 p {
+        font-size: 0.65em;
+        left: 33%;
+    }
+    .text3 {
+        top: 950px
+    }
+    .text3 p {
+        font-size: 0.65em;
+        left: 28%;
+        top: 35px;
+    }
+    .text4 {
+        top: 1340px;
+    }
+    .text4 p {
+        font-size: 0.65em;
+    }
+    .cow3 {
+        top: 200px;
+    }
+    .text5 {
+        top: 1950px;
+    }
+    .text5 p {
+        font-size: 0.65em;
+    }
+    .text6 {
+        top: 2100px;
+    }
+    .text6 p {
+        font-size: 0.8em;
+        top: 130px;
+    }
+}
+
+
+/* iphone6/7/8 */
+
+@media only screen and (max-width: 375px) {
+    h1 {
+        /* left: 24%; */
+    }
+    .cow .cloud2 {
+        top: 200px;
+    }
+    .cow2 .cloud6 {
+        top: 200px;
+        z-index: 0;
+    }
+    .text2 {
+        top: 500px;
+    }
+    .text3 {
+        top: 840px;
+    }
+    .text4 {
+        top: 1150px;
+    }
+    .cow3 {
+        top: 180px;
+    }
+    .text5 {
+        top: 1700px;
+    }
+    .text6 {
+        top: 1800px;
+    }
+}
