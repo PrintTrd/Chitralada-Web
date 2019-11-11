@@ -22,7 +22,7 @@
 .topnav a {
     float: left;
     display: block;
-    color: #bf744b;
+    color: #a85f37;
     text-align: center;
     padding: 15px 25px;
     text-decoration: none;
@@ -100,11 +100,12 @@
         font-size: 1em;
     }
     .topnav.responsive .icon {
-        font-size: 30px;
+        font-size: 38px;
     }
     .logo2 {
         width: 62px;
         position: absolute;
+        padding: 18px 20px;
     }
 }
 @media only screen and (max-width: 320px) {

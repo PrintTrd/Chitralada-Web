@@ -663,11 +663,22 @@ grid-template-columns: repeat(auto-fill, 25%); */
     }
 }
 @media only screen and (max-width: 473px) {
+    .topic-main {
+        font-size: 6vw;
+    }
+    .topic-sub {
+        font-size: 4vw;
+    }
     h3{
         font-size: 18px;
     }
     p {
         font-size: 16px;
+    }
+    .cross {
+        width: 8%;
+        right: 8%;
+        top: 8%;
     }
     .milk1 {
         width: 15.75vw;
@@ -678,6 +689,17 @@ grid-template-columns: repeat(auto-fill, 25%); */
     }
 }
 @media only screen and (max-width: 422px) {
+    .fridge {
+        top: 30%;
+        height: 85%;
+    }
+    .detailbox {
+        width: 85vw;
+        height: 300px;
+    }
+    #text_detail {
+        width: 41%;
+    }
     .milk2 {
         width: 14vw;
         margin-left: 1.5vw;
@@ -693,6 +715,12 @@ grid-template-columns: repeat(auto-fill, 25%); */
     }
 }
 @media only screen and (max-width: 378px) {
+    .detailbox {
+        height: 250px;
+    }
+    #text_detail {
+        width: 52%;
+    }
     .milk1 {
         margin-left: -0.25vw;
     }
