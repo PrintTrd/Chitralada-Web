@@ -100,10 +100,10 @@ function hide(){
 
 var state = 1;
 function door(){ 
-    if (screen.width > "768") {
+    if (screen.width > 768) {
         if (state == 1) {
             var pos = 47;
-            var door = setInterval(frames, 25);
+            var door = setInterval(frames, 47);
             function frames() {
                 setTimeout(function(){
                     if (pos == 0) {
@@ -114,13 +114,13 @@ function door(){
                         l_door.style.left = -pos + 'vw';
                         r_door.style.left = pos + 'vw';
                     }            
-                }, 250);
+                }, 20);
             }
             state = 0;    
         } 
         else {
             var pos = 0;
-            var door = setInterval(frames, 25);
+            var door = setInterval(frames, 47);
             function frames() {
                 setTimeout(function(){
                     if (pos == 47) {
@@ -131,14 +131,14 @@ function door(){
                         l_door.style.left = -pos + 'vw';
                         r_door.style.left = pos + 'vw';
                     }            
-                }, 250);
+                }, 20);
             }
             state = 1;
         }        
     } else {
         if (state == 1) {
             var pos = 93;
-            var door = setInterval(frames, 45);
+            var door = setInterval(frames, 93);
             function frames() {
                 setTimeout(function(){
                     if (pos == 0) {
@@ -155,7 +155,7 @@ function door(){
         } 
         else {
             var pos = 0;
-            var door = setInterval(frames, 45);
+            var door = setInterval(frames, 93);
             function frames() {
                 setTimeout(function(){
                     if (pos == 93) {

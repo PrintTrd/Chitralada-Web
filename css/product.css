@@ -17,10 +17,10 @@ body{
     height: 100%;
 }
 h3{
-    font-size: 200%;
+    font-size: 220%;
 }
 p{
-    font-size: 150%;
+    font-size: 200%;
 }
 /* scrollbar*/
 ::-webkit-scrollbar {
@@ -235,7 +235,7 @@ p{
 #text_detail{
     text-align: start;
     position: relative;
-    width: 30%;
+    width: 31.25%;
     display: flex;
     flex-direction: column;
 }
@@ -422,7 +422,57 @@ grid-template-columns: repeat(auto-fill, 25%); */
 }
 
 /* responsive */
+@media only screen and (max-width: 1921px) {
+    #text_detail{
+        width: 38%;
+    }
+    h3{
+        font-size: 200%;
+    }
+    p {
+        font-size: 180%;
+    }
+}
+@media only screen and (max-width: 1440px){
+    .detailbox{
+        width: 50vw;
+        height: 450px;
+    }
+    #text_detail {
+        width: 36.5%;
+    }
+    h3{
+        font-size: 180%;
+    }
+    p {
+        font-size: 150%;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .detailbox{
+        width: 50vw;
+        height: 350px;
+    }
+    h3{
+        font-size: 150%;
+    }
+    p {
+        font-size: 125%;
+    }
+}
+
+/* mobile responsive */
 @media only screen and (orientation: portrait){
+    #text-box {
+        top: 15vh;
+    }
+    .topic-main {
+        font-size: 5vw;
+    }
+    .topic-sub {
+        font-size: 3vw;
+    }
+
     .fridge{
         height: 70%;
         margin-top: 0;
@@ -557,6 +607,23 @@ grid-template-columns: repeat(auto-fill, 25%); */
     .cupboard{
         margin-top: 45%;
     }
+    .detailbox{
+        width: 60vw;
+        padding: 4%;
+    }
+    #text_detail{
+        width: 37.25%;
+    }
+    .cross{
+        width: 7%;
+        right: 7%;
+    }
+    h3{
+        font-size: 130%;
+    }
+    p {
+        font-size: 115%;
+    }
 }
 @media only screen and (max-width: 738px) {
     .milk1 {
@@ -581,11 +648,27 @@ grid-template-columns: repeat(auto-fill, 25%); */
     }
 }
 @media only screen and (max-width: 508px) {
+    .detailbox{
+        width: 75vw;
+        height: 320px;
+    }
+    h3{
+        font-size: 120%;
+    }
+    p {
+        font-size: 110%;
+    }
     .milk2 {
         margin-left: 0.05vw;
     }
 }
 @media only screen and (max-width: 473px) {
+    h3{
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
     .milk1 {
         width: 15.75vw;
         margin-top: 10.5%;
