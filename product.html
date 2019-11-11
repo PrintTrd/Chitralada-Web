@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="cur">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="image/cow_logo.png" type="image">
-    <link rel="stylesheet" href="css/product.css">    
+    <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/nav_mobile.css">
 
     <script src="js/nav_mobile.js"></script>
@@ -17,10 +18,11 @@
     <script src="js/product.js"></script>
 
 </head>
+
 <body>
     <!-- start nav responsive mobile -->
     <div class="topnav" id="myTopnav">
-        <div class="logo2"><img src="image/Nav/logo.svg" alt=""></div>
+        <div class="logo2" onclick="window.location='index.html';"><img src="image/Nav/logo.svg" alt=""></div>
         <a></a>
         <a></a>
         <a href="index.html">หน้าแรก</a>
@@ -55,7 +57,9 @@
                     </a>
                 </li>
 
-                <li><a class="menu1 pointer-cur" id="logo" href="index.html"><img src="image/Nav/logo.svg"></a></li>
+                <li>
+                    <a class="menu1 pointer-cur" id="logo" href="index.html"><img src="image/Nav/logo.svg"></a>
+                </li>
 
                 <li>
                     <a class="menu pointer-cur" href="tour.html">
@@ -71,8 +75,8 @@
                 </li>
                 <li>
                     <a class="menu pointer-cur" id="con" href="contact.html">
-                        <img src="image/Nav/menu6.svg" >
-                        <img src="image/Nav/menu6c.svg" >
+                        <img src="image/Nav/menu6.svg">
+                        <img src="image/Nav/menu6c.svg">
                     </a>
                 </li>
             </ul>
@@ -81,9 +85,9 @@
 
     <div id="text-box">
         <span class="topic-main">ร้านค้าจิตรลดา</span>
-        <span class="topic-sub">ผลิตภัณฑ์จากนมโคแท้ในสวนหลวงจิตรดา</span>          
+        <span class="topic-sub">ผลิตภัณฑ์จากนมโคแท้ในสวนหลวงจิตรดา</span>
     </div>
-  
+
     <div class="fridge">
         <div class="r-fridge">
             <img src="image/Product/fridge_boarder.svg" class="r-fridge_board">
@@ -99,10 +103,10 @@
                     <img src="image/Product/4yogurt.svg" class="rubberBand yogurttt">
                     <img src="image/Product/4yogurt.svg" class="rubberBand yogurttt">
                     <img src="image/Product/4yogurt.svg" class="rubberBand yogurttt">
-                </div>                
+                </div>
             </div>
             <img src="image/Product/right_fridge.svg" id="r_door" class="r-fridge_door pointer-cur" onclick="door()">
-        </div>        
+        </div>
         <div class="l-fridge">
             <img src="image/Product/fridge_boarder.svg" class="l-fridge_board">
             <div class="fridge_product">
@@ -119,7 +123,7 @@
                     <img src="image/Product/2yogurt_Thai-Denmark.svg" class="rubberBand yogurttt">
                     <img src="image/Product/2yogurt_Thai-Denmark.svg" class="rubberBand yogurttt">
                     <img src="image/Product/2yogurt_Thai-Denmark.svg" class="rubberBand yogurttt">
-                </div>                
+                </div>
             </div>
             <img src="image/Product/left_fridge.svg" id="l_door" class="l-fridge_door pointer-cur" onclick="door()">
         </div>
@@ -133,22 +137,22 @@
             <div class="m_Nong-Pho pointer-cur" onclick="show(4)">
                 <div class="hide">
                     <img src="image/Product/5milk_Nong-Pho.svg" class="rubberBand" style="width: 8vw;">
-                    <img src="image/Product/5milk_Nong-Pho.svg" class="rubberBand" style="width: 8vw;">                    
+                    <img src="image/Product/5milk_Nong-Pho.svg" class="rubberBand" style="width: 8vw;">
                 </div>
                 <div>
                     <img src="image/Product/5milk_Nong-Pho.svg" class="rubberBand milk1">
                     <img src="image/Product/5milk_Nong-Pho.svg" class="rubberBand milk1">
                     <img src="image/Product/5milk_Nong-Pho.svg" class="rubberBand milk1">
                     <img src="image/Product/5milk_Nong-Pho.svg" class="rubberBand milk1">
-                    <img src="image/Product/5milk_Nong-Pho.svg" class="rubberBand milk1">    
+                    <img src="image/Product/5milk_Nong-Pho.svg" class="rubberBand milk1">
                 </div>
                 <div class="hide">
                     <img src="image/Product/5milk_Nong-Pho.svg" class="rubberBand" style="width: 8vw;">
                     <img src="image/Product/5milk_Nong-Pho.svg" class="rubberBand" style="width: 8vw;">
                     <img src="image/Product/5milk_Nong-Pho.svg" class="rubberBand" style="width: 8vw;">
-                </div>   
+                </div>
             </div>
-            
+
             <div class="m_pellets pointer-cur" onclick="show(5)">
                 <div>
                     <img src="image/Product/6milk_pellets.svg" class="rubberBand pellet">
@@ -193,8 +197,8 @@
         <img src="image/Product/cupboard_shelf_mb.svg" class="cupboard_shelf_mb" style="margin-top: 42%;">
         <div class="best_shelf">
             <img src="image/Product/BestSeller.svg" class="bestsell">
-            <img src="image/Product/cupboard_shelf.svg" class="cupboard_shelf">   
-            <img src="image/Product/cupboard_shelf_mb.svg" class="cupboard_shelf_mb">     
+            <img src="image/Product/cupboard_shelf.svg" class="cupboard_shelf">
+            <img src="image/Product/cupboard_shelf_mb.svg" class="cupboard_shelf_mb">
         </div>
         <img src="image/Product/cupboard_shelf.svg" class="cupboard_shelf" style="margin-top: 50%;">
         <img src="image/Product/cupboard_shelf_mb.svg" class="cupboard_shelf_mb" style="margin-top: 133%;">
@@ -203,7 +207,7 @@
         <img src="image/Product/cupboard_shelf_mb.svg" class="cupboard_shelf_mb" style="margin-top: 179.5%;">
 
         <img src="image/Product/cupboard_legs.svg" class="cupboard-leg">
-        <img src="image/Product/cupboard_legs_mb.svg" class="cupboard-leg_mb"> 
+        <img src="image/Product/cupboard_legs_mb.svg" class="cupboard-leg_mb">
     </div>
 
     <div id="detailbox_area">
@@ -217,10 +221,11 @@
                         <div id="detail">
                             <p>___</p>
                         </div>
-                    </section>                    
+                    </section>
                 </div>
-            </div>                
+            </div>
         </div>
     </div>
 </body>
+
 </html>
