@@ -1,6 +1,9 @@
-body{
+*{
     margin: 0;
-    padding: 0;
+    padding: 0;  
+    transition: .2s;  
+}
+body{
     overflow-y: hidden;
     overflow-x: hidden;    
     -webkit-user-select: none;
@@ -69,7 +72,7 @@ body{
     position: absolute;
     animation: rotate 15s infinite linear;
     left: 25%;
-    bottom: 62%;
+    bottom: 48%;
     z-index: 0;
     width: 7%;
 }
@@ -85,14 +88,14 @@ body{
 .tracktor{
     position: absolute;
     left: 16.5%;
-    bottom: 25%;
+    bottom: 15%;
     z-index: 0;
     width: 6%;
 }
 .truck{
     position: absolute;
     left: 60%;
-    bottom: 35%;
+    bottom: 25%;
     z-index: 0;
     width: 7%;
 }
@@ -139,35 +142,35 @@ body{
 .l-process{
     position: absolute;
     left: 19%;
-    bottom: 32%;
+    bottom: 35%;
     width: 10%;
     transition: transform .5s;       
 }
 .l-product{
     position: absolute;
     left: 46%;
-    bottom: 20%;
+    bottom: 24%;
     width: 10%;
     transition: transform .5s;          
 }
 .l-tour{
     position: absolute;
     left: 23.5%;
-    bottom: 15%;
+    bottom: 18%;
     width: 10%;
     transition: transform .5s;          
 }
 .l-history{
     position: absolute;
     left: 4%;
-    bottom: 2%;
+    bottom: 11%;
     width: 10%;
     transition: transform .5s;          
 }
 .l-contact{
     position: absolute;
     left: 88%;
-    bottom: 10%;
+    bottom: 5%;
     width: 10%;
     transition: transform .5s; 
 }
@@ -251,185 +254,141 @@ body{
 }
 
 /* Responsive style */
-@media only screen and (max-width: 1499px) {
-    .bg{
-        bottom: 0;
+@media only screen and (max-height: 1440px){
+    .l-history {
+        bottom: 11%;
     }
-    .windmill{
-        position: absolute;
-        width: 6%;
-        right: 2%;
-        bottom: 20%;
+    .l-process {
+        bottom: 36%;
     }
-    .vane{
-        position: absolute;
-        animation: rotate 3s infinite linear;
-        right: 2%;
-        bottom: 72%;
-        z-index: 1;
-        height: 50%;
-    }
-    .pole{
-        width: 20%;
-    }
-    .wheel{
-        position: absolute;
-        animation: rotate 15s infinite linear;
-        left: 25%;
-        bottom: 62%;
-        z-index: 0;
-        width: 7%;
-    }
-    .tracktor{
-        position: absolute;
-        left: 16.5%;
+    .l-product {
         bottom: 25%;
-        z-index: 0;
-        width: 6%;
-    }
-    .truck{
-        position: absolute;
-        left: 60%;
-        bottom: 35%;
-        z-index: 0;
-        width: 7%;
-    }
-}
-@media only screen and (max-width: 1440px) {
-    .windmill{
-        right: 2.5%;
-        bottom: 20%;
-    }
-    .vane{
-        bottom: 72%;
-    }
-    .wheel{
-        bottom: 60%;
-    }
-    .l-process{
-        bottom: 45%;       
-    }
-    .l-product{
-        bottom: 31%;        
     }
     .l-tour{
-        bottom: 25%;        
-    }
-    .l-history{
-        bottom: 19.5%;         
-    }
-    .l-contact{
-        bottom: 15%;
-    }
-}
-@media only screen and (max-width: 1280px) {
-    .windmill{
-        right: 2.5%;
-        bottom: 20%;
-    }
-    .vane{
-        bottom: 71.5%;
+        bottom: 17%;
     }
     .wheel{
-        bottom: 50%;
-    }
-    .tracktor{
-        bottom: 22%;
-    }
-    .truck{
-        bottom: 32%;
-    }
-    .l-process{
-        bottom: 38%;       
-    }
-    .l-product{
-        bottom: 28%;        
-    }
-    .l-tour{
-        bottom: 20%;        
-    }
-    .l-history{
-        bottom: 18%;         
-    }
-    .l-contact{
-        bottom: 13%;
-    }
-}
-@media only screen and (max-width: 1024px) {
-    .windmill{
-        right: 2.5%;
-        bottom: 20%;
-    }
-    .vane{
-        bottom: 72%;
-    }
-    .wheel{
-        bottom: 44%;
+        bottom: 55%;
     }
     .tracktor{
         bottom: 18%;
     }
     .truck{
-        bottom: 25%;
-    }
-    .l-process{
-        bottom: 33%;       
-    }
-    .l-product{
-        bottom: 25%;        
-    }
-    .l-tour{
-        bottom: 20%;        
-    }
-    .l-history{
-        bottom: 15%;         
-    }
-    .l-contact{
-        bottom: 13%;
+        bottom: 28%;
     }
 }
-@media only screen and (max-width: 900px) {
-    .windmill{
-        right: 2.5%;
+@media only screen and (max-height: 1080px){
+    .l-process {
+        bottom: 38%;
+    }
+}
+@media only screen and (max-width: 1440px){
+    .bg{
+        bottom: -5%;
+    }
+    .wheel {
+        bottom: 55%;
+    }
+    .l-history {
         bottom: 15%;
     }
-    .vane{
-        bottom: 72%;
-    }
-    .wheel{
+    .l-process {
         bottom: 40%;
     }
-    .tracktor{
-        bottom: 17%;
+    .l-tour {
+        bottom: 22%;
     }
-    .truck{
-        bottom: 24%;
-    }
-    .l-process{
-        bottom: 31%;       
-    }
-    .l-product{
-        bottom: 20%;        
-    }
-    .l-tour{
-        bottom: 17%;        
-    }
-    .l-history{
-        bottom: 13%;         
+    .l-product {
+        bottom: 25%;
     }
     .l-contact{
-        bottom: 12%;
+        bottom: 10%;
+    }
+    .tracktor {
+        bottom: 20%;
+    }
+    .truck {
+        bottom: 30%;
+    }
+}
+@media only screen and (max-width: 1366px){
+    .wheel {
+        bottom: 58%;
+    }
+    .l-history {
+        bottom: 18%;
+    }
+    .l-process {
+        bottom: 42%;
+    }
+    .l-product {
+        bottom: 30%;
+    }
+    .tracktor {
+        bottom: 22%;
+    }
+    .truck {
+        bottom: 33%;
+    }
+}
+@media only screen and (max-width: 1280px){
+    .bg{
+        bottom: 0%;
+    }
+    .wheel {
+        bottom: 55%;
+    }
+    .l-history {
+        bottom: 19%;
+    }
+    .l-process {
+        bottom: 40%;
+    }
+    .l-product {
+        bottom: 30%;
+    }
+    .l-tour {
+        bottom: 24%;
+    }
+    .l-contact{
+        bottom: 11%;
+    }
+    .truck {
+        bottom: 30%;
+    }
+    .tracktor {
+        bottom: 24%;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .wheel {
+        bottom: 50%;
+    }
+    .l-history {
+        bottom: 18%;
+    }
+    .l-process {
+        bottom: 38%;
+    }
+    .l-product {
+        bottom: 26%;
+    }
+    .l-tour {
+        bottom: 22%;
+    }
+    .tracktor {
+        bottom: 22%;
     }
 }
 
+/* mobile responsive */
 @media only screen and (orientation: portrait) {
     .bg{
         display: none;
     }
-    .mob-bg{
+    .mob-bg {
         width: 100%;
-        bottom: 0;
-        size: 100%;
+        bottom: -12%;
         z-index: -1;
         position: absolute;
         display: inline !important;
@@ -440,35 +399,31 @@ body{
     .logo-mob{
         display: inline !important;
         position: absolute;
-        width: 25%;
-        top: 6%;
-        left: 37.5%;
+        width: 18%;
+        top: 5%;
+        left: 42%;
         animation: logo 1s linear;
     }
     @keyframes logo{
         0%{top: 10%; opacity: 0;}
-        100%{top: 6%; opacity: 1;}
+        100%{top: 5%; opacity: 1;}
     }                
-    .windmill{
-        position: absolute;
-        width: 9%;
+    .windmill {
+        width: 8%;
         left: 17%;
-        top: 73%;
+        right: 0%;
+        bottom: 3%;
     }
     .vane{
-        position: absolute;
-        animation: rotate 3s infinite linear;
-        /* right: 45%; */
-        bottom: 69%;
-        z-index: 1;
+        bottom: 71.5%;
     }
     .wheel{
         position: absolute;
         animation: rotate 15s infinite linear;
         left: 32%;
-        top: 38%;
+        top: 29%;
         z-index: 1;
-        width: 10%;
+        width: 11%;
     }
     .pole{
         width: 20%;
@@ -492,14 +447,14 @@ body{
     .l-process{
         position: absolute;
         left: 27%;
-        top: 47%;
+        top: 40%;
         width: 16%;
         transition: transform .5s;          
     }
     .l-product{
         position: absolute;
         left: 58%;
-        top: 54%;
+        top: 51%;
         width: 16%;
         transition: transform .5s;          
     }
@@ -513,19 +468,42 @@ body{
     .l-history{
         position: absolute;
         left: 20%;
-        top: 62%;
+        top: 63%;
         width: 16%;
         transition: transform .5s;          
     }
     .l-contact{
         position: absolute;
         left: 12%;
-        top: 86%;
+        top: 88%;
         width: 16%;
         transition: transform .5s; 
+    }
+    .tracktor{
+        bottom: 35%;
+        left: 25%;
+        width: 14%;
+    }
+    .truck{
+        bottom: 40%;
+        left: 80%;
+        width: 15%;
+    }
+    .tracktor:hover{
+        animation: vehicle-tracktor 0s linear;
+    }
+    .truck:hover{
+        animation: vehicle-truck 0s linear;
     }
 }
 @media only screen and (max-width: 414px) {
+    .mob-bg {
+        bottom: 0%;
+    }
+    .logo-mob{
+        width: 25%;
+        left: 37.5%;
+    }
     .windmill{
         position: absolute;
         width: 9%;
@@ -535,8 +513,10 @@ body{
     .vane{
         position: absolute;
         animation: rotate 3s infinite linear;
-        bottom: 69%;
+        bottom: 73%;
         z-index: 1;
+        height: 45%;
+        right: -17%;
     }
     .wheel{
         position: absolute;
@@ -601,97 +581,50 @@ body{
         transition: transform .5s; 
     }
 }
-@media only screen and (max-width: 375px) {
-    .bg{
-        height: 100vh;
+@media only screen and (max-width: 375px){
+    .logo-mob {
+        width: 30%;
+        left: 35%;
     }
-    .windmill{
-        left: 17%;
-        top: 75%;
+    .windmill {
+        left: 16%;
+        top: 72%;
     }
-    .vane{
-        bottom: 72%;
+    .vane {
+        bottom: 76%;
+        height: 44%;
+        right: -19%;
     }
     .wheel{
-        left: 32%;
-        top: 46%;
-    }
-    .pole{
-        width: 20%;
+        top: 38%;
     }
     .l-process{
-        left: 27%;
-        top: 53.5%;
+        width: 20%;
+        top: 45%;
     }
     .l-product{
-        left: 58%;
-        top: 60%;
+        width: 20%;
+        top: 52%;
     }
     .l-tour{
-        left: 52%;
-        top: 69%;
+        width: 20%;
+        top: 61%;
     }
     .l-history{
-        left: 20%;
-        top: 66%;
+        width: 20%;
+        top: 60%;
+        left: 18%;
     }
-    .l-contact{
-        left: 12%;
-        top: 86.5%;
+    .l-contact {
+        width: 20%;
+        top: 85%;
+        left: 6%;
     }
 }
 @media only screen and (max-width: 320px) {
-    /* .logo-mob{
-        width: 35%;
-        top: 10%;
-        left: 32.5%;
-        animation: logo 1s linear;
-    }
-    @keyframes logo{
-        0%{top: 15%; opacity: 0;}
-        100%{top: 10%; opacity: 1;}
-    } */
-    .windmill{
-        position: absolute;
-        width: 9%;
-        left: 17%;
-        top: 73%;
-    }
-    .vane{
-        position: absolute;
-        animation: rotate 3s infinite linear;
-        bottom: 66.5%;
-        z-index: 1;
-    }
-    .wheel{
-        position: absolute;
-        animation: rotate 15s infinite linear;
-        left: 32%;
-        top: 38%;
-        z-index: 1;
-        width: 10%;
-    }
-    .pole{
-        width: 20%;
-    }
-    .l-process{
-        left: 27%;
-        top: 47%;
-    }
-    .l-product{
-        left: 58%;
-        top: 54.5%;
-    }
-    .l-tour{
-        left: 52%;
-        top: 63%;
-    }
-    .l-history{
-        left: 20%;
-        top: 61%;
-    }
-    .l-contact{
-        left: 12%;
-        top: 85%;
+    .vane {
+        bottom: 73%;
+        height: 42%;
+        right: -13%;
     }
 }
