@@ -20,13 +20,10 @@ body {
 }
 
 .cur{
-    cursor: url('default-s.png'), default;
+    cursor: url('default.png'), default;
 }
 .pointer-cur{
     cursor: url('pointer.png'), pointer;
-}
-.pointer-cur:active{
-    cursor: url('pointer-s.png'), pointer;
 }
 
 /* navbar */
@@ -303,14 +300,15 @@ body {
         margin-top: 3%;
         left: 35%;
     }
-    .windmill{
-        width: 5%;
-        right: 33%;
+    .windmill {
+        width: 4.5%;
+        right: 34.5%;
+        bottom: 21%;
     }
-    .home{
-        width: 235%;
-        left: -58%;
-        margin-bottom: -5%;        
+    .home {
+        width: 265%;
+        left: -74%;
+        margin-bottom: -8%;
     }
 }
 @media only screen and (max-width: 768px) {

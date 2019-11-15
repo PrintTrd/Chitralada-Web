@@ -17,14 +17,10 @@ body {
 }
 
 .cur{
-    cursor: url('default-s.png'), default;
-    height: 100%;
+    cursor: url('default.png'), default;
 }
 .pointer-cur{
     cursor: url('pointer.png'), pointer;
-}
-.pointer-cur:active{
-    cursor: url('pointer-s.png'), pointer;
 }
 
 /* navbar */
