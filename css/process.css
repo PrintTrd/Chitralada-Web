@@ -19,12 +19,14 @@ body {
     height: 100%;
 }
 
-.cur{
+.cur {
     cursor: url('default.png'), default;
 }
-.pointer-cur{
+
+.pointer-cur {
     cursor: url('pointer.png'), pointer;
 }
+
 
 /* .bg-process {
     background: linear-gradient(to bottom, #ffffff 65%, #c5e9ef 100%);
@@ -36,7 +38,7 @@ body {
 /* navbar */
 
 .navbar {
-    background-color: transparent;
+    background-color: white;
     width: 100vw;
     height: 10%;
     position: fixed;
@@ -50,7 +52,7 @@ body {
 
 .nav {
     width: 100%;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .navbar ul {
@@ -115,6 +117,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-top: 5%;
 }
 
 .main-text2 {

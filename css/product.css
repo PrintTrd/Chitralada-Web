@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Taviraj');
 @import url('https://fonts.googleapis.com/css?family=Sarabun:200&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
     transition: .2s;
 }
-body{
+
+body {
     overflow-x: hidden;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -16,30 +16,40 @@ body{
     font-size: 100%;
     height: 100%;
 }
-h3{
+
+h3 {
     font-size: 220%;
 }
-p{
+
+p {
     font-size: 200%;
 }
+
+
 /* scrollbar*/
+
 ::-webkit-scrollbar {
     width: 0px;
 }
 
-  /* With a .cur fallback */
-.cur{
+
+/* With a .cur fallback */
+
+.cur {
     cursor: url('default.png'), default;
 }
-.pointer-cur{
+
+.pointer-cur {
     cursor: url('pointer.png'), pointer;
 }
 
+
 /* navbar */
-.navbar{
+
+.navbar {
     /*display: block;
     text-align: center; */
-    background-color: transparent;
+    background-color: white;
     width: 100vw;
     height: 10%;
     position: fixed;
@@ -50,41 +60,58 @@ p{
     z-index: 4;
     transition: top 0.8s;
 }
+
 .nav {
     width: 100%;
-    margin-top: 5%;
+    margin-top: 2%;
 }
-.navbar ul{
+
+.navbar ul {
     position: relative;
     left: 4.5%;
     list-style-type: none;
 }
-.navbar ul li{ 
+
+.navbar ul li {
     text-align: center;
     float: left;
     width: 10%;
     padding: 1.5%;
-} 
-#logo img{
+}
+
+#logo img {
     margin-top: -12%;
     width: 70%;
 }
-#con img{
+
+#con img {
     width: 50%;
     margin-left: -30%;
     margin-top: 3%;
 }
-#home img{
+
+#home img {
     width: 50%;
     margin-left: 30%;
     margin-top: -2%;
 }
-/* hover menu */
-.menu img:last-child{display:none}
-.menu:hover img:first-child{display:none}
-.menu:hover img:last-child{display:inline-block}
 
-#text-box{
+
+/* hover menu */
+
+.menu img:last-child {
+    display: none
+}
+
+.menu:hover img:first-child {
+    display: none
+}
+
+.menu:hover img:last-child {
+    display: inline-block
+}
+
+#text-box {
     width: 100vw;
     top: 20.5vh;
     position: absolute;
@@ -93,17 +120,19 @@ p{
     flex-direction: column;
     justify-content: center;
 }
-.topic-main{
+
+.topic-main {
     font-size: 3vw;
-    color:#3c6868;
+    color: #3c6868;
     font-weight: bold;
 }
-.topic-sub{
+
+.topic-sub {
     font-size: 2vw;
-    color:#e97625;
+    color: #e97625;
 }
 
-@-webkit-keyframes rubberBand{
+@-webkit-keyframes rubberBand {
     from {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
@@ -133,48 +162,44 @@ p{
         transform: scale3d(1, 1, 1);
     }
 }
-@keyframes rubberBand{
+
+@keyframes rubberBand {
     from {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
-
     30% {
         -webkit-transform: scale3d(1, 0.75, 1);
         transform: scale3d(1, 0.75, 1);
     }
-
     40% {
         -webkit-transform: scale3d(0.75, 1.25, 1);
         transform: scale3d(0.75, 1.25, 1);
     }
-
     50% {
         -webkit-transform: scale3d(1.15, 0.85, 1);
         transform: scale3d(1.15, 0.85, 1);
     }
-
     65% {
         -webkit-transform: scale3d(0.95, 1.05, 1);
         transform: scale3d(0.95, 1.05, 1);
     }
-
     75% {
         -webkit-transform: scale3d(1.05, 0.95, 1);
         transform: scale3d(1.05, 0.95, 1);
     }
-
     to {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
 }
-.rubberBand:hover{
+
+.rubberBand:hover {
     -webkit-animation: rubberBand 0.8s linear;
     animation: rubberBand 0.8s linear;
 }
 
-#detailbox_area{
+#detailbox_area {
     z-index: 5;
     position: fixed;
     display: flex;
@@ -188,7 +213,8 @@ p{
     transform: scale(0);
     transition: .3s;
 }
-.area{
+
+.area {
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -196,18 +222,20 @@ p{
     justify-content: center;
     align-items: center;
 }
-.detailbox{
+
+.detailbox {
     z-index: 6;
     width: 40vw;
-    height: 500px;   
+    height: 500px;
     padding: 2%;
     position: fixed;
-    align-items: center;    
+    align-items: center;
     border: 5px solid #d78b8b;
     border-radius: 2.5rem;
     background: rgb(253, 247, 234);
 }
-#flex_detail{
+
+#flex_detail {
     opacity: 0;
     transition: 2s;
     height: 98%;
@@ -217,18 +245,21 @@ p{
     align-items: center;
     margin: auto;
 }
-.cross{
+
+.cross {
     z-index: 7;
     width: 5%;
     right: 5%;
     position: absolute;
 }
-#image{
+
+#image {
     position: relative;
     min-width: 30%;
     max-height: 95%;
 }
-#text_detail{
+
+#text_detail {
     text-align: start;
     position: relative;
     width: 31.25%;
@@ -236,10 +267,11 @@ p{
     flex-direction: column;
 }
 
-.line{
+.line {
     display: none;
 }
-.fridge{
+
+.fridge {
     position: relative;
     height: 70%;
     margin-top: 39vh;
@@ -247,17 +279,20 @@ p{
     display: block;
     overflow: hidden;
 }
-.l-fridge{
+
+.l-fridge {
     width: 50vw;
     left: 0vw;
     position: absolute;
 }
-.r-fridge{
+
+.r-fridge {
     width: 50vw;
     left: 50vw;
     position: absolute;
 }
-.l-fridge_door{
+
+.l-fridge_door {
     animation: l-fridge 1.5s linear;
     left: -45vw;
     width: 50vw;
@@ -265,7 +300,8 @@ p{
     z-index: 2;
     overflow-x: hidden;
 }
-.r-fridge_door{
+
+.r-fridge_door {
     animation: r-fridge 1.5s linear;
     left: 45vw;
     width: 50vw;
@@ -273,104 +309,136 @@ p{
     z-index: 2;
     overflow-x: hidden;
 }
-@keyframes l-fridge{
-    0%{left: 0vw;}
-    65%{left: -47vw;}
-    100%{left: -45vw;}
+
+@keyframes l-fridge {
+    0% {
+        left: 0vw;
+    }
+    65% {
+        left: -47vw;
+    }
+    100% {
+        left: -45vw;
+    }
 }
-@keyframes r-fridge{
-    0%{left: 0vw;}
-    65%{left: 47vw;}
-    100%{left: 45vw;}
+
+@keyframes r-fridge {
+    0% {
+        left: 0vw;
+    }
+    65% {
+        left: 47vw;
+    }
+    100% {
+        left: 45vw;
+    }
 }
-.fridge_shelf{
+
+.fridge_shelf {
     width: 98vw;
     margin-top: 15%;
     position: absolute;
     z-index: -1;
 }
-.r_fridge_shelf{
+
+.r_fridge_shelf {
     display: none;
 }
-.l_fridge_shelf{
+
+.l_fridge_shelf {
     display: none;
 }
-.l-fridge_board{
+
+.l-fridge_board {
     width: 50vw;
     left: 0vw;
     position: absolute;
     z-index: -1;
 }
-.r-fridge_board{
+
+.r-fridge_board {
     width: 50vw;
     position: absolute;
     z-index: -1;
 }
 
+
 /* display: grid;
 grid-template-columns: repeat(auto-fill, 25%); */
-.fridge_product{
+
+.fridge_product {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    justify-items: center; 
+    justify-items: center;
     position: absolute;
     left: 7.5%;
     right: 7.5%;
 }
-.icecream{
+
+.icecream {
     display: inline-flex;
     justify-content: space-between;
-    justify-items: center;    
+    justify-items: center;
     margin-top: 19%;
 }
-.butter{
+
+.butter {
     display: inline-flex;
     justify-content: space-between;
-    justify-items: center;    
+    justify-items: center;
     margin-top: 16%;
 }
-.yogurt{
+
+.yogurt {
     display: inline-flex;
     justify-content: space-around;
-    justify-items: center;    
+    justify-items: center;
     margin-top: 10%;
 }
-.yogurttt{
+
+.yogurttt {
     width: 8vw;
 }
 
-.cupboard{
+.cupboard {
     width: 100%;
 }
-.cupboard-leg{
+
+.cupboard-leg {
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
 }
-.cupboard-leg_mb{
+
+.cupboard-leg_mb {
     display: none;
 }
-.cupboard_shelf{
+
+.cupboard_shelf {
     position: absolute;
     z-index: 0;
 }
-.cupboard_shelf_mb{
+
+.cupboard_shelf_mb {
     display: none;
 }
-.cupboard_product{
+
+.cupboard_product {
     display: flex;
     flex-direction: column;
     position: absolute;
     left: 4vw;
     right: 4vw;
 }
-.best_shelf{
+
+.best_shelf {
     position: absolute;
     width: 100vw;
     margin-top: 33%;
 }
-.bestsell{
+
+.bestsell {
     margin-top: -2%;
     position: absolute;
     width: 8vw;
@@ -378,81 +446,98 @@ grid-template-columns: repeat(auto-fill, 25%); */
     z-index: 2;
     animation: swing .8s infinite alternate;
 }
-@keyframes swing{
-    0%{transform: rotate(-5deg);}
-    100%{transform: rotate(5deg);}
+
+@keyframes swing {
+    0% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
 }
-.m_Nong-Pho{
+
+.m_Nong-Pho {
     display: inline-flex;
     justify-content: space-between;
-    justify-items: center;    
+    justify-items: center;
 }
-.milk1{
+
+.milk1 {
     width: 8vw;
 }
-.milk2{
+
+.milk2 {
     width: 8vw;
     margin-left: 1.5vw;
 }
-.milk3{
+
+.milk3 {
     width: 10vw;
 }
-.m_pellets{
+
+.m_pellets {
     display: inline-flex;
     justify-content: space-around;
     justify-items: center;
-    margin-top: 4%; 
+    margin-top: 4%;
 }
-.pellet{
+
+.pellet {
     width: 9vw;
     margin-left: 1.5vw;
 }
-.m_TD{
+
+.m_TD {
     display: inline-flex;
     justify-content: space-between;
     justify-items: center;
     margin-top: 6%;
 }
-.m_Chit{
+
+.m_Chit {
     display: inline-flex;
     justify-content: space-between;
     margin-top: 6%;
     align-self: flex-end;
 }
 
+
 /* responsive */
+
 @media only screen and (max-width: 1921px) {
-    #text_detail{
+    #text_detail {
         width: 38%;
     }
-    h3{
+    h3 {
         font-size: 200%;
     }
     p {
         font-size: 180%;
     }
 }
-@media only screen and (max-width: 1440px){
-    .detailbox{
+
+@media only screen and (max-width: 1440px) {
+    .detailbox {
         width: 50vw;
         height: 450px;
     }
     #text_detail {
         width: 36.5%;
     }
-    h3{
+    h3 {
         font-size: 180%;
     }
     p {
         font-size: 150%;
     }
 }
-@media only screen and (max-width: 1024px){
-    .detailbox{
+
+@media only screen and (max-width: 1024px) {
+    .detailbox {
         width: 50vw;
         height: 350px;
     }
-    h3{
+    h3 {
         font-size: 150%;
     }
     p {
@@ -460,9 +545,11 @@ grid-template-columns: repeat(auto-fill, 25%); */
     }
 }
 
+
 /* mobile responsive */
-@media only screen and (orientation: portrait){
-    .line{
+
+@media only screen and (orientation: portrait) {
+    .line {
         display: inline;
         width: 120vw;
         position: absolute;
@@ -478,159 +565,173 @@ grid-template-columns: repeat(auto-fill, 25%); */
     .topic-sub {
         font-size: 3vw;
     }
-
-    .fridge{
+    .fridge {
         height: 70%;
         margin-top: 0;
         margin-bottom: 10%;
         top: 33%;
     }
-    .r-fridge{
+    .r-fridge {
         width: 100vw;
         left: 0;
     }
-    .r-fridge_board{
+    .r-fridge_board {
         width: 100vw;
     }
-    .r-fridge_door{
+    .r-fridge_door {
         left: 93vw;
         width: 100vw;
     }
-    .l-fridge{
+    .l-fridge {
         width: 100vw;
         left: 0vw;
         margin-top: 62%;
     }
-    .l-fridge_board{
+    .l-fridge_board {
         width: 100vw;
     }
-    .l-fridge_door{
+    .l-fridge_door {
         left: -93vw;
         width: 100vw;
     }
-    @keyframes l-fridge{
-        0%{left: 0vw;}
-        75%{left: -97vw;}
-        100%{left: -93vw;}
+    @keyframes l-fridge {
+        0% {
+            left: 0vw;
+        }
+        75% {
+            left: -97vw;
+        }
+        100% {
+            left: -93vw;
+        }
     }
-    @keyframes r-fridge{
-        0%{left: 0vw;}
-        75%{left: 97vw;}
-        100%{left: 93vw;}
+    @keyframes r-fridge {
+        0% {
+            left: 0vw;
+        }
+        75% {
+            left: 97vw;
+        }
+        100% {
+            left: 93vw;
+        }
     }
-    .fridge_shelf{
+    .fridge_shelf {
         display: none;
-    }    
-    .r_fridge_shelf{
+    }
+    .r_fridge_shelf {
         display: inline;
         width: 98vw;
         margin-left: 1%;
         margin-top: 30%;
     }
-    .l_fridge_shelf{
+    .l_fridge_shelf {
         display: inline;
         width: 98vw;
         margin-left: 1%;
         margin-top: 57%;
     }
-    .yogurttt{
+    .yogurttt {
         width: 16vw;
     }
-    .cupboard{
+    .cupboard {
         margin-top: 58%;
     }
-    .cupboard-leg{
+    .cupboard-leg {
         display: none;
     }
-    .cupboard-leg_mb{
+    .cupboard-leg_mb {
         display: inline;
         margin-left: auto;
         margin-right: auto;
     }
-    .cupboard_shelf{
+    .cupboard_shelf {
         display: none;
     }
-    .cupboard_shelf_mb{
+    .cupboard_shelf_mb {
         display: inline;
         position: absolute;
         z-index: 0;
     }
-    .cupboard_product{
+    .cupboard_product {
         left: 7.5vw;
         right: 7.5vw;
     }
-    .best_shelf{
+    .best_shelf {
         margin-top: 88%;
     }
-    .bestsell{
+    .bestsell {
         width: 18vw;
         left: 3vw;
         margin-top: -4%;
     }
-    .hide{
+    .hide {
         display: none;
         width: 0px;
     }
-    .m_TD{
+    .m_TD {
         margin-top: 30%;
     }
-    .m_Chit{
+    .m_Chit {
         margin-top: 36.5%;
     }
-    .milk1{
+    .milk1 {
         width: 16.35vw;
         margin-top: 10%;
     }
-    .milk2{
+    .milk2 {
         width: 13vw;
         margin-left: 0.5vw;
     }
-    .milk3{
+    .milk3 {
         width: 14vw;
     }
-    .m_pellets{
+    .m_pellets {
         margin-top: 17%;
     }
-    .pellet{
+    .pellet {
         width: 21vw;
         margin-left: 1.5vw;
     }
 }
-@media only screen and (max-width: 1440px) and (orientation: portrait){
-    .fridge{
+
+@media only screen and (max-width: 1440px) and (orientation: portrait) {
+    .fridge {
         height: 125%;
         margin-bottom: 0%;
     }
-    .cupboard{
+    .cupboard {
         margin-top: 50%;
     }
 }
+
 @media only screen and (max-width: 768px) {
-    .fridge{
+    .fridge {
         top: 32%;
         height: 107%;
     }
-    .cupboard{
+    .cupboard {
         margin-top: 45%;
     }
-    .detailbox{
+    .detailbox {
         width: 60vw;
         padding: 4%;
     }
-    #text_detail{
+    #text_detail {
         width: 37.25%;
     }
-    .cross{
+    .cross {
         width: 7%;
         right: 7%;
     }
-    h3{
+    h3 {
         font-size: 130%;
     }
     p {
         font-size: 115%;
     }
 }
+
 @media only screen and (max-width: 738px) {
     .milk1 {
         width: 16.25vw;
@@ -640,11 +741,13 @@ grid-template-columns: repeat(auto-fill, 25%); */
         margin-left: 0.45vw;
     }
 }
+
 @media only screen and (max-width: 686px) {
     .milk2 {
         margin-left: 0.2vw;
     }
 }
+
 @media only screen and (max-width: 630px) {
     .m_pellets {
         margin-top: 17.5%;
@@ -653,12 +756,13 @@ grid-template-columns: repeat(auto-fill, 25%); */
         width: 16vw;
     }
 }
+
 @media only screen and (max-width: 508px) {
-    .detailbox{
+    .detailbox {
         width: 75vw;
         height: 320px;
     }
-    h3{
+    h3 {
         font-size: 120%;
     }
     p {
@@ -668,6 +772,7 @@ grid-template-columns: repeat(auto-fill, 25%); */
         margin-left: 0.05vw;
     }
 }
+
 @media only screen and (max-width: 473px) {
     .topic-main {
         font-size: 6vw;
@@ -675,7 +780,7 @@ grid-template-columns: repeat(auto-fill, 25%); */
     .topic-sub {
         font-size: 4vw;
     }
-    h3{
+    h3 {
         font-size: 18px;
     }
     p {
@@ -694,6 +799,7 @@ grid-template-columns: repeat(auto-fill, 25%); */
         margin-left: 0vw;
     }
 }
+
 @media only screen and (max-width: 422px) {
     .fridge {
         top: 30%;
@@ -710,16 +816,17 @@ grid-template-columns: repeat(auto-fill, 25%); */
         width: 14vw;
         margin-left: 1.5vw;
     }
-    .m_TD{
+    .m_TD {
         margin-top: 27.5%;
     }
-    #hide{
+    #hide {
         display: none;
     }
     .m_Chit {
         margin-top: 35.5%;
     }
 }
+
 @media only screen and (max-width: 378px) {
     .detailbox {
         height: 250px;

@@ -20,12 +20,14 @@ body {
     overflow-x: hidden;
 }
 
-.cur{
+.cur {
     cursor: url('default.png'), default;
 }
-.pointer-cur{
+
+.pointer-cur {
     cursor: url('pointer.png'), pointer;
 }
+
 
 /* .bg-process {
     background: linear-gradient(to bottom, #ffffff 65%, #c5e9ef 100%);
@@ -33,9 +35,11 @@ body {
     width: 100%;
 } */
 
+
 /* navbar */
+
 .navbar {
-    background-color: transparent;
+    background-color: white;
     width: 100vw;
     height: 10%;
     position: fixed;
@@ -49,7 +53,7 @@ body {
 
 .nav {
     width: 100%;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .navbar ul {
@@ -105,6 +109,7 @@ body {
 
 
 /* topic */
+
 .topic-text {
     width: auto;
     height: 60%;
@@ -149,6 +154,7 @@ h1 {
 
 
 /* text2-pic_car */
+
 .text2 {
     position: relative;
     width: 100%;
@@ -183,6 +189,7 @@ h1 {
 
 
 /* text3-pic_cow2 */
+
 .text3 {
     position: relative;
     width: auto;
@@ -216,6 +223,7 @@ h1 {
 
 
 /* text4-pic_cow3_milk*/
+
 .text4 {
     position: relative;
     width: auto;
@@ -255,6 +263,7 @@ h1 {
 
 
 /* text5-pic__milk2*/
+
 .text5 {
     position: relative;
     width: auto;
@@ -288,6 +297,7 @@ h1 {
 
 
 /* text6-pic_foot*/
+
 .text6 {
     position: relative;
     width: auto;
@@ -318,9 +328,11 @@ h1 {
 
 
 /* all-cloud */
+
 .cloud1 {
     z-index: 1;
 }
+
 .cloud1 .cloud1-1 {
     width: 20%;
     right: -5%;
@@ -328,6 +340,7 @@ h1 {
     position: absolute;
     animation: mymove 8s infinite;
 }
+
 .cloud1 .cloud1-2 {
     width: 10%;
     top: 350px;
@@ -335,6 +348,7 @@ h1 {
     position: absolute;
     animation: mymove 9s infinite;
 }
+
 .cloud1 .cloud1-3 {
     width: 20%;
     top: 700px;
@@ -342,6 +356,7 @@ h1 {
     position: absolute;
     animation: mymove2 11s infinite;
 }
+
 .cow .cloud2 {
     width: 20%;
     position: absolute;
@@ -359,6 +374,7 @@ h1 {
     z-index: 1;
     animation: mymove 7s infinite;
 }
+
 .car1 .cloud4 {
     width: 10%;
     top: 120px;
@@ -387,6 +403,7 @@ h1 {
 
 
 /* animation cloud */
+
 @keyframes mymove {
     0%,
     100% {
@@ -396,6 +413,7 @@ h1 {
         transform: translate(100px, 0);
     }
 }
+
 @keyframes mymove2 {
     0%,
     100% {
