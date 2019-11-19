@@ -33,7 +33,6 @@ body {
 
 .navbar {
     width: 100vw;
-    height: 3cm;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -47,7 +46,7 @@ body {
     background-color: white;
     width: 100%;
     /* margin-top: 2%; */
-    height: 90%;
+    height: 3cm;
 }
 
 .navbar ul {
