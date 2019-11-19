@@ -32,9 +32,8 @@ body {
 /* navbar */
 
 .navbar {
-    background-color: white;
     width: 100vw;
-    height: 10%;
+    height: 3cm;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -45,6 +44,7 @@ body {
 }
 
 .nav {
+    background-color: white;
     width: 100%;
     /* margin-top: 2%; */
     height: 90%;
@@ -54,6 +54,7 @@ body {
     position: relative;
     left: 4.5%;
     list-style-type: none;
+    margin-top: 0.5%;
 }
 
 .navbar ul li {
