@@ -46,12 +46,11 @@ p {
 
 /* navbar */
 
+
+/* nav */
+
 .navbar {
-    /*display: block;
-    text-align: center; */
-    background-color: white;
     width: 100vw;
-    height: 10%;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -62,15 +61,17 @@ p {
 }
 
 .nav {
+    background-color: white;
     width: 100%;
     /* margin-top: 2%; */
-    height: 90%;
+    height: 3cm;
 }
 
 .navbar ul {
     position: relative;
     left: 4.5%;
     list-style-type: none;
+    margin-top: 0.5%;
 }
 
 .navbar ul li {
