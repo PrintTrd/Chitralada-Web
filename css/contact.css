@@ -280,14 +280,13 @@ body {
         bottom: 33%;
     }
     .home {
-        width: 188%;
+        width: 135%;
         margin-bottom: -2%;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .speechBalloon {
-        height: 45%;
         bottom: 45%;
     }
     .facebook_mb {
@@ -304,12 +303,36 @@ body {
         margin-top: 3%;
         left: 35%;
     }
+    .vane{
+        bottom: 69%;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .home {
+        width: 187%;
+    }
+    .speechBalloon{
+        bottom: 42%;
+        height: 42%;
+    }
+    .vane{
+        bottom: 71.5%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .vane{
+        bottom: 66%;
+    }
 }
 
 @media only screen and (max-width: 414px) {
     .speechBalloon {
-        height: 40%;
-        bottom: 35%;
+        bottom: 40%;
+    }
+    .vane{
+        bottom: 68%;
     }
 }
 
