@@ -4,7 +4,7 @@
 }
 .topnav {
     overflow: hidden;
-    background-color: transparent;
+    background-color: white;
     width: 100%;
     position: fixed;
     z-index: 9;
