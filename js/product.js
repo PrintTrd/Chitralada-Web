@@ -71,15 +71,11 @@ function rendata(index){
 }
 
 function show(nowIndex){
-    // detailbox_area.classList.add("show");
     detailbox_area.style.transform = "scale(1)";
     rendata(nowIndex);
-    flex_detail.style.opacity = 1;
 }
 function hide(){ 
-    // detailbox_area.classList.remove("show");
     detailbox_area.style.transform = "scale(0)";
-    flex_detail.style.opacity = 0;
 }
 
 var state = 1;

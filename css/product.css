@@ -157,7 +157,6 @@ p {
 }
 
 #flex_detail {
-    opacity: 0;
     transition: 2s;
     height: 98%;
     display: flex;
