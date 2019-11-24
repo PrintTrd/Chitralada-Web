@@ -4,8 +4,7 @@
     transition: .2s;  
 }
 body{
-    overflow-y: hidden;
-    overflow-x: hidden;    
+    overflow: hidden; 
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -20,6 +19,14 @@ body{
 /* .pointer-cur:active{
     cursor: url('pointer.png'), pointer;
 } */
+
+.cont {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 2560px;
+    margin: auto;
+}
 
 .bg{
     width: 100%;
