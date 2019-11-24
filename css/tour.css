@@ -28,6 +28,14 @@ body {
     cursor: url('pointer.png'), pointer;
 }
 
+.cont {
+    position: relative;
+    /* border: 1px solid red; */
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+
 
 /* .bg-process {
     background: linear-gradient(to bottom, #ffffff 65%, #c5e9ef 100%);
@@ -310,6 +318,7 @@ h1 {
 .foot {
     position: absolute;
     width: 100%;
+    font-size: 0;
 }
 
 .text6 p {
