@@ -274,10 +274,10 @@ p {
 }
 
 .fridge {
-    position: relative;
+    /* position: absolute; */
     height: 70%;
-    margin-top: 39vh;
-    margin-bottom: 3.5%;
+    margin-top: 28%;
+    margin-bottom: 35%;
     display: block;
     overflow: hidden;
 }
