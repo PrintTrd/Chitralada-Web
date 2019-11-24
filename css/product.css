@@ -20,7 +20,7 @@ body {
     overflow-x: hidden;
     position: relative;
     width: 100%;
-    max-width: 1440px;
+    max-width: 2560px;
     margin: auto;
 }
 
@@ -487,10 +487,7 @@ grid-template-columns: repeat(auto-fill, 25%); */
         font-size: 3vw;
     }
     .fridge {
-        height: 70%;
-        margin-top: 0;
-        margin-bottom: 10%;
-        top: 33%;
+        margin-top: 5%;
     }
     .r-fridge {
         width: 100vw;
@@ -617,20 +614,12 @@ grid-template-columns: repeat(auto-fill, 25%); */
 }
 
 @media only screen and (max-width: 1440px) and (orientation: portrait) {
-    .fridge {
-        height: 125%;
-        margin-bottom: 0%;
-    }
     .cupboard {
         margin-top: 50%;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .fridge {
-        top: 32%;
-        height: 107%;
-    }
     .cupboard {
         margin-top: 45%;
     }
