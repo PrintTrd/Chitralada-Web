@@ -20,6 +20,27 @@ body {
     height: 100%;
 }
 
+footer{
+    position: fixed;
+    z-index: 3;
+    height: 12%;
+    width: 100%;
+    background:#7e9b6a;
+    text-align: right;
+    align-items: center;
+    display: flex;
+    bottom: 0;
+    justify-content: flex-end;
+}
+
+footer p {
+    padding: 0% 3%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2em;
+    color: white;
+    top: 0;
+}
+
 .cont {
     position: relative;
     border: 1px solid red;
@@ -35,14 +56,15 @@ body {
 }
 
 .con {
-    position: absolute;
+    position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 87%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
+    margin-bottom: 0.5%;
 }
 
 .home {
@@ -50,9 +72,17 @@ body {
     bottom: 0;
     width: 100vw;
     z-index: 2;
-    margin-bottom: -1%;
+    bottom: 9%;
 }
 
+.base {
+    background-color:#b8e099;
+    width: 100vw;
+    height: 50px;
+    z-index: -1;
+    position: absolute;
+    bottom: 9%;
+}
 
 /* windmill */
 
@@ -239,17 +269,32 @@ body {
     .speechBalloon {
         bottom: 63%;
     }
+    footer p{
+        font-size: 1.5em;
+    }
 }
 
 @media only screen and (max-width: 1440px) {
     .speechBalloon {
         bottom: 59%;
     }
+    footer p{
+        font-size: 1.2em;
+    }
 }
 
 @media only screen and (max-width: 1366px) {
     .speechBalloon {
         bottom: 62%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    footer{
+        height: 8%;
+    }
+    footer p{
+        font-size: 14px;
     }
 }
 
@@ -289,13 +334,12 @@ body {
     }
     .home {
         width: 135%;
-        margin-bottom: -2%;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .speechBalloon {
-        bottom: 45%;
+        bottom: 48%;
     }
     .facebook_mb {
         width: 33%;
@@ -313,6 +357,12 @@ body {
     }
     .vane {
         bottom: 69%;
+    }
+    .home{
+        bottom: 11%;
+    }
+    footer p{
+        font-size: 10px;
     }
 }
 
@@ -347,5 +397,20 @@ body {
 @media only screen and (max-width: 375px) {
     .vane {
         bottom: 71.5%;
+    }
+    .home {
+        bottom: 15%;
+    }
+    footer p {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    footer {
+        height: 10%;
+    }
+    footer p {
+        font-size: 7.75px;
     }
 }

@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;  
+    transition: .2s;  
+}
+body{
+    overflow: hidden; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+/* With a .cur fallback */
+.cur{
+    cursor: url('default.png'), default;
+}
+.pointer-cur{
+    cursor: url('pointer.png'), pointer;
+}
+/* .pointer-cur:active{
+    cursor: url('pointer.png'), pointer;
+} */
+
+.cont {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 2560px;
+    margin: auto;
+}
+
+.bg{
+    width: 100%;
+    size: 100%;
+    z-index: -1;
+    position: absolute;
+    bottom: -10%;
+}
+.mob-bg{
+    display: none;
+}
+
+.logo{
+    position: absolute;
+    width: 18%;
+    bottom: 55%;
+    left: 70%;
+    animation: logo 1s linear;
+}
+.logo-mob{
+    display: none;
+}
+@keyframes logo{
+    0%{bottom: 48%; opacity: 0;}
+    100%{bottom: 55%; opacity: 1;}
+}
+
+.windmill {
+    position: absolute;
+    width: 6%;
+    right: 1%;
+    bottom: 20%;
+}
+.vane{
+    position: absolute;
+    animation: rotate 3s infinite linear;
+    right: 26%;
+    bottom: 72%;
+    z-index: 1;
+    height: 50%;
+}
+.vane:active{
+    animation: reverse rotate 8s infinite linear;
+}
+.pole{
+    width: 15%;
+}
+
+.wheel{
+    position: absolute;
+    animation: rotate 15s infinite linear;
+    left: 25%;
+    bottom: 48%;
+    z-index: 0;
+    width: 7%;
+}
+.wheel:active{
+    animation: reverse rotate 15s infinite linear;
+}
+
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.tracktor{
+    position: absolute;
+    left: 16.5%;
+    bottom: 15%;
+    z-index: 0;
+    width: 6%;
+}
+.truck{
+    position: absolute;
+    left: 60%;
+    bottom: 25%;
+    z-index: 0;
+    width: 7%;
+}
+.tracktor:hover{
+    animation: vehicle-tracktor 1s linear;
+}
+.truck:hover{
+    animation: vehicle-truck 1s linear;
+}
+@keyframes vehicle-tracktor{
+    0%{left: 16.5%;}
+    50%{left: 17.5%;}
+    100%{left: 16.5%;}
+}
+@keyframes vehicle-truck{
+    0%{left: 60%;}
+    50%{left: 63%;}
+    100%{left: 60%;}
+}
+
+.cloud-area {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+}
+.cloud{
+    position: absolute;
+    margin-left: -900px;
+    top: 5%;
+    width: 900px;
+    opacity: 0.95;
+    animation: cloud 40s linear infinite;
+}
+.cloud-mob{
+    display: none;
+}
+@keyframes cloud{
+    0%{left: 0px;}
+    100%{left: 2700px;}
+}
+
+.l-process{
+    position: absolute;
+    left: 19%;
+    bottom: 35%;
+    width: 10%;
+    transition: transform .5s;       
+}
+.l-product{
+    position: absolute;
+    left: 46%;
+    bottom: 24%;
+    width: 10%;
+    transition: transform .5s;          
+}
+.l-tour{
+    position: absolute;
+    left: 23.5%;
+    bottom: 18%;
+    width: 10%;
+    transition: transform .5s;          
+}
+.l-history{
+    position: absolute;
+    left: 4%;
+    bottom: 11%;
+    width: 10%;
+    transition: transform .5s;          
+}
+.l-contact{
+    position: absolute;
+    left: 88%;
+    bottom: 5%;
+    width: 10%;
+    transition: transform .5s; 
+}
+
+@keyframes rubberBand{
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+.rubberBand:hover{
+    animation: rubberBand 0.8s linear;
+}
+
+/* Responsive style */
+@media only screen and (max-height: 1440px){
+    /* .l-history {
+        bottom: 11%;
+    }
+    .l-process {
+        bottom: 36%;
+    }
+    .l-product {
+        bottom: 25%;
+    }
+    .l-tour{
+        bottom: 17%;
+    }
+    .wheel{
+        bottom: 55%;
+    }
+    .tracktor{
+        bottom: 18%;
+    }
+    .truck{
+        bottom: 28%;
+    } */
+}
+/* @media only screen and (max-height: 1080px){
+
+} */
+@media only screen and (max-width: 1440px){
+    /* .bg{
+        bottom: -5%;
+    }
+    .wheel {
+        bottom: 55%;
+    }
+    .l-history {
+        bottom: 15%;
+    }
+    .l-process {
+        bottom: 40%;
+    }
+    .l-tour {
+        bottom: 22%;
+    }
+    .l-product {
+        bottom: 25%;
+    }
+    .l-contact{
+        bottom: 10%;
+    }
+    .tracktor {
+        bottom: 20%;
+    }
+    .truck {
+        bottom: 30%;
+    } */
+}
+@media only screen and (max-width: 1366px){
+    /* .wheel {
+        bottom: 58%;
+    }
+    .l-history {
+        bottom: 18%;
+    }
+    .l-process {
+        bottom: 42%;
+    }
+    .l-product {
+        bottom: 30%;
+    }
+    .tracktor {
+        bottom: 22%;
+    }
+    .truck {
+        bottom: 33%;
+    } */
+}
+@media only screen and (max-width: 1280px){
+    /* .bg{
+        bottom: 0%;
+    }
+    .wheel {
+        bottom: 55%;
+    }
+    .l-history {
+        bottom: 19%;
+    }
+    .l-process {
+        bottom: 40%;
+    }
+    .l-product {
+        bottom: 30%;
+    }
+    .l-tour {
+        bottom: 24%;
+    }
+    .l-contact{
+        bottom: 11%;
+    }
+    .truck {
+        bottom: 30%;
+    }
+    .tracktor {
+        bottom: 24%;
+    } */
+}
+@media only screen and (max-width: 1024px){
+    /* .wheel {
+        bottom: 50%;
+    }
+    .l-history {
+        bottom: 18%;
+    }
+    .l-process {
+        bottom: 38%;
+    }
+    .l-product {
+        bottom: 26%;
+    }
+    .l-tour {
+        bottom: 22%;
+    }
+    .tracktor {
+        bottom: 22%;
+    } */
+}
+
+/* mobile responsive */
+@media only screen and (orientation: portrait) {
+    /* .bg{
+        display: none;
+    }
+    .mob-bg {
+        width: 100%;
+        bottom: -12%;
+        z-index: -1;
+        position: absolute;
+        display: inline !important;
+    }
+    .logo{
+        display: none;
+    }    
+    .logo-mob{
+        display: inline !important;
+        position: absolute;
+        width: 18%;
+        top: 5%;
+        left: 42%;
+        animation: logo 1s linear;
+    }
+    @keyframes logo{
+        0%{top: 10%; opacity: 0;}
+        100%{top: 5%; opacity: 1;}
+    }                
+    .windmill {
+        width: 8%;
+        left: 17%;
+        right: 0%;
+        bottom: 3%;
+    }
+    .vane{
+        bottom: 71.5%;
+        right: 3%;
+    }
+    .wheel{
+        position: absolute;
+        animation: rotate 15s infinite linear;
+        left: 32%;
+        top: 29%;
+        z-index: 1;
+        width: 11%;
+    }
+    .pole{
+        width: 20%;
+    }
+    .cloud{
+        display: none;
+    }
+    .cloud-mob{
+        display: inline !important;
+        position: absolute;
+        margin-left: -300px;
+        top: 5%;
+        width: 300px;
+        opacity: 0.95;
+        animation: cloud 40s linear infinite;
+    }
+    @keyframes cloud{
+        0%{left: 0px;}
+        100%{left: 900px;}
+    }
+    .l-process{
+        position: absolute;
+        left: 27%;
+        top: 40%;
+        width: 16%;
+        transition: transform .5s;          
+    }
+    .l-product{
+        position: absolute;
+        left: 58%;
+        top: 51%;
+        width: 16%;
+        transition: transform .5s;          
+    }
+    .l-tour{
+        position: absolute;
+        left: 52%;
+        top: 65%;
+        width: 16%;
+        transition: transform .5s;          
+    }
+    .l-history{
+        position: absolute;
+        left: 20%;
+        top: 63%;
+        width: 16%;
+        transition: transform .5s;          
+    }
+    .l-contact{
+        position: absolute;
+        left: 12%;
+        top: 88%;
+        width: 16%;
+        transition: transform .5s; 
+    }
+    .tracktor{
+        bottom: 35%;
+        left: 25%;
+        width: 14%;
+    }
+    .truck{
+        bottom: 40%;
+        left: 80%;
+        width: 15%;
+    }
+    .tracktor:hover{
+        animation: vehicle-tracktor 0s linear;
+    }
+    .truck:hover{
+        animation: vehicle-truck 0s linear;
+    } */
+}
+/* @media only screen and (max-width: 414px) {
+
+}
+@media only screen and (max-width: 375px){
+
+}
+@media only screen and (max-width: 320px) {
+
+} */
