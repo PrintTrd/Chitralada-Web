@@ -16,9 +16,9 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    overflow-x: hidden;
-    align-items: center;
+    /* height: 100%; */
+    /* overflow-x: hidden;
+    align-items: center; */
 }
 
 .cont {
