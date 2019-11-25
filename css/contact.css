@@ -334,6 +334,7 @@ footer p {
     }
     .home {
         width: 135%;
+        bottom: 7%;
     }
 }
 
@@ -359,7 +360,7 @@ footer p {
         bottom: 69%;
     }
     .home{
-        bottom: 11%;
+        bottom: 7%;
     }
     footer p{
         font-size: 10px;
@@ -399,7 +400,7 @@ footer p {
         bottom: 71.5%;
     }
     .home {
-        bottom: 15%;
+        bottom: 6%;
     }
     footer p {
         font-size: 9px;
