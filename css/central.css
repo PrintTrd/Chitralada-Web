@@ -10,8 +10,10 @@
 .cur {
     cursor: url('default.png'), default;
 }
-
 .pointer-cur {
+    cursor: url('pointer2.png'), pointer;
+}
+.pointer-cur:active{
     cursor: url('pointer.png'), pointer;
 }
 

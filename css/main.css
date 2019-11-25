@@ -9,16 +9,6 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
 }
-/* With a .cur fallback */
-.cur{
-    cursor: url('default.png'), default;
-}
-.pointer-cur{
-    cursor: url('pointer.png'), pointer;
-}
-/* .pointer-cur:active{
-    cursor: url('pointer.png'), pointer;
-} */
 
 .cont {
     overflow: hidden;
