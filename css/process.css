@@ -130,7 +130,7 @@ h1 {
     top: 13.5%;
     left: 10%;
     line-height: 170%;
-    text-align: center;
+    /* text-align: center; */
     z-index: 3;
 }
 
@@ -163,7 +163,7 @@ h1 {
     top: 18%;
     left: 11%;
     line-height: 170%;
-    text-align: justify;
+    /* text-align: justify; */
     z-index: 3;
 }
 
@@ -176,7 +176,7 @@ h1 {
     top: 47%;
     left: 57%;
     line-height: 170%;
-    text-align: justify;
+    /* text-align: justify; */
     z-index: 3;
 }
 
@@ -196,7 +196,7 @@ h1 {
     top: 69.5%;
     left: 57%;
     line-height: 170%;
-    text-align: justify;
+    /* text-align: justify; */
     z-index: 3;
 }
 
