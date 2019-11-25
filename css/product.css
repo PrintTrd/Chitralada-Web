@@ -53,6 +53,24 @@ p {
     color: #e97625;
 }
 
+footer{
+    height: 150px;
+    width: 100%;
+    background:#684026;
+    text-align: right;
+    align-items: center;
+    display: flex;
+    bottom: 0;
+    justify-content: flex-end;
+}
+
+footer p {
+    padding: 0% 3%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2em;
+    color: white;
+}
+
 @-webkit-keyframes rubberBand {
     from {
         -webkit-transform: scale3d(1, 1, 1);
@@ -638,6 +656,9 @@ grid-template-columns: repeat(auto-fill, 25%); */
         width: 7%;
         right: 7%;
     }
+    footer p{
+        font-size: 1em;
+    }
 }
 
 @media only screen and (max-width: 738px) {
@@ -666,6 +687,9 @@ grid-template-columns: repeat(auto-fill, 25%); */
     .milk1 {
         width: 16vw;
     }
+    footer p{
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 508px) {
@@ -678,6 +702,12 @@ grid-template-columns: repeat(auto-fill, 25%); */
     }
     .milk2 {
         margin-left: 0.05vw;
+    }
+    footer{
+        height: 100px;
+    }
+    footer p{
+        font-size: 12px;
     }
 }
 
@@ -702,6 +732,12 @@ grid-template-columns: repeat(auto-fill, 25%); */
     }
     .milk2 {
         margin-left: 0vw;
+    }
+    footer{
+        height: 80px;
+    }
+    footer p{
+        font-size: 10px;
     }
 }
 
@@ -742,10 +778,22 @@ grid-template-columns: repeat(auto-fill, 25%); */
     p {
         font-size: 14px;
     }
+    footer{
+        height: 70px;
+    }
+    footer p{
+        font-size: 8px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
     #text_detail {
         width: 65%;
+    }
+    footer{
+        height: 50px;
+    }
+    footer p{
+        font-size: 7px;
     }
 }
