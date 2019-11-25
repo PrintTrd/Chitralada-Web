@@ -18,17 +18,18 @@ body {
 
 .cont {
     position: relative;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 100%;
     max-width: 1440px;
     margin: auto;
+    height: 100%;
 }
 
 
 /* main txet*/
 
 .main-text {
-    margin-top: 30%;
+    /* margin-top: 5%; */
     /* padding: 0 2%; */
     width: 100%;
     height: 100%;
@@ -183,9 +184,6 @@ h1 {
 /* responsive */
 
 @media only screen and (max-width: 1024px) {
-    .main-text {
-        margin-top: 32%;
-    }
     /* style element */
     /* box1 */
     .pbox1 {
@@ -237,9 +235,6 @@ h1 {
 }
 
 @media only screen and (max-width: 911px) {
-    .main-text {
-        margin-top: 30%;
-    }
     .container {
         height: 17%;
     }
@@ -251,13 +246,12 @@ h1 {
     } */
     .grid-container {
         margin-top: 0%;
-        padding-top: 20%;
     }
     .topic-main {
         font-size: 1.5em;
     }
     .topic-sub {
-        font-size: 0.75em;
+        font-size: 0.8em;
     }
     .pbox1 {
         font-size: 1.4em;
@@ -291,7 +285,7 @@ h1 {
         font-size: 1.5em;
     }
     .topic-sub {
-        font-size: 0.75em;
+        font-size: 0.8em;
     }
     .pbox1 {
         font-size: 1.12em;
@@ -323,9 +317,6 @@ h1 {
 }
 
 @media only screen and (max-width: 735px) {
-    .main-text {
-        margin-top: 37%;
-    }
     /* footer */
     .container {
         height: 15%;
@@ -342,7 +333,6 @@ h1 {
         position: relative;
         padding: 0% 5%;
         margin-bottom: 30%;
-        padding-top: 30%;
     }
     .grid-container {
         margin-top: 0%;
@@ -401,9 +391,6 @@ h1 {
 /* mobile iphone 6/7/8 */
 
 @media only screen and (max-width: 375px) {
-    .main-text {
-        margin-top: 65%;
-    }
     /* footer */
     .container {
         height: 15%;
@@ -420,7 +407,6 @@ h1 {
         position: relative;
         padding: 3% 8%;
         margin-bottom: 40%;
-        padding-top: 50%;
     }
     .grid-data {
         padding: 10% 0%;

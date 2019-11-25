@@ -20,6 +20,14 @@ body {
     height: 100%;
 }
 
+.cont {
+    position: relative;
+    border: 1px solid red;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+
 .main {
     width: auto;
     position: relative;
@@ -303,7 +311,7 @@ body {
         margin-top: 3%;
         left: 35%;
     }
-    .vane{
+    .vane {
         bottom: 69%;
     }
 }
@@ -312,17 +320,17 @@ body {
     .home {
         width: 187%;
     }
-    .speechBalloon{
+    .speechBalloon {
         bottom: 42%;
         height: 42%;
     }
-    .vane{
+    .vane {
         bottom: 71.5%;
     }
 }
 
 @media only screen and (max-width: 425px) {
-    .vane{
+    .vane {
         bottom: 66%;
     }
 }
@@ -331,7 +339,7 @@ body {
     .speechBalloon {
         bottom: 40%;
     }
-    .vane{
+    .vane {
         bottom: 68%;
     }
 }
