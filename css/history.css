@@ -18,7 +18,7 @@ body {
 
 .cont {
     position: relative;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* width: 100%; */
     max-width: 1440px;
     margin: auto;
@@ -156,15 +156,15 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 20%;
+    height: 200px;
     bottom: 0;
-    margin-bottom: 1.5%;
+    margin-bottom: 7%;
 }
 
-.footer {
+.fft {
     position: fixed;
     width: 100%;
-    height: 11.5%;
+    height: 200px;
     background-color: #9BAA93;
     bottom: 0;
     margin-bottom: -1%;
@@ -179,6 +179,32 @@ h1 {
     width: 95%;
     z-index: 3;
 }
+
+.footer {
+    background-color: transparent;
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    text-align: right;
+    padding-left: 10%;
+    padding-right: 15%;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    padding-bottom: 1%;
+}
+
+
+/* footer {
+    width: 100%;
+    background-color: red;
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    margin-top: 13px;
+} */
 
 
 /* responsive */
@@ -226,6 +252,13 @@ h1 {
 }
 
 @media only screen and (max-width: 970px) {
+    .footer {
+        padding-bottom: 0%;
+        font-size: 0.85em;
+    }
+    .fft {
+        height: 170px;
+    }
     .topic-main {
         font-size: 1.7em;
     }
@@ -235,11 +268,14 @@ h1 {
 }
 
 @media only screen and (max-width: 911px) {
-    .container {
-        height: 17%;
-    }
-    .footer {
-        height: 9.5%;
+    /* .container {
+        height: 160px;
+    } */
+    /* .tourist {
+        margin-top: 2%;
+    } */
+    .fft {
+        height: 160px;
     }
     /* .tourist {
         width: 100%;
@@ -268,14 +304,19 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
-    .container {
+    /* .container {
         height: 17%;
-    }
+    } */
     .footer {
-        height: 9.5%;
+        padding-bottom: 0%;
+        font-size: 0.8em;
+    }
+    .fft {
+        height: 160px;
     }
     .tourist {
         width: 125%;
+        margin-top: -1%;
     }
     .grid-container {
         margin-top: 0%;
@@ -318,14 +359,18 @@ h1 {
 
 @media only screen and (max-width: 735px) {
     /* footer */
-    .container {
+    /* .container {
         height: 15%;
-    }
-    .footer {
-        height: 8%;
+    } */
+    .fft {
+        height: 150px;
     }
     .tourist {
         width: 157%;
+    }
+    .footer {
+        padding-bottom: 0%;
+        font-size: 0.6em;
     }
     .grid-container {
         display: grid;
@@ -392,14 +437,19 @@ h1 {
 
 @media only screen and (max-width: 375px) {
     /* footer */
-    .container {
+    /* .container {
         height: 15%;
-    }
+    } */
     .footer {
-        height: 8%;
+        font-size: 0.2em;
+        height: 55px;
+    }
+    .fft {
+        height: 100px;
     }
     .tourist {
-        width: 17cm;
+        width: 17.5cm;
+        margin-top: 6%;
     }
     .grid-container {
         display: grid;
