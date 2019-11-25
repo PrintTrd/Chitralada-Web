@@ -23,11 +23,12 @@ body {
 
 .cont {
     position: relative;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 100%;
     max-width: 1440px;
     margin: auto;
 }
+
 
 /* .bg-process {
     background: linear-gradient(to bottom, #ffffff 65%, #c5e9ef 100%);
@@ -42,7 +43,6 @@ body {
 }
 
 .footer {
-    clear: both;
     position: relative;
     width: 100%;
     height: 150px;
@@ -54,7 +54,8 @@ body {
     justify-content: flex-end;
 }
 
-.footer p {
+.footer .ft {
+    width: 90%;
     padding: 0% 3%;
     font-size: 1.2em;
     color: white;
@@ -66,8 +67,12 @@ body {
 .topic-text {
     width: auto;
     height: 60%;
-    margin-top: 25%;
+    margin-top: 15%;
     position: relative;
+    /* width: auto;
+    height: 900px;
+    margin-top: 15%;
+    position: relative; */
 }
 
 h1 {
@@ -114,6 +119,9 @@ h1 {
     width: 100%;
     height: 50%;
     top: 850px;
+    /* position: relative;
+    width: 100%;
+    height: 700px; */
 }
 
 .car1-1 {
@@ -149,6 +157,10 @@ h1 {
     width: auto;
     height: 50%;
     top: 1300px;
+    /* position: relative;
+    width: auto;
+    height: 750px;
+    top: -150px; */
 }
 
 .cow2-2 {
@@ -183,6 +195,10 @@ h1 {
     width: auto;
     height: 50%;
     top: 2000px;
+    /* position: relative;
+    width: auto;
+    height: 780px;
+    top: -100px; */
 }
 
 .milk {
@@ -223,6 +239,10 @@ h1 {
     width: auto;
     height: 50%;
     top: 2900px;
+    /* position: relative;
+    width: auto;
+    height: 450px;
+    top: 20px; */
 }
 
 .milk2 {
@@ -255,16 +275,20 @@ h1 {
 .text6 {
     position: relative;
     width: auto;
-    height: 150%;
+    /* height: 150%; */
     top: 2880px;
     margin-bottom: -11%;
+    /* position: relative;
+    width: auto;
+    height: 778px;
+    top: -389px; */
 }
 
 .foot {
-    position: absolute;
+    position: relative;
     width: 150%;
     font-size: 0;
-    top: 20px;
+    /* top: 20px; */
     /* text-align: center; */
     left: -35%;
 }
@@ -491,6 +515,9 @@ h1 {
     .cow .cloud2 {
         top: 200px;
     }
+    .footer .ft {
+        font-size: 1em;
+    }
 }
 
 @media only screen and (max-width: 821px) {
@@ -538,6 +565,9 @@ h1 {
         font-size: 1em;
         top: 250px;
     }
+    .footer .ft {
+        font-size: 0.85em;
+    }
 }
 
 @media only screen and (max-width: 660px) {
@@ -577,13 +607,16 @@ h1 {
     }
     .text6 p {
         font-size: 0.85em;
-        top: 160px;
+        top: 240px;
     }
     .cow .cloud2 {
         top: 150px;
     }
     .cloud1 .cloud1-3 {
         top: 500px;
+    }
+    .footer .ft {
+        font-size: 0.85em;
     }
 }
 
@@ -703,6 +736,12 @@ h1 {
         width: 45%;
         left: 50%;
     }
+    .footer {
+        height: 110px;
+    }
+    .footer .ft {
+        font-size: 0.7em;
+    }
 }
 
 @media only screen and (max-width: 455px) {
@@ -747,6 +786,9 @@ h1 {
         font-size: 0.8em;
         top: 100px;
     }
+    .footer .ft {
+        font-size: 0.6em;
+    }
 }
 
 
@@ -780,5 +822,11 @@ h1 {
     }
     .text6 {
         top: 1800px;
+    }
+    .footer {
+        height: 90px;
+    }
+    .footer .ft {
+        font-size: 0.4em;
     }
 }
