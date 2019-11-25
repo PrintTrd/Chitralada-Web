@@ -52,7 +52,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
+    /* overflow-x: hidden; */
     /* margin-top: 5%; */
 }
 
@@ -193,11 +193,11 @@ h1 {
 /* pic-cow */
 
 .cow1 {
-    width: 70%;
+    width: 60%;
     z-index: 1;
     position: absolute;
     margin-left: 31%;
-    margin-top: 3%;
+    margin-top: 8%;
     z-index: 2;
 }
 
@@ -248,7 +248,7 @@ h1 {
     width: 18%;
     position: ABSOLUTE;
     right: 3%;
-    top: 10%;
+    top: 24%;
     animation: mymove2 13s infinite;
 }
 
@@ -340,7 +340,7 @@ h1 {
         margin-top: -2%;
     }
     .cow1 {
-        width: 65%;
+        width: 57%;
     }
     .cow2 {
         width: 115%;
