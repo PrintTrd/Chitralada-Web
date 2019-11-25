@@ -18,15 +18,17 @@ body {
     background-size: cover;
     height: 100%;
     overflow-x: hidden;
+    align-items: center;
 }
 
 .cont {
     position: relative;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 100%;
     max-width: 1440px;
     margin: auto;
 }
+
 
 /* .bg-process {
     background: linear-gradient(to bottom, #ffffff 65%, #c5e9ef 100%);
@@ -39,6 +41,7 @@ body {
     position: relative;
     z-index: 1;
 }
+
 
 /* topic */
 

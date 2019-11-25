@@ -1,24 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
-*{
+* {
     transition: .2s;
 }
+
 .topnav {
     overflow: hidden;
     background-color: white;
     width: 100%;
     position: fixed;
     z-index: 9;
+    top: 0;
 }
+
 .logo2 {
     width: 52px;
     padding: 15px 15px;
     position: absolute;
     justify-content: center;
 }
+
 .a {
     padding-top: 14px;
     background-color: white;
 }
+
 .topnav a {
     float: left;
     display: block;
@@ -31,16 +36,20 @@
     font-family: 'Kanit', sans-serif;
     transition: .5s;
 }
+
 .topnav .icon {
     display: none;
 }
 
+
 /* iphone 6/7/8 size */
+
 @media only screen and (min-width: 768px) {
     .topnav a {
         display: none;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .topnav a {
         display: none;
@@ -53,6 +62,7 @@
         display: block;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .topnav.responsive {
         z-index: 9;
@@ -92,6 +102,7 @@
         position: absolute;
     }
 }
+
 @media only screen and (max-width: 414px) {
     .topnav a.icon {
         font-size: 40px;
@@ -108,6 +119,7 @@
         padding: 18px 20px;
     }
 }
+
 @media only screen and (max-width: 320px) {
     .topnav a.icon {
         font-size: 35px;

@@ -1,9 +1,12 @@
 /* scrollbar*/
+
 ::-webkit-scrollbar {
     width: 0px;
 }
 
+
 /* With a .cur fallback */
+
 .cur {
     cursor: url('default.png'), default;
 }
@@ -14,7 +17,9 @@
     cursor: url('pointer.png'), pointer;
 }
 
+
 /* navbar */
+
 .navbar {
     width: 100vw;
     position: fixed;
@@ -30,7 +35,7 @@
     background-color: white;
     width: 100%;
     /* margin-top: 2%; */
-    height: 3cm;
+    /* height: 3cm; */
 }
 
 .navbar ul {
