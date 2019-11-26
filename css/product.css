@@ -637,6 +637,12 @@ grid-template-columns: repeat(auto-fill, 25%); */
     }
 }
 
+@media only screen and (max-width: 809px) {
+    footer p {
+        font-size: 17px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     h3 {
         font-size: 18px;
@@ -659,7 +665,7 @@ grid-template-columns: repeat(auto-fill, 25%); */
         right: 7%;
     }
     footer p {
-        font-size: 1em;
+        font-size: 16px;
     }
 }
 
@@ -680,6 +686,9 @@ grid-template-columns: repeat(auto-fill, 25%); */
     #text-box {
         margin-top: 20%;
     }
+    footer p {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 630px) {
@@ -690,7 +699,7 @@ grid-template-columns: repeat(auto-fill, 25%); */
         width: 16vw;
     }
     footer p {
-        font-size: 10px;
+        font-size: 12px;
         width: 100%;
     }
 }
