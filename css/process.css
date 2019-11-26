@@ -645,6 +645,7 @@ h1 {
     }
     .footer p {
         font-size: 0.6em;
+        width: 100%;
     }
 }
 
