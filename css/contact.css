@@ -368,7 +368,7 @@ footer p {
         bottom: 7%;
     }
     footer p {
-        font-size: 10px;
+        font-size: 9px;
     }
 }
 
@@ -398,6 +398,10 @@ footer p {
     .vane {
         bottom: 68%;
     }
+    footer p {
+        font-size: 8px;
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -408,7 +412,8 @@ footer p {
         bottom: 6%;
     }
     footer p {
-        font-size: 9px;
+        font-size: 8px;
+        width: 100%;
     }
 }
 
