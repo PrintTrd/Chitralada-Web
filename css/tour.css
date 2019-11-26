@@ -809,7 +809,8 @@ h1 {
 
 @media only screen and (max-width: 375px) {
     h1 {
-        /* left: 24%; */
+        left: 20%;
+        padding-top: 20%;
     }
     .cow .cloud2 {
         top: 200px;
