@@ -690,7 +690,8 @@ grid-template-columns: repeat(auto-fill, 25%); */
         width: 16vw;
     }
     footer p {
-        font-size: 14px;
+        font-size: 8px;
+        width: 100%;
     }
 }
 
