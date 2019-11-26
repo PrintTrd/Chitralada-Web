@@ -53,10 +53,10 @@ p {
     color: #e97625;
 }
 
-footer{
+footer {
     height: 150px;
     width: 100%;
-    background:#684026;
+    background: #684026;
     text-align: right;
     align-items: center;
     display: flex;
@@ -69,6 +69,7 @@ footer p {
     font-family: 'Kanit', sans-serif;
     font-size: 1.2em;
     color: white;
+    width: 90%;
 }
 
 @-webkit-keyframes rubberBand {
@@ -483,6 +484,7 @@ grid-template-columns: repeat(auto-fill, 25%); */
     }
 }
 
+
 /* mobile responsive */
 
 @media only screen and (orientation: portrait) {
@@ -656,7 +658,7 @@ grid-template-columns: repeat(auto-fill, 25%); */
         width: 7%;
         right: 7%;
     }
-    footer p{
+    footer p {
         font-size: 1em;
     }
 }
@@ -687,7 +689,7 @@ grid-template-columns: repeat(auto-fill, 25%); */
     .milk1 {
         width: 16vw;
     }
-    footer p{
+    footer p {
         font-size: 14px;
     }
 }
@@ -703,10 +705,10 @@ grid-template-columns: repeat(auto-fill, 25%); */
     .milk2 {
         margin-left: 0.05vw;
     }
-    footer{
+    footer {
         height: 100px;
     }
-    footer p{
+    footer p {
         font-size: 12px;
     }
 }
@@ -733,10 +735,10 @@ grid-template-columns: repeat(auto-fill, 25%); */
     .milk2 {
         margin-left: 0vw;
     }
-    footer{
+    footer {
         height: 80px;
     }
-    footer p{
+    footer p {
         font-size: 10px;
     }
 }
@@ -778,10 +780,10 @@ grid-template-columns: repeat(auto-fill, 25%); */
     p {
         font-size: 14px;
     }
-    footer{
+    footer {
         height: 70px;
     }
-    footer p{
+    footer p {
         font-size: 8px;
     }
 }
@@ -790,10 +792,10 @@ grid-template-columns: repeat(auto-fill, 25%); */
     #text_detail {
         width: 65%;
     }
-    footer{
+    footer {
         height: 50px;
     }
-    footer p{
+    footer p {
         font-size: 7px;
     }
 }

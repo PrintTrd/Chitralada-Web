@@ -20,12 +20,12 @@ body {
     height: 100%;
 }
 
-footer{
+footer {
     position: fixed;
     z-index: 3;
     height: 12%;
     width: 100%;
-    background:#7e9b6a;
+    background: #7e9b6a;
     text-align: right;
     align-items: center;
     display: flex;
@@ -39,6 +39,7 @@ footer p {
     font-size: 2em;
     color: white;
     top: 0;
+    width: 90%;
 }
 
 .cont {
@@ -76,13 +77,14 @@ footer p {
 }
 
 .base {
-    background-color:#b8e099;
+    background-color: #b8e099;
     width: 100vw;
     height: 50px;
     z-index: -1;
     position: absolute;
     bottom: 9%;
 }
+
 
 /* windmill */
 
@@ -269,7 +271,7 @@ footer p {
     .speechBalloon {
         bottom: 63%;
     }
-    footer p{
+    footer p {
         font-size: 1.5em;
     }
 }
@@ -278,7 +280,7 @@ footer p {
     .speechBalloon {
         bottom: 59%;
     }
-    footer p{
+    footer p {
         font-size: 1.2em;
     }
 }
@@ -290,10 +292,10 @@ footer p {
 }
 
 @media only screen and (max-width: 1024px) {
-    footer{
+    footer {
         height: 8%;
     }
-    footer p{
+    footer p {
         font-size: 14px;
     }
 }
@@ -359,10 +361,10 @@ footer p {
     .vane {
         bottom: 69%;
     }
-    .home{
+    .home {
         bottom: 7%;
     }
-    footer p{
+    footer p {
         font-size: 10px;
     }
 }
