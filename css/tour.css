@@ -640,7 +640,8 @@ h1 {
     /* text1 */
     h1 {
         font-size: 0.85em;
-        left: 15%;
+        left: 17%;
+        padding-top: 16%;
     }
     .cow1 {
         position: absolute;
