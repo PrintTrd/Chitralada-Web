@@ -383,6 +383,10 @@ footer p {
     .vane {
         bottom: 71.5%;
     }
+    footer p {
+        font-size: 8px;
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 425px) {
