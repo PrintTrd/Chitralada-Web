@@ -76,16 +76,6 @@ footer p {
     bottom: 9%;
 }
 
-.base {
-    background-color: #b8e099;
-    width: 100vw;
-    height: 50px;
-    z-index: -1;
-    position: absolute;
-    bottom: 9%;
-}
-
-
 /* windmill */
 
 .windmill {
