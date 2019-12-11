@@ -138,6 +138,7 @@ h1 {
 .text2 p {
     left: 13%;
     position: absolute;
+    text-align: center;
 }
 
 .ask {
