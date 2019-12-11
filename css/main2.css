@@ -9,16 +9,6 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
 }
-/* With a .cur fallback */
-.cur{
-    cursor: url('default.png'), default;
-}
-.pointer-cur{
-    cursor: url('pointer.png'), pointer;
-}
-/* .pointer-cur:active{
-    cursor: url('pointer.png'), pointer;
-} */
 
 .cont {
     overflow: hidden;
@@ -181,7 +171,44 @@ body{
     width: 10%;
     transition: transform .5s; 
 }
+/* .zoom:hover {
+    transform: scale(1.5); */
+@-webkit-keyframes rubberBand{
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
 
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
 @keyframes rubberBand{
     from {
         -webkit-transform: scale3d(1, 1, 1);
@@ -219,12 +246,13 @@ body{
     }
 }
 .rubberBand:hover{
+    -webkit-animation: rubberBand 0.8s linear;
     animation: rubberBand 0.8s linear;
 }
 
 /* Responsive style */
 @media only screen and (max-height: 1440px){
-    /* .l-history {
+    .l-history {
         bottom: 11%;
     }
     .l-process {
@@ -244,13 +272,15 @@ body{
     }
     .truck{
         bottom: 28%;
-    } */
+    }
 }
-/* @media only screen and (max-height: 1080px){
-
-} */
+@media only screen and (max-height: 1080px){
+    .l-process {
+        bottom: 38%;
+    }
+}
 @media only screen and (max-width: 1440px){
-    /* .bg{
+    .bg{
         bottom: -5%;
     }
     .wheel {
@@ -276,10 +306,10 @@ body{
     }
     .truck {
         bottom: 30%;
-    } */
+    }
 }
 @media only screen and (max-width: 1366px){
-    /* .wheel {
+    .wheel {
         bottom: 58%;
     }
     .l-history {
@@ -296,14 +326,14 @@ body{
     }
     .truck {
         bottom: 33%;
-    } */
+    }
 }
 @media only screen and (max-width: 1280px){
-    /* .bg{
+    .bg{
         bottom: 0%;
     }
     .wheel {
-        bottom: 55%;
+        bottom: 52%;
     }
     .l-history {
         bottom: 19%;
@@ -324,11 +354,11 @@ body{
         bottom: 30%;
     }
     .tracktor {
-        bottom: 24%;
-    } */
+        left: 17%;
+    }
 }
 @media only screen and (max-width: 1024px){
-    /* .wheel {
+    .wheel {
         bottom: 50%;
     }
     .l-history {
@@ -345,12 +375,12 @@ body{
     }
     .tracktor {
         bottom: 22%;
-    } */
+    }
 }
 
 /* mobile responsive */
 @media only screen and (orientation: portrait) {
-    /* .bg{
+    .bg{
         display: none;
     }
     .mob-bg {
@@ -462,14 +492,171 @@ body{
     }
     .truck:hover{
         animation: vehicle-truck 0s linear;
-    } */
+    }
 }
-/* @media only screen and (max-width: 414px) {
+@media only screen and (max-width: 414px) {
+    .mob-bg {
+        bottom: 0%;
+    }
+    .logo-mob{
+        width: 25%;
+        left: 37.5%;
+    }
+    .windmill{
+        position: absolute;
+        width: 9%;
+        left: 17%;
+        top: 73%;
+    }
+    .vane{
+        position: absolute;
+        animation: rotate 3s infinite linear;
+        bottom: 73%;
+        z-index: 1;
+        height: 45%;
+        right: -17%;
+    }
+    .wheel{
+        position: absolute;
+        animation: rotate 15s infinite linear;
+        left: 32%;
+        top: 38%;
+        z-index: 1;
+        width: 10%;
+    }
+    .pole{
+        width: 20%;
+    }
+    .cloud{
+        display: none;
+    }
+    .cloud-mob{
+        display: inline !important;
+        position: absolute;
+        margin-left: -300px;
+        top: 5%;
+        width: 300px;
+        opacity: 0.95;
+        animation: cloud 40s linear infinite;
+    }
+    @keyframes cloud{
+        0%{left: 0px;}
+        100%{left: 900px;}
+    }
+    .l-process{
+        position: absolute;
+        left: 27%;
+        top: 47%;
+        width: 16%;
+        transition: transform .5s;          
+    }
+    .l-product{
+        position: absolute;
+        left: 58%;
+        top: 54%;
+        width: 16%;
+        transition: transform .5s;          
+    }
+    .l-tour{
+        position: absolute;
+        left: 52%;
+        top: 65%;
+        width: 16%;
+        transition: transform .5s;          
+    }
+    .l-history{
+        position: absolute;
+        left: 20%;
+        top: 62%;
+        width: 16%;
+        transition: transform .5s;          
+    }
+    .l-contact{
+        position: absolute;
+        left: 12%;
+        top: 86%;
+        width: 16%;
+        transition: transform .5s; 
+    }
+}
 
+@media only screen and (max-width: 411px) {
+    .windmill{
+        top: 74%;
+    }
+    .vane{
+        height: 46%;
+        right: -11%;
+        width: 18vw;
+    }
+    .wheel{
+        top: 44%;
+    }
+    .l-product {
+        top: 57%;
+    }
+    .truck{
+        bottom: 37%;
+    }
+    .l-process{
+        top: 51%;
+    }
+    .l-history{
+        top: 64%;
+    }
+    .tracktor{
+        bottom: 32%;
+    }
 }
+
 @media only screen and (max-width: 375px){
-
+    .logo-mob {
+        width: 30%;
+        left: 35%;
+    }
+    .windmill {
+        left: 16%;
+        top: 72%;
+    }
+    .vane {
+        bottom: 76%;
+        height: 44%;
+        right: -19%;
+        width: 20vw;
+    }
+    .wheel{
+        top: 38%;
+    }
+    .l-process{
+        width: 20%;
+        top: 45%;
+    }
+    .l-product{
+        width: 20%;
+        top: 52%;
+    }
+    .l-tour{
+        width: 20%;
+        top: 61%;
+    }
+    .l-history{
+        width: 20%;
+        top: 60%;
+        left: 18%;
+    }
+    .l-contact {
+        width: 20%;
+        top: 85%;
+        left: 6%;
+    }
+    .tracktor{
+        bottom: 35%;
+    }
 }
 @media only screen and (max-width: 320px) {
-
-} */
+    .vane {
+        bottom: 73%;
+        height: 42%;
+        right: -13%;
+    }
+}

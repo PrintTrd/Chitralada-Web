@@ -4,7 +4,7 @@
     transition: .2s;  
 }
 body{
-    overflow: hidden; 
+    overflow-x: hidden; 
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -42,6 +42,25 @@ body{
 @keyframes logo{
     0%{bottom: 48%; opacity: 0;}
     100%{bottom: 55%; opacity: 1;}
+}
+
+.footer {
+    position: relative;
+    width: 100vw;
+    height: 150px;
+    background-color: #8cad76;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.footer p {
+    width: 90%;
+    padding: 0% 3%;
+    font-size: 1.2em;
+    color: white;
 }
 
 .windmill {
@@ -390,6 +409,12 @@ body{
         position: absolute;
         display: inline !important;
     }
+    .footer {
+        height: 120px;
+    }
+    .footer p {
+        font-size: 0.8em;
+    }
     .logo{
         display: none;
     }    
@@ -502,6 +527,12 @@ body{
         width: 25%;
         left: 37.5%;
     }
+    .footer {
+        height: 80px;
+    }
+    .footer p {
+        font-size: 0.6em;
+    }
     .windmill{
         position: absolute;
         width: 9%;
@@ -613,6 +644,12 @@ body{
     .logo-mob {
         width: 30%;
         left: 35%;
+    }
+    .footer {
+        height: 65px;
+    }
+    .footer p {
+        font-size: 0.55em;
     }
     .windmill {
         left: 16%;
