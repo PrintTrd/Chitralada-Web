@@ -287,7 +287,7 @@ body {
     }
     .footer p {
         font-size: 1.1em;
-    } */
+    }
     /* .home {
         bottom: 7%;
     } */
@@ -298,8 +298,8 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        bottom: 50%;
-        height: 38%;
+        bottom: 42%;
+        height: 45%;
     }
     .facebook {
         display: none;
@@ -335,7 +335,7 @@ body {
 
 @media only screen and (max-width: 768px) {
     .speechBalloon {
-        bottom: 48%;
+        bottom: 40%;
     }
     .facebook_mb {
         width: 33%;
