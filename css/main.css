@@ -690,6 +690,11 @@ body{
         bottom: 35%;
     }
 }
+@media only screen and (max-width: 370px) {
+    .footer p {
+        font-size: 0.5em;
+    }
+}
 @media only screen and (max-width: 320px) {
     .vane {
         bottom: 73%;
