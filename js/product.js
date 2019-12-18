@@ -71,11 +71,15 @@ function rendata(index){
 }
 
 function show(nowIndex){
+    detailbox_area.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     detailbox_area.style.transform = "scale(1)";
     rendata(nowIndex);
 }
-function hide(){ 
-    detailbox_area.style.transform = "scale(0)";
+function hide(){
+    detailbox_area.style.backgroundColor = "transparent";
+    setTimeout(() => {
+        detailbox_area.style.transform = "scale(0)";
+    }, 200);
 }
 
 var state = 1;
